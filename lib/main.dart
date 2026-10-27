@@ -1,6 +1,8 @@
 import 'package:borrowbetter/firebase_options.dart';
-import 'package:borrowbetter/src/shared/theme/dimensions.dart';
 import 'package:borrowbetter/src/shared/theme/theme.dart';
+import 'package:borrowbetter/src/shared/widgets/centre_chargement.dart';
+import 'package:borrowbetter/src/shared/widgets/erreur_vue.dart';
+import 'package:borrowbetter/src/shared/widgets/etat_vide.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -29,21 +31,27 @@ class _ApercuTheme extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textes = Theme.of(context).textTheme;
     return Scaffold(
       appBar: AppBar(title: const Text('BorrowBetter')),
-      body: Padding(
-        padding: const EdgeInsets.all(Espacements.l),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Titre', style: textes.headlineMedium),
-            const SizedBox(height: Espacements.s),
-            Text('Texte courant du thème.', style: textes.bodyLarge),
-            const SizedBox(height: Espacements.xl),
-            FilledButton(onPressed: () {}, child: const Text('Bouton')),
-          ],
-        ),
+      body: ListView(
+        children: [
+          const SizedBox(height: 100, child: CentreChargement()),
+          SizedBox(
+            height: 220,
+            child: ErreurVue(
+              message: 'Impossible de charger les objets.',
+              libelleReessayer: 'Réessayer',
+              onReessayer: () {},
+            ),
+          ),
+          const SizedBox(
+            height: 220,
+            child: EtatVide(
+              titre: 'Aucun objet',
+              message: 'Rien à afficher pour le moment.',
+            ),
+          ),
+        ],
       ),
     );
   }
