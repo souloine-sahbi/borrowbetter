@@ -1,0 +1,13 @@
+{
+  "@@locale": "en",
+  "appTitre": "BorrowBetter",
+  "actionReessayer": "Retry",
+  "erreurChargement": "Unable to load the data.",
+  "aucunResultat": "No results",
+  "statutEnAttente": "Pending",
+  "statutAcceptee": "Accepted",
+  "statutRefusee": "Declined",
+  "statutAnnulee": "Cancelled",
+  "statutEnCours": "In progress",
+  "statutRendue": "Returned"
+}

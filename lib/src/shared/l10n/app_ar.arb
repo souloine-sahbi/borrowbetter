@@ -1,0 +1,13 @@
+{
+  "@@locale": "ar",
+  "appTitre": "BorrowBetter",
+  "actionReessayer": "إعادة المحاولة",
+  "erreurChargement": "تعذّر تحميل البيانات.",
+  "aucunResultat": "لا توجد نتائج",
+  "statutEnAttente": "قيد الانتظار",
+  "statutAcceptee": "مقبولة",
+  "statutRefusee": "مرفوضة",
+  "statutAnnulee": "ملغاة",
+  "statutEnCours": "جارية",
+  "statutRendue": "تمت الإعادة"
+}
