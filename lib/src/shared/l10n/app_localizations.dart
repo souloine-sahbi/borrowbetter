@@ -159,6 +159,36 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Rendue'**
   String get statutRendue;
+
+  /// No description provided for @navAccueil.
+  ///
+  /// In fr, this message translates to:
+  /// **'Accueil'**
+  String get navAccueil;
+
+  /// No description provided for @navRecherche.
+  ///
+  /// In fr, this message translates to:
+  /// **'Recherche'**
+  String get navRecherche;
+
+  /// No description provided for @navParametres.
+  ///
+  /// In fr, this message translates to:
+  /// **'Paramètres'**
+  String get navParametres;
+
+  /// No description provided for @parametresLangue.
+  ///
+  /// In fr, this message translates to:
+  /// **'Langue'**
+  String get parametresLangue;
+
+  /// No description provided for @parametresTheme.
+  ///
+  /// In fr, this message translates to:
+  /// **'Thème'**
+  String get parametresTheme;
 }
 
 class _AppLocalizationsDelegate

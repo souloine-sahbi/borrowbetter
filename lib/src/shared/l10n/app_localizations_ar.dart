@@ -38,4 +38,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get statutRendue => 'تمت الإعادة';
+
+  @override
+  String get navAccueil => 'الرئيسية';
+
+  @override
+  String get navRecherche => 'البحث';
+
+  @override
+  String get navParametres => 'الإعدادات';
+
+  @override
+  String get parametresLangue => 'اللغة';
+
+  @override
+  String get parametresTheme => 'المظهر';
 }

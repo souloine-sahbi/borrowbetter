@@ -9,5 +9,10 @@
   "statutRefusee": "مرفوضة",
   "statutAnnulee": "ملغاة",
   "statutEnCours": "جارية",
-  "statutRendue": "تمت الإعادة"
+  "statutRendue": "تمت الإعادة",
+  "navAccueil": "الرئيسية",
+  "navRecherche": "البحث",
+  "navParametres": "الإعدادات",
+  "parametresLangue": "اللغة",
+  "parametresTheme": "المظهر"
 }
