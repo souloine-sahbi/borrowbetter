@@ -38,4 +38,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get statutRendue => 'Returned';
+
+  @override
+  String get navAccueil => 'Home';
+
+  @override
+  String get navRecherche => 'Search';
+
+  @override
+  String get navParametres => 'Settings';
+
+  @override
+  String get parametresLangue => 'Language';
+
+  @override
+  String get parametresTheme => 'Theme';
 }

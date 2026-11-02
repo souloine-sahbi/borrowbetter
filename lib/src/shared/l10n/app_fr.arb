@@ -9,5 +9,10 @@
   "statutRefusee": "Refusée",
   "statutAnnulee": "Annulée",
   "statutEnCours": "En cours",
-  "statutRendue": "Rendue"
+  "statutRendue": "Rendue",
+  "navAccueil": "Accueil",
+  "navRecherche": "Recherche",
+  "navParametres": "Paramètres",
+  "parametresLangue": "Langue",
+  "parametresTheme": "Thème"
 }

@@ -9,5 +9,10 @@
   "statutRefusee": "Declined",
   "statutAnnulee": "Cancelled",
   "statutEnCours": "In progress",
-  "statutRendue": "Returned"
+  "statutRendue": "Returned",
+  "navAccueil": "Home",
+  "navRecherche": "Search",
+  "navParametres": "Settings",
+  "parametresLangue": "Language",
+  "parametresTheme": "Theme"
 }
