@@ -5,6 +5,7 @@ import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
 import 'package:borrowbetter/src/shared/widgets/bouton_principal.dart';
+import 'package:borrowbetter/src/shared/widgets/logo_marque.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -60,6 +61,8 @@ class _EtatEcranConnexion extends ConsumerState<EcranConnexion> {
         child: ListView(
           padding: const EdgeInsets.all(Espacements.l),
           children: [
+            const LogoMarque(),
+            const SizedBox(height: Espacements.xl),
             Form(
               key: _formulaire,
               child: Column(

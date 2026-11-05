@@ -30,5 +30,10 @@
   "erreurEmailUtilise": "هذا البريد الإلكتروني مستعمل بالفعل",
   "erreurMotDePasseFaible": "كلمة المرور ضعيفة جدًا",
   "erreurReseau": "مشكلة في الاتصال بالشبكة",
-  "erreurInconnue": "حدث خطأ، حاول مرة أخرى"
+  "erreurInconnue": "حدث خطأ، حاول مرة أخرى",
+  "forceFaible": "ضعيفة",
+  "forceMoyenne": "متوسطة",
+  "forceBonne": "جيدة",
+  "forceForte": "قوية",
+  "forceConseil": "استخدم 8 أحرف أو أكثر مع أرقام ورموز وأحرف كبيرة"
 }

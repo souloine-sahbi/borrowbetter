@@ -30,5 +30,10 @@
   "erreurEmailUtilise": "Cette adresse e-mail est déjà utilisée",
   "erreurMotDePasseFaible": "Mot de passe trop faible",
   "erreurReseau": "Problème de connexion réseau",
-  "erreurInconnue": "Une erreur est survenue, réessayez"
+  "erreurInconnue": "Une erreur est survenue, réessayez",
+  "forceFaible": "Faible",
+  "forceMoyenne": "Moyen",
+  "forceBonne": "Bon",
+  "forceForte": "Fort",
+  "forceConseil": "Utilisez 8 caractères ou plus, avec majuscules, chiffres et symboles"
 }

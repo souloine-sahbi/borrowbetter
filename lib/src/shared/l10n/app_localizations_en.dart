@@ -101,4 +101,20 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get erreurInconnue => 'Something went wrong, please try again';
+
+  @override
+  String get forceFaible => 'Weak';
+
+  @override
+  String get forceMoyenne => 'Fair';
+
+  @override
+  String get forceBonne => 'Good';
+
+  @override
+  String get forceForte => 'Strong';
+
+  @override
+  String get forceConseil =>
+      'Use 8 or more characters with uppercase letters, numbers and symbols';
 }
