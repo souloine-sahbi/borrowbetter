@@ -35,5 +35,16 @@
   "forceMoyenne": "Moyen",
   "forceBonne": "Bon",
   "forceForte": "Fort",
-  "forceConseil": "Utilisez 8 caractères ou plus, avec majuscules, chiffres et symboles"
+  "forceConseil": "Utilisez 8 caractères ou plus, avec majuscules, chiffres et symboles",
+    "authBienvenue": "Bon retour !",
+  "authSousTitreConnexion": "Connectez-vous à votre compte",
+  "authCreerTitre": "Créez votre compte",
+  "authCreerSousTitre": "Rejoignez la communauté et commencez à emprunter ou prêter.",
+  "authMotDePasseOublie": "Mot de passe oublié ?",
+  "authContinuerGoogle": "Continuer avec Google",
+  "authPasDeCompteQuestion": "Pas encore de compte ?",
+  "authSInscrire": "S’inscrire",
+  "authDejaCompteQuestion": "Déjà un compte ?",
+  "authSeConnecter": "Se connecter",
+  "authReinitEnvoyee": "E-mail de réinitialisation envoyé"
 }

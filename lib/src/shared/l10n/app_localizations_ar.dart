@@ -116,4 +116,38 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get forceConseil => 'استخدم 8 أحرف أو أكثر مع أرقام ورموز وأحرف كبيرة';
+
+  @override
+  String get authBienvenue => 'مرحبًا بعودتك!';
+
+  @override
+  String get authSousTitreConnexion => 'سجّل الدخول إلى حسابك';
+
+  @override
+  String get authCreerTitre => 'أنشئ حسابك';
+
+  @override
+  String get authCreerSousTitre =>
+      'انضم إلى المجتمع وابدأ بالاستعارة أو الإعارة.';
+
+  @override
+  String get authMotDePasseOublie => 'نسيت كلمة المرور؟';
+
+  @override
+  String get authContinuerGoogle => 'المتابعة باستخدام Google';
+
+  @override
+  String get authPasDeCompteQuestion => 'ليس لديك حساب؟';
+
+  @override
+  String get authSInscrire => 'سجّل الآن';
+
+  @override
+  String get authDejaCompteQuestion => 'لديك حساب بالفعل؟';
+
+  @override
+  String get authSeConnecter => 'تسجيل الدخول';
+
+  @override
+  String get authReinitEnvoyee => 'تم إرسال رسالة إعادة تعيين كلمة المرور';
 }

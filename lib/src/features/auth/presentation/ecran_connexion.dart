@@ -1,4 +1,7 @@
 import 'package:borrowbetter/src/features/auth/data/depot_auth.dart';
+import 'package:borrowbetter/src/features/auth/presentation/bouton_google.dart';
+import 'package:borrowbetter/src/features/auth/presentation/champ_mot_de_passe.dart';
+import 'package:borrowbetter/src/features/auth/presentation/decoration_champ.dart';
 import 'package:borrowbetter/src/features/auth/presentation/message_erreur_auth.dart';
 import 'package:borrowbetter/src/features/auth/presentation/validateurs.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
@@ -51,17 +54,51 @@ class _EtatEcranConnexion extends ConsumerState<EcranConnexion> {
     }
   }
 
+  Future<void> _reinitialiser() async {
+    final textes = AppLocalizations.of(context);
+    final messager = ScaffoldMessenger.of(context);
+    final probleme = validerEmail(textes, _email.text);
+    if (probleme != null) {
+      setState(() => _erreur = probleme);
+      return;
+    }
+    setState(() => _erreur = null);
+    try {
+      await ref
+          .read(depotAuthProvider)
+          .reinitialiserMotDePasse(_email.text.trim());
+      messager.showSnackBar(SnackBar(content: Text(textes.authReinitEnvoyee)));
+    } on FirebaseAuthException catch (e) {
+      if (!mounted) return;
+      setState(() => _erreur = messageErreurAuth(textes, e));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final textes = AppLocalizations.of(context);
+    final theme = Theme.of(context);
     final erreur = _erreur;
     return Scaffold(
-      appBar: AppBar(title: Text(textes.authConnexion)),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(Espacements.l),
           children: [
             const LogoMarque(),
+            const SizedBox(height: Espacements.xl),
+            Text(
+              textes.authBienvenue,
+              style: theme.textTheme.headlineSmall?.copyWith(
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            const SizedBox(height: Espacements.xs),
+            Text(
+              textes.authSousTitreConnexion,
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
             const SizedBox(height: Espacements.xl),
             Form(
               key: _formulaire,
@@ -70,38 +107,50 @@ class _EtatEcranConnexion extends ConsumerState<EcranConnexion> {
                   TextFormField(
                     controller: _email,
                     keyboardType: TextInputType.emailAddress,
-                    decoration: InputDecoration(labelText: textes.authEmail),
+                    decoration: decorationChamp(
+                      libelle: textes.authEmail,
+                      icone: Icons.mail_outline,
+                    ),
                     validator: (valeur) => validerEmail(textes, valeur),
                   ),
                   const SizedBox(height: Espacements.m),
-                  TextFormField(
-                    controller: _motDePasse,
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: textes.authMotDePasse,
-                    ),
-                    validator: (valeur) => validerMotDePasse(textes, valeur),
+                  ChampMotDePasse(
+                    controleur: _motDePasse,
+                    libelle: textes.authMotDePasse,
+                    validateur: (valeur) => validerMotDePasse(textes, valeur),
                   ),
                 ],
               ),
             ),
-            if (erreur != null) ...[
-              const SizedBox(height: Espacements.m),
-              Text(
-                erreur,
-                style: TextStyle(color: Theme.of(context).colorScheme.error),
+            Align(
+              alignment: AlignmentDirectional.centerEnd,
+              child: TextButton(
+                onPressed: _enChargement ? null : _reinitialiser,
+                child: Text(textes.authMotDePasseOublie),
               ),
+            ),
+            if (erreur != null) ...[
+              Text(erreur, style: TextStyle(color: theme.colorScheme.error)),
+              const SizedBox(height: Espacements.m),
             ],
-            const SizedBox(height: Espacements.l),
             BoutonPrincipal(
               libelle: textes.authConnexion,
               onPressed: _enChargement ? null : _envoyer,
               enChargement: _enChargement,
             ),
             const SizedBox(height: Espacements.m),
-            TextButton(
-              onPressed: () => context.go(Chemins.inscription),
-              child: Text(textes.authPasDeCompte),
+            const BoutonGoogle(),
+            const SizedBox(height: Espacements.l),
+            Wrap(
+              alignment: WrapAlignment.center,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                Text(textes.authPasDeCompteQuestion),
+                TextButton(
+                  onPressed: () => context.go(Chemins.inscription),
+                  child: Text(textes.authSInscrire),
+                ),
+              ],
             ),
           ],
         ),

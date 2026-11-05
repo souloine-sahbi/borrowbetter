@@ -26,6 +26,9 @@ class DepotAuth {
   }
 
   Future<void> deconnexion() => _auth.signOut();
+
+  Future<void> reinitialiserMotDePasse(String email) =>
+      _auth.sendPasswordResetEmail(email: email);
 }
 
 final depotAuthProvider = Provider<DepotAuth>(

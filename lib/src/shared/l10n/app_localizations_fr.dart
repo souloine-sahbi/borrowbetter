@@ -117,4 +117,38 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get forceConseil =>
       'Utilisez 8 caractères ou plus, avec majuscules, chiffres et symboles';
+
+  @override
+  String get authBienvenue => 'Bon retour !';
+
+  @override
+  String get authSousTitreConnexion => 'Connectez-vous à votre compte';
+
+  @override
+  String get authCreerTitre => 'Créez votre compte';
+
+  @override
+  String get authCreerSousTitre =>
+      'Rejoignez la communauté et commencez à emprunter ou prêter.';
+
+  @override
+  String get authMotDePasseOublie => 'Mot de passe oublié ?';
+
+  @override
+  String get authContinuerGoogle => 'Continuer avec Google';
+
+  @override
+  String get authPasDeCompteQuestion => 'Pas encore de compte ?';
+
+  @override
+  String get authSInscrire => 'S’inscrire';
+
+  @override
+  String get authDejaCompteQuestion => 'Déjà un compte ?';
+
+  @override
+  String get authSeConnecter => 'Se connecter';
+
+  @override
+  String get authReinitEnvoyee => 'E-mail de réinitialisation envoyé';
 }

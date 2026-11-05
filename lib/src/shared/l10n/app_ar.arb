@@ -35,5 +35,16 @@
   "forceMoyenne": "متوسطة",
   "forceBonne": "جيدة",
   "forceForte": "قوية",
-  "forceConseil": "استخدم 8 أحرف أو أكثر مع أرقام ورموز وأحرف كبيرة"
+  "forceConseil": "استخدم 8 أحرف أو أكثر مع أرقام ورموز وأحرف كبيرة",
+    "authBienvenue": "مرحبًا بعودتك!",
+  "authSousTitreConnexion": "سجّل الدخول إلى حسابك",
+  "authCreerTitre": "أنشئ حسابك",
+  "authCreerSousTitre": "انضم إلى المجتمع وابدأ بالاستعارة أو الإعارة.",
+  "authMotDePasseOublie": "نسيت كلمة المرور؟",
+  "authContinuerGoogle": "المتابعة باستخدام Google",
+  "authPasDeCompteQuestion": "ليس لديك حساب؟",
+  "authSInscrire": "سجّل الآن",
+  "authDejaCompteQuestion": "لديك حساب بالفعل؟",
+  "authSeConnecter": "تسجيل الدخول",
+  "authReinitEnvoyee": "تم إرسال رسالة إعادة تعيين كلمة المرور"
 }

@@ -1,5 +1,8 @@
 import 'package:borrowbetter/src/features/auth/data/depot_auth.dart';
 import 'package:borrowbetter/src/features/auth/domain/force_mot_de_passe.dart';
+import 'package:borrowbetter/src/features/auth/presentation/bouton_google.dart';
+import 'package:borrowbetter/src/features/auth/presentation/champ_mot_de_passe.dart';
+import 'package:borrowbetter/src/features/auth/presentation/decoration_champ.dart';
 import 'package:borrowbetter/src/features/auth/presentation/indicateur_force_mot_de_passe.dart';
 import 'package:borrowbetter/src/features/auth/presentation/message_erreur_auth.dart';
 import 'package:borrowbetter/src/features/auth/presentation/validateurs.dart';
@@ -62,15 +65,29 @@ class _EtatEcranInscription extends ConsumerState<EcranInscription> {
   @override
   Widget build(BuildContext context) {
     final textes = AppLocalizations.of(context);
+    final theme = Theme.of(context);
     final erreur = _erreur;
     final force = evaluerForce(_motDePasse.text);
     return Scaffold(
-      appBar: AppBar(title: Text(textes.authInscription)),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(Espacements.l),
           children: [
             const LogoMarque(),
+            const SizedBox(height: Espacements.xl),
+            Text(
+              textes.authCreerTitre,
+              style: theme.textTheme.headlineSmall?.copyWith(
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            const SizedBox(height: Espacements.xs),
+            Text(
+              textes.authCreerSousTitre,
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
             const SizedBox(height: Espacements.xl),
             Form(
               key: _formulaire,
@@ -78,25 +95,28 @@ class _EtatEcranInscription extends ConsumerState<EcranInscription> {
                 children: [
                   TextFormField(
                     controller: _nom,
-                    decoration: InputDecoration(labelText: textes.authNom),
+                    decoration: decorationChamp(
+                      libelle: textes.authNom,
+                      icone: Icons.person_outline,
+                    ),
                     validator: (valeur) => validerObligatoire(textes, valeur),
                   ),
                   const SizedBox(height: Espacements.m),
                   TextFormField(
                     controller: _email,
                     keyboardType: TextInputType.emailAddress,
-                    decoration: InputDecoration(labelText: textes.authEmail),
+                    decoration: decorationChamp(
+                      libelle: textes.authEmail,
+                      icone: Icons.mail_outline,
+                    ),
                     validator: (valeur) => validerEmail(textes, valeur),
                   ),
                   const SizedBox(height: Espacements.m),
-                  TextFormField(
-                    controller: _motDePasse,
-                    obscureText: true,
+                  ChampMotDePasse(
+                    controleur: _motDePasse,
+                    libelle: textes.authMotDePasse,
                     onChanged: (_) => setState(() {}),
-                    decoration: InputDecoration(
-                      labelText: textes.authMotDePasse,
-                    ),
-                    validator: (valeur) => validerMotDePasse(textes, valeur),
+                    validateur: (valeur) => validerMotDePasse(textes, valeur),
                   ),
                   if (force != ForceMotDePasse.aucune) ...[
                     const SizedBox(height: Espacements.s),
@@ -107,10 +127,7 @@ class _EtatEcranInscription extends ConsumerState<EcranInscription> {
             ),
             if (erreur != null) ...[
               const SizedBox(height: Espacements.m),
-              Text(
-                erreur,
-                style: TextStyle(color: Theme.of(context).colorScheme.error),
-              ),
+              Text(erreur, style: TextStyle(color: theme.colorScheme.error)),
             ],
             const SizedBox(height: Espacements.l),
             BoutonPrincipal(
@@ -119,9 +136,18 @@ class _EtatEcranInscription extends ConsumerState<EcranInscription> {
               enChargement: _enChargement,
             ),
             const SizedBox(height: Espacements.m),
-            TextButton(
-              onPressed: () => context.go(Chemins.connexion),
-              child: Text(textes.authDejaCompte),
+            const BoutonGoogle(),
+            const SizedBox(height: Espacements.l),
+            Wrap(
+              alignment: WrapAlignment.center,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                Text(textes.authDejaCompteQuestion),
+                TextButton(
+                  onPressed: () => context.go(Chemins.connexion),
+                  child: Text(textes.authSeConnecter),
+                ),
+              ],
             ),
           ],
         ),
