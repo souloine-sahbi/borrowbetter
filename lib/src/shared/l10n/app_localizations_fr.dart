@@ -101,4 +101,20 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get erreurInconnue => 'Une erreur est survenue, réessayez';
+
+  @override
+  String get forceFaible => 'Faible';
+
+  @override
+  String get forceMoyenne => 'Moyen';
+
+  @override
+  String get forceBonne => 'Bon';
+
+  @override
+  String get forceForte => 'Fort';
+
+  @override
+  String get forceConseil =>
+      'Utilisez 8 caractères ou plus, avec majuscules, chiffres et symboles';
 }

@@ -101,4 +101,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get erreurInconnue => 'حدث خطأ، حاول مرة أخرى';
+
+  @override
+  String get forceFaible => 'ضعيفة';
+
+  @override
+  String get forceMoyenne => 'متوسطة';
+
+  @override
+  String get forceBonne => 'جيدة';
+
+  @override
+  String get forceForte => 'قوية';
+
+  @override
+  String get forceConseil => 'استخدم 8 أحرف أو أكثر مع أرقام ورموز وأحرف كبيرة';
 }

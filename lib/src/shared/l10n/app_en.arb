@@ -30,5 +30,10 @@
   "erreurEmailUtilise": "This email address is already in use",
   "erreurMotDePasseFaible": "Password too weak",
   "erreurReseau": "Network connection problem",
-  "erreurInconnue": "Something went wrong, please try again"
+  "erreurInconnue": "Something went wrong, please try again",
+  "forceFaible": "Weak",
+  "forceMoyenne": "Fair",
+  "forceBonne": "Good",
+  "forceForte": "Strong",
+  "forceConseil": "Use 8 or more characters with uppercase letters, numbers and symbols"
 }

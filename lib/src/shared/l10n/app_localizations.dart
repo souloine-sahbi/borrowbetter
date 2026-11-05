@@ -285,6 +285,36 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Une erreur est survenue, réessayez'**
   String get erreurInconnue;
+
+  /// No description provided for @forceFaible.
+  ///
+  /// In fr, this message translates to:
+  /// **'Faible'**
+  String get forceFaible;
+
+  /// No description provided for @forceMoyenne.
+  ///
+  /// In fr, this message translates to:
+  /// **'Moyen'**
+  String get forceMoyenne;
+
+  /// No description provided for @forceBonne.
+  ///
+  /// In fr, this message translates to:
+  /// **'Bon'**
+  String get forceBonne;
+
+  /// No description provided for @forceForte.
+  ///
+  /// In fr, this message translates to:
+  /// **'Fort'**
+  String get forceForte;
+
+  /// No description provided for @forceConseil.
+  ///
+  /// In fr, this message translates to:
+  /// **'Utilisez 8 caractères ou plus, avec majuscules, chiffres et symboles'**
+  String get forceConseil;
 }
 
 class _AppLocalizationsDelegate

@@ -1,10 +1,13 @@
 import 'package:borrowbetter/src/features/auth/data/depot_auth.dart';
+import 'package:borrowbetter/src/features/auth/domain/force_mot_de_passe.dart';
+import 'package:borrowbetter/src/features/auth/presentation/indicateur_force_mot_de_passe.dart';
 import 'package:borrowbetter/src/features/auth/presentation/message_erreur_auth.dart';
 import 'package:borrowbetter/src/features/auth/presentation/validateurs.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
 import 'package:borrowbetter/src/shared/widgets/bouton_principal.dart';
+import 'package:borrowbetter/src/shared/widgets/logo_marque.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -60,12 +63,15 @@ class _EtatEcranInscription extends ConsumerState<EcranInscription> {
   Widget build(BuildContext context) {
     final textes = AppLocalizations.of(context);
     final erreur = _erreur;
+    final force = evaluerForce(_motDePasse.text);
     return Scaffold(
       appBar: AppBar(title: Text(textes.authInscription)),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(Espacements.l),
           children: [
+            const LogoMarque(),
+            const SizedBox(height: Espacements.xl),
             Form(
               key: _formulaire,
               child: Column(
@@ -86,11 +92,16 @@ class _EtatEcranInscription extends ConsumerState<EcranInscription> {
                   TextFormField(
                     controller: _motDePasse,
                     obscureText: true,
+                    onChanged: (_) => setState(() {}),
                     decoration: InputDecoration(
                       labelText: textes.authMotDePasse,
                     ),
                     validator: (valeur) => validerMotDePasse(textes, valeur),
                   ),
+                  if (force != ForceMotDePasse.aucune) ...[
+                    const SizedBox(height: Espacements.s),
+                    IndicateurForceMotDePasse(force: force),
+                  ],
                 ],
               ),
             ),
