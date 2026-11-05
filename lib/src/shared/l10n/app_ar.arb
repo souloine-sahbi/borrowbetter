@@ -14,5 +14,21 @@
   "navRecherche": "البحث",
   "navParametres": "الإعدادات",
   "parametresLangue": "اللغة",
-  "parametresTheme": "المظهر"
+  "parametresTheme": "المظهر",
+  "authConnexion": "تسجيل الدخول",
+  "authInscription": "إنشاء حساب",
+  "authEmail": "البريد الإلكتروني",
+  "authMotDePasse": "كلمة المرور",
+  "authNom": "الاسم الكامل",
+  "authPasDeCompte": "ليس لديك حساب؟ سجّل الآن",
+  "authDejaCompte": "لديك حساب؟ سجّل الدخول",
+  "authDeconnexion": "تسجيل الخروج",
+  "validationObligatoire": "هذا الحقل مطلوب",
+  "validationEmail": "بريد إلكتروني غير صالح",
+  "validationMotDePasse": "6 أحرف على الأقل",
+  "erreurIdentifiants": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+  "erreurEmailUtilise": "هذا البريد الإلكتروني مستعمل بالفعل",
+  "erreurMotDePasseFaible": "كلمة المرور ضعيفة جدًا",
+  "erreurReseau": "مشكلة في الاتصال بالشبكة",
+  "erreurInconnue": "حدث خطأ، حاول مرة أخرى"
 }

@@ -53,4 +53,52 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get parametresTheme => 'المظهر';
+
+  @override
+  String get authConnexion => 'تسجيل الدخول';
+
+  @override
+  String get authInscription => 'إنشاء حساب';
+
+  @override
+  String get authEmail => 'البريد الإلكتروني';
+
+  @override
+  String get authMotDePasse => 'كلمة المرور';
+
+  @override
+  String get authNom => 'الاسم الكامل';
+
+  @override
+  String get authPasDeCompte => 'ليس لديك حساب؟ سجّل الآن';
+
+  @override
+  String get authDejaCompte => 'لديك حساب؟ سجّل الدخول';
+
+  @override
+  String get authDeconnexion => 'تسجيل الخروج';
+
+  @override
+  String get validationObligatoire => 'هذا الحقل مطلوب';
+
+  @override
+  String get validationEmail => 'بريد إلكتروني غير صالح';
+
+  @override
+  String get validationMotDePasse => '6 أحرف على الأقل';
+
+  @override
+  String get erreurIdentifiants => 'البريد الإلكتروني أو كلمة المرور غير صحيحة';
+
+  @override
+  String get erreurEmailUtilise => 'هذا البريد الإلكتروني مستعمل بالفعل';
+
+  @override
+  String get erreurMotDePasseFaible => 'كلمة المرور ضعيفة جدًا';
+
+  @override
+  String get erreurReseau => 'مشكلة في الاتصال بالشبكة';
+
+  @override
+  String get erreurInconnue => 'حدث خطأ، حاول مرة أخرى';
 }

@@ -14,5 +14,21 @@
   "navRecherche": "Search",
   "navParametres": "Settings",
   "parametresLangue": "Language",
-  "parametresTheme": "Theme"
+  "parametresTheme": "Theme",
+  "authConnexion": "Sign in",
+  "authInscription": "Sign up",
+  "authEmail": "Email address",
+  "authMotDePasse": "Password",
+  "authNom": "Full name",
+  "authPasDeCompte": "No account yet? Sign up",
+  "authDejaCompte": "Already have an account? Sign in",
+  "authDeconnexion": "Sign out",
+  "validationObligatoire": "This field is required",
+  "validationEmail": "Invalid email address",
+  "validationMotDePasse": "At least 6 characters",
+  "erreurIdentifiants": "Incorrect email or password",
+  "erreurEmailUtilise": "This email address is already in use",
+  "erreurMotDePasseFaible": "Password too weak",
+  "erreurReseau": "Network connection problem",
+  "erreurInconnue": "Something went wrong, please try again"
 }

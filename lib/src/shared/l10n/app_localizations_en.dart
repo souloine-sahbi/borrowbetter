@@ -53,4 +53,52 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get parametresTheme => 'Theme';
+
+  @override
+  String get authConnexion => 'Sign in';
+
+  @override
+  String get authInscription => 'Sign up';
+
+  @override
+  String get authEmail => 'Email address';
+
+  @override
+  String get authMotDePasse => 'Password';
+
+  @override
+  String get authNom => 'Full name';
+
+  @override
+  String get authPasDeCompte => 'No account yet? Sign up';
+
+  @override
+  String get authDejaCompte => 'Already have an account? Sign in';
+
+  @override
+  String get authDeconnexion => 'Sign out';
+
+  @override
+  String get validationObligatoire => 'This field is required';
+
+  @override
+  String get validationEmail => 'Invalid email address';
+
+  @override
+  String get validationMotDePasse => 'At least 6 characters';
+
+  @override
+  String get erreurIdentifiants => 'Incorrect email or password';
+
+  @override
+  String get erreurEmailUtilise => 'This email address is already in use';
+
+  @override
+  String get erreurMotDePasseFaible => 'Password too weak';
+
+  @override
+  String get erreurReseau => 'Network connection problem';
+
+  @override
+  String get erreurInconnue => 'Something went wrong, please try again';
 }
