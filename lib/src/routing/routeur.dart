@@ -4,6 +4,7 @@ import 'package:borrowbetter/src/features/auth/presentation/ecran_connexion.dart
 import 'package:borrowbetter/src/features/auth/presentation/ecran_inscription.dart';
 import 'package:borrowbetter/src/features/parametres/presentation/ecran_parametres.dart';
 import 'package:borrowbetter/src/features/recherche/presentation/ecran_recherche.dart';
+import 'package:borrowbetter/src/features/splash/presentation/ecran_splash.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/routing/coquille_navigation.dart';
 import 'package:flutter/foundation.dart';
@@ -17,11 +18,13 @@ final routeurProvider = Provider<GoRouter>((ref) {
     ..listen(etatAuthProvider, (_, _) => rafraichir.value++);
 
   return GoRouter(
-    initialLocation: Chemins.accueil,
+    initialLocation: Chemins.splash,
     refreshListenable: rafraichir,
     redirect: (context, state) {
-      final connecte = ref.read(depotAuthProvider).utilisateur != null;
       final lieu = state.matchedLocation;
+      if (lieu == Chemins.splash) return null;
+
+      final connecte = ref.read(depotAuthProvider).utilisateur != null;
       final surEcranAuth =
           lieu == Chemins.connexion || lieu == Chemins.inscription;
       if (!connecte && !surEcranAuth) return Chemins.connexion;
@@ -29,6 +32,10 @@ final routeurProvider = Provider<GoRouter>((ref) {
       return null;
     },
     routes: [
+      GoRoute(
+        path: Chemins.splash,
+        builder: (context, state) => const EcranSplash(),
+      ),
       GoRoute(
         path: Chemins.connexion,
         builder: (context, state) => const EcranConnexion(),
