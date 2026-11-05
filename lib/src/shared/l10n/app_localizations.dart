@@ -315,6 +315,72 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Utilisez 8 caractères ou plus, avec majuscules, chiffres et symboles'**
   String get forceConseil;
+
+  /// No description provided for @authBienvenue.
+  ///
+  /// In fr, this message translates to:
+  /// **'Bon retour !'**
+  String get authBienvenue;
+
+  /// No description provided for @authSousTitreConnexion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Connectez-vous à votre compte'**
+  String get authSousTitreConnexion;
+
+  /// No description provided for @authCreerTitre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Créez votre compte'**
+  String get authCreerTitre;
+
+  /// No description provided for @authCreerSousTitre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Rejoignez la communauté et commencez à emprunter ou prêter.'**
+  String get authCreerSousTitre;
+
+  /// No description provided for @authMotDePasseOublie.
+  ///
+  /// In fr, this message translates to:
+  /// **'Mot de passe oublié ?'**
+  String get authMotDePasseOublie;
+
+  /// No description provided for @authContinuerGoogle.
+  ///
+  /// In fr, this message translates to:
+  /// **'Continuer avec Google'**
+  String get authContinuerGoogle;
+
+  /// No description provided for @authPasDeCompteQuestion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Pas encore de compte ?'**
+  String get authPasDeCompteQuestion;
+
+  /// No description provided for @authSInscrire.
+  ///
+  /// In fr, this message translates to:
+  /// **'S’inscrire'**
+  String get authSInscrire;
+
+  /// No description provided for @authDejaCompteQuestion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Déjà un compte ?'**
+  String get authDejaCompteQuestion;
+
+  /// No description provided for @authSeConnecter.
+  ///
+  /// In fr, this message translates to:
+  /// **'Se connecter'**
+  String get authSeConnecter;
+
+  /// No description provided for @authReinitEnvoyee.
+  ///
+  /// In fr, this message translates to:
+  /// **'E-mail de réinitialisation envoyé'**
+  String get authReinitEnvoyee;
 }
 
 class _AppLocalizationsDelegate

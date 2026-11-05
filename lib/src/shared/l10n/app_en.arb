@@ -35,5 +35,16 @@
   "forceMoyenne": "Fair",
   "forceBonne": "Good",
   "forceForte": "Strong",
-  "forceConseil": "Use 8 or more characters with uppercase letters, numbers and symbols"
+  "forceConseil": "Use 8 or more characters with uppercase letters, numbers and symbols",
+    "authBienvenue": "Welcome back!",
+  "authSousTitreConnexion": "Log in to your account",
+  "authCreerTitre": "Create your account",
+  "authCreerSousTitre": "Join our community and start borrowing or lending.",
+  "authMotDePasseOublie": "Forgot password?",
+  "authContinuerGoogle": "Continue with Google",
+  "authPasDeCompteQuestion": "Don’t have an account?",
+  "authSInscrire": "Sign up",
+  "authDejaCompteQuestion": "Already have an account?",
+  "authSeConnecter": "Log in",
+  "authReinitEnvoyee": "Password reset email sent"
 }
