@@ -4,4 +4,5 @@ abstract final class Chemins {
   static const parametres = '/parametres';
   static const connexion = '/connexion';
   static const inscription = '/inscription';
+    static const splash = '/splash';
 }
