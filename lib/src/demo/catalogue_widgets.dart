@@ -45,7 +45,10 @@ class _EtatCatalogueWidgets extends State<CatalogueWidgets> {
         padding: const EdgeInsets.all(Espacements.l),
         children: [
           const _Section(titre: 'Identité visuelle', enfant: LogoMarque()),
-          const _Section(titre: 'Langue (FR / EN / AR)', enfant: SelecteurLangue()),
+          const _Section(
+            titre: 'Langue (FR / EN / AR)',
+            enfant: SelecteurLangue(),
+          ),
           const _Section(titre: 'Thème', enfant: SelecteurTheme()),
           _Section(
             titre: 'Boutons',
@@ -177,9 +180,7 @@ class _EtatCatalogueWidgets extends State<CatalogueWidgets> {
                   controller: _motDePasse,
                   obscureText: true,
                   onChanged: (_) => setState(() {}),
-                  decoration: InputDecoration(
-                    labelText: textes.authMotDePasse,
-                  ),
+                  decoration: InputDecoration(labelText: textes.authMotDePasse),
                 ),
                 if (force != ForceMotDePasse.aucune) ...[
                   const SizedBox(height: Espacements.s),
@@ -218,9 +219,8 @@ class _Section extends StatelessWidget {
         children: [
           Text(
             titre,
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-              fontWeight: FontWeight.w600,
-            ),
+            style: Theme.of(context).textTheme.titleMedium
+                ?.copyWith(fontWeight: FontWeight.w600),
           ),
           const SizedBox(height: Espacements.s),
           enfant,
