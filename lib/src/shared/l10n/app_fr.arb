@@ -14,5 +14,21 @@
   "navRecherche": "Recherche",
   "navParametres": "Paramètres",
   "parametresLangue": "Langue",
-  "parametresTheme": "Thème"
+  "parametresTheme": "Thème",
+  "authConnexion": "Connexion",
+  "authInscription": "Inscription",
+  "authEmail": "Adresse e-mail",
+  "authMotDePasse": "Mot de passe",
+  "authNom": "Nom complet",
+  "authPasDeCompte": "Pas encore de compte ? S’inscrire",
+  "authDejaCompte": "Déjà un compte ? Se connecter",
+  "authDeconnexion": "Se déconnecter",
+  "validationObligatoire": "Ce champ est obligatoire",
+  "validationEmail": "Adresse e-mail invalide",
+  "validationMotDePasse": "6 caractères minimum",
+  "erreurIdentifiants": "E-mail ou mot de passe incorrect",
+  "erreurEmailUtilise": "Cette adresse e-mail est déjà utilisée",
+  "erreurMotDePasseFaible": "Mot de passe trop faible",
+  "erreurReseau": "Problème de connexion réseau",
+  "erreurInconnue": "Une erreur est survenue, réessayez"
 }

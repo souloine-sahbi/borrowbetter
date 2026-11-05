@@ -189,6 +189,102 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Thème'**
   String get parametresTheme;
+
+  /// No description provided for @authConnexion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Connexion'**
+  String get authConnexion;
+
+  /// No description provided for @authInscription.
+  ///
+  /// In fr, this message translates to:
+  /// **'Inscription'**
+  String get authInscription;
+
+  /// No description provided for @authEmail.
+  ///
+  /// In fr, this message translates to:
+  /// **'Adresse e-mail'**
+  String get authEmail;
+
+  /// No description provided for @authMotDePasse.
+  ///
+  /// In fr, this message translates to:
+  /// **'Mot de passe'**
+  String get authMotDePasse;
+
+  /// No description provided for @authNom.
+  ///
+  /// In fr, this message translates to:
+  /// **'Nom complet'**
+  String get authNom;
+
+  /// No description provided for @authPasDeCompte.
+  ///
+  /// In fr, this message translates to:
+  /// **'Pas encore de compte ? S’inscrire'**
+  String get authPasDeCompte;
+
+  /// No description provided for @authDejaCompte.
+  ///
+  /// In fr, this message translates to:
+  /// **'Déjà un compte ? Se connecter'**
+  String get authDejaCompte;
+
+  /// No description provided for @authDeconnexion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Se déconnecter'**
+  String get authDeconnexion;
+
+  /// No description provided for @validationObligatoire.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ce champ est obligatoire'**
+  String get validationObligatoire;
+
+  /// No description provided for @validationEmail.
+  ///
+  /// In fr, this message translates to:
+  /// **'Adresse e-mail invalide'**
+  String get validationEmail;
+
+  /// No description provided for @validationMotDePasse.
+  ///
+  /// In fr, this message translates to:
+  /// **'6 caractères minimum'**
+  String get validationMotDePasse;
+
+  /// No description provided for @erreurIdentifiants.
+  ///
+  /// In fr, this message translates to:
+  /// **'E-mail ou mot de passe incorrect'**
+  String get erreurIdentifiants;
+
+  /// No description provided for @erreurEmailUtilise.
+  ///
+  /// In fr, this message translates to:
+  /// **'Cette adresse e-mail est déjà utilisée'**
+  String get erreurEmailUtilise;
+
+  /// No description provided for @erreurMotDePasseFaible.
+  ///
+  /// In fr, this message translates to:
+  /// **'Mot de passe trop faible'**
+  String get erreurMotDePasseFaible;
+
+  /// No description provided for @erreurReseau.
+  ///
+  /// In fr, this message translates to:
+  /// **'Problème de connexion réseau'**
+  String get erreurReseau;
+
+  /// No description provided for @erreurInconnue.
+  ///
+  /// In fr, this message translates to:
+  /// **'Une erreur est survenue, réessayez'**
+  String get erreurInconnue;
 }
 
 class _AppLocalizationsDelegate

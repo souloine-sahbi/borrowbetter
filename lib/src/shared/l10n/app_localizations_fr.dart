@@ -53,4 +53,52 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get parametresTheme => 'Thème';
+
+  @override
+  String get authConnexion => 'Connexion';
+
+  @override
+  String get authInscription => 'Inscription';
+
+  @override
+  String get authEmail => 'Adresse e-mail';
+
+  @override
+  String get authMotDePasse => 'Mot de passe';
+
+  @override
+  String get authNom => 'Nom complet';
+
+  @override
+  String get authPasDeCompte => 'Pas encore de compte ? S’inscrire';
+
+  @override
+  String get authDejaCompte => 'Déjà un compte ? Se connecter';
+
+  @override
+  String get authDeconnexion => 'Se déconnecter';
+
+  @override
+  String get validationObligatoire => 'Ce champ est obligatoire';
+
+  @override
+  String get validationEmail => 'Adresse e-mail invalide';
+
+  @override
+  String get validationMotDePasse => '6 caractères minimum';
+
+  @override
+  String get erreurIdentifiants => 'E-mail ou mot de passe incorrect';
+
+  @override
+  String get erreurEmailUtilise => 'Cette adresse e-mail est déjà utilisée';
+
+  @override
+  String get erreurMotDePasseFaible => 'Mot de passe trop faible';
+
+  @override
+  String get erreurReseau => 'Problème de connexion réseau';
+
+  @override
+  String get erreurInconnue => 'Une erreur est survenue, réessayez';
 }

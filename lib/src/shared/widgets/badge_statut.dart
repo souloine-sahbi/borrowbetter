@@ -12,7 +12,7 @@ enum StatutBadge { enAttente, acceptee, refusee, annulee, enCours, rendue }
 /// Chaque statut a une icône en plus de sa couleur, pour rester lisible sans
 /// distinguer les couleurs.
 class BadgeStatut extends StatelessWidget {
-  const BadgeStatut({required this.statut, required this.libelle, super.key});
+  const new({required this.statut, required this.libelle, super.key});
 
   final StatutBadge statut;
   final String libelle;
