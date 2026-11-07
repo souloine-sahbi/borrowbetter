@@ -157,4 +157,67 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get lieuVille => 'City';
+
+  @override
+  String get objetNouveau => 'Add an item';
+
+  @override
+  String get objetTitre => 'Listing title';
+
+  @override
+  String get objetDescription => 'Description';
+
+  @override
+  String get objetCategorie => 'Category';
+
+  @override
+  String get objetEtat => 'Condition';
+
+  @override
+  String get objetCite => 'Neighborhood';
+
+  @override
+  String get objetRue => 'Street (optional)';
+
+  @override
+  String get objetPublier => 'Publish';
+
+  @override
+  String get objetPublie => 'Item published';
+
+  @override
+  String get categorieOutils => 'Tools';
+
+  @override
+  String get categorieCamping => 'Camping';
+
+  @override
+  String get categorieCuisine => 'Kitchen';
+
+  @override
+  String get categorieSport => 'Sports';
+
+  @override
+  String get categorieElectronique => 'Electronics';
+
+  @override
+  String get categorieLivres => 'Books';
+
+  @override
+  String get categorieJeux => 'Games';
+
+  @override
+  String get categorieAutre => 'Other';
+
+  @override
+  String get etatNeuf => 'New';
+
+  @override
+  String get etatCommeNeuf => 'Like new';
+
+  @override
+  String get etatBonEtat => 'Good';
+
+  @override
+  String get etatUsage => 'Used';
 }
