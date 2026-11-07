@@ -393,6 +393,132 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Ville'**
   String get lieuVille;
+
+  /// No description provided for @objetNouveau.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ajouter un objet'**
+  String get objetNouveau;
+
+  /// No description provided for @objetTitre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Titre de l’annonce'**
+  String get objetTitre;
+
+  /// No description provided for @objetDescription.
+  ///
+  /// In fr, this message translates to:
+  /// **'Description'**
+  String get objetDescription;
+
+  /// No description provided for @objetCategorie.
+  ///
+  /// In fr, this message translates to:
+  /// **'Catégorie'**
+  String get objetCategorie;
+
+  /// No description provided for @objetEtat.
+  ///
+  /// In fr, this message translates to:
+  /// **'État'**
+  String get objetEtat;
+
+  /// No description provided for @objetCite.
+  ///
+  /// In fr, this message translates to:
+  /// **'Cité ou quartier'**
+  String get objetCite;
+
+  /// No description provided for @objetRue.
+  ///
+  /// In fr, this message translates to:
+  /// **'Rue (facultatif)'**
+  String get objetRue;
+
+  /// No description provided for @objetPublier.
+  ///
+  /// In fr, this message translates to:
+  /// **'Publier'**
+  String get objetPublier;
+
+  /// No description provided for @objetPublie.
+  ///
+  /// In fr, this message translates to:
+  /// **'Objet publié'**
+  String get objetPublie;
+
+  /// No description provided for @categorieOutils.
+  ///
+  /// In fr, this message translates to:
+  /// **'Outils'**
+  String get categorieOutils;
+
+  /// No description provided for @categorieCamping.
+  ///
+  /// In fr, this message translates to:
+  /// **'Camping'**
+  String get categorieCamping;
+
+  /// No description provided for @categorieCuisine.
+  ///
+  /// In fr, this message translates to:
+  /// **'Cuisine'**
+  String get categorieCuisine;
+
+  /// No description provided for @categorieSport.
+  ///
+  /// In fr, this message translates to:
+  /// **'Sport'**
+  String get categorieSport;
+
+  /// No description provided for @categorieElectronique.
+  ///
+  /// In fr, this message translates to:
+  /// **'Électronique'**
+  String get categorieElectronique;
+
+  /// No description provided for @categorieLivres.
+  ///
+  /// In fr, this message translates to:
+  /// **'Livres'**
+  String get categorieLivres;
+
+  /// No description provided for @categorieJeux.
+  ///
+  /// In fr, this message translates to:
+  /// **'Jeux'**
+  String get categorieJeux;
+
+  /// No description provided for @categorieAutre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Autre'**
+  String get categorieAutre;
+
+  /// No description provided for @etatNeuf.
+  ///
+  /// In fr, this message translates to:
+  /// **'Neuf'**
+  String get etatNeuf;
+
+  /// No description provided for @etatCommeNeuf.
+  ///
+  /// In fr, this message translates to:
+  /// **'Comme neuf'**
+  String get etatCommeNeuf;
+
+  /// No description provided for @etatBonEtat.
+  ///
+  /// In fr, this message translates to:
+  /// **'Bon état'**
+  String get etatBonEtat;
+
+  /// No description provided for @etatUsage.
+  ///
+  /// In fr, this message translates to:
+  /// **'Usagé'**
+  String get etatUsage;
 }
 
 class _AppLocalizationsDelegate

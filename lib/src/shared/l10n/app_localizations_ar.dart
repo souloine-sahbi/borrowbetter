@@ -156,4 +156,67 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get lieuVille => 'المدينة';
+
+  @override
+  String get objetNouveau => 'إضافة غرض';
+
+  @override
+  String get objetTitre => 'عنوان الإعلان';
+
+  @override
+  String get objetDescription => 'الوصف';
+
+  @override
+  String get objetCategorie => 'الفئة';
+
+  @override
+  String get objetEtat => 'الحالة';
+
+  @override
+  String get objetCite => 'الحي أو المنطقة';
+
+  @override
+  String get objetRue => 'الشارع (اختياري)';
+
+  @override
+  String get objetPublier => 'نشر';
+
+  @override
+  String get objetPublie => 'تم نشر الغرض';
+
+  @override
+  String get categorieOutils => 'أدوات';
+
+  @override
+  String get categorieCamping => 'تخييم';
+
+  @override
+  String get categorieCuisine => 'مطبخ';
+
+  @override
+  String get categorieSport => 'رياضة';
+
+  @override
+  String get categorieElectronique => 'إلكترونيات';
+
+  @override
+  String get categorieLivres => 'كتب';
+
+  @override
+  String get categorieJeux => 'ألعاب';
+
+  @override
+  String get categorieAutre => 'أخرى';
+
+  @override
+  String get etatNeuf => 'جديد';
+
+  @override
+  String get etatCommeNeuf => 'كالجديد';
+
+  @override
+  String get etatBonEtat => 'جيد';
+
+  @override
+  String get etatUsage => 'مستعمل';
 }

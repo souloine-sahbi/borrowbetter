@@ -2,6 +2,7 @@ import 'package:borrowbetter/src/features/accueil/presentation/ecran_accueil.dar
 import 'package:borrowbetter/src/features/auth/data/depot_auth.dart';
 import 'package:borrowbetter/src/features/auth/presentation/ecran_connexion.dart';
 import 'package:borrowbetter/src/features/auth/presentation/ecran_inscription.dart';
+import 'package:borrowbetter/src/features/objets/presentation/ecran_nouvel_objet.dart';
 import 'package:borrowbetter/src/features/parametres/presentation/ecran_parametres.dart';
 import 'package:borrowbetter/src/features/recherche/presentation/ecran_recherche.dart';
 import 'package:borrowbetter/src/features/splash/presentation/ecran_splash.dart';
@@ -43,6 +44,10 @@ final routeurProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: Chemins.inscription,
         builder: (context, state) => const EcranInscription(),
+      ),
+      GoRoute(
+        path: Chemins.nouvelObjet,
+        builder: (context, state) => const EcranNouvelObjet(),
       ),
       StatefulShellRoute.indexedStack(
         builder: (context, state, coquille) =>
