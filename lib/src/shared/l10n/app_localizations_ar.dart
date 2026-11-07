@@ -150,4 +150,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get authReinitEnvoyee => 'تم إرسال رسالة إعادة تعيين كلمة المرور';
+
+  @override
+  String get lieuGouvernorat => 'الولاية';
+
+  @override
+  String get lieuVille => 'المدينة';
 }

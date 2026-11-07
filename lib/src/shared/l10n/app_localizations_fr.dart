@@ -151,4 +151,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get authReinitEnvoyee => 'E-mail de réinitialisation envoyé';
+
+  @override
+  String get lieuGouvernorat => 'Gouvernorat';
+
+  @override
+  String get lieuVille => 'Ville';
 }
