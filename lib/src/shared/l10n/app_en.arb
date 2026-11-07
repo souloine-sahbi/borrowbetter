@@ -46,5 +46,7 @@
   "authSInscrire": "Sign up",
   "authDejaCompteQuestion": "Already have an account?",
   "authSeConnecter": "Log in",
-  "authReinitEnvoyee": "Password reset email sent"
+  "authReinitEnvoyee": "Password reset email sent",
+  "lieuGouvernorat": "Governorate",
+  "lieuVille": "City"
 }

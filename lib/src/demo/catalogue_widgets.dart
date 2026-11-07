@@ -1,5 +1,6 @@
 import 'package:borrowbetter/src/features/auth/domain/force_mot_de_passe.dart';
 import 'package:borrowbetter/src/features/auth/presentation/indicateur_force_mot_de_passe.dart';
+import 'package:borrowbetter/src/features/lieux/presentation/selecteur_localisation.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
 import 'package:borrowbetter/src/shared/widgets/avatar_profil.dart';
@@ -28,6 +29,8 @@ class _EtatCatalogueWidgets extends State<CatalogueWidgets> {
 
   final _motDePasse = TextEditingController();
   var _categorie = 'Outils';
+  String? _gouvernorat;
+  String? _ville;
 
   @override
   void dispose() {
@@ -170,6 +173,17 @@ class _EtatCatalogueWidgets extends State<CatalogueWidgets> {
                 ),
                 const SizedBox(height: 80, child: CentreChargement()),
               ],
+            ),
+          ),
+          _Section(
+            titre: 'Localisation (gouvernorat et ville)',
+            enfant: SelecteurLocalisation(
+              gouvernoratId: _gouvernorat,
+              villeId: _ville,
+              onChanged: (gouvernorat, ville) => setState(() {
+                _gouvernorat = gouvernorat;
+                _ville = ville;
+              }),
             ),
           ),
           _Section(

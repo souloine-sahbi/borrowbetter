@@ -46,5 +46,7 @@
   "authSInscrire": "سجّل الآن",
   "authDejaCompteQuestion": "لديك حساب بالفعل؟",
   "authSeConnecter": "تسجيل الدخول",
-  "authReinitEnvoyee": "تم إرسال رسالة إعادة تعيين كلمة المرور"
+  "authReinitEnvoyee": "تم إرسال رسالة إعادة تعيين كلمة المرور",
+  "lieuGouvernorat": "الولاية",
+  "lieuVille": "المدينة"
 }

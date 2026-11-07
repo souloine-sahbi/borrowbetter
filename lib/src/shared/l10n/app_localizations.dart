@@ -381,6 +381,18 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'E-mail de réinitialisation envoyé'**
   String get authReinitEnvoyee;
+
+  /// No description provided for @lieuGouvernorat.
+  ///
+  /// In fr, this message translates to:
+  /// **'Gouvernorat'**
+  String get lieuGouvernorat;
+
+  /// No description provided for @lieuVille.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ville'**
+  String get lieuVille;
 }
 
 class _AppLocalizationsDelegate
