@@ -1,0 +1,1497 @@
+{
+  "gouvernorats": [
+    {
+      "id": "ariana",
+      "fr": "Ariana",
+      "ar": "أريانة",
+      "villes": [
+        {
+          "id": "ariana-ariana-ville",
+          "fr": "Ariana Ville",
+          "ar": "أريانة المدينة"
+        },
+        {
+          "id": "ariana-ettadhamen",
+          "fr": "Ettadhamen",
+          "ar": "حي التضامن"
+        },
+        {
+          "id": "ariana-kalaat-el-andalous",
+          "fr": "Kalâat el-Andalous",
+          "ar": "قلعة الأندلس"
+        },
+        {
+          "id": "ariana-la-soukra",
+          "fr": "La Soukra",
+          "ar": "سكرة"
+        },
+        {
+          "id": "ariana-mnihla",
+          "fr": "Mnihla",
+          "ar": "المنيهلة"
+        },
+        {
+          "id": "ariana-raoued",
+          "fr": "Raoued",
+          "ar": "رواد"
+        },
+        {
+          "id": "ariana-sidi-thabet",
+          "fr": "Sidi Thabet",
+          "ar": "سيدي ثابت"
+        }
+      ]
+    },
+    {
+      "id": "beja",
+      "fr": "Béja",
+      "ar": "باجة",
+      "villes": [
+        {
+          "id": "beja-amdoun",
+          "fr": "Amdoun",
+          "ar": "عمدون"
+        },
+        {
+          "id": "beja-beja-nord",
+          "fr": "Béja Nord",
+          "ar": "باجة الشمالية"
+        },
+        {
+          "id": "beja-beja-sud",
+          "fr": "Béja Sud",
+          "ar": "باجة الجنوبية"
+        },
+        {
+          "id": "beja-goubellat",
+          "fr": "Goubellat",
+          "ar": "قبلاط"
+        },
+        {
+          "id": "beja-medjez-el-bab",
+          "fr": "Medjez el-Bab",
+          "ar": "مجاز الباب"
+        },
+        {
+          "id": "beja-nefza",
+          "fr": "Nefza",
+          "ar": "نفزة"
+        },
+        {
+          "id": "beja-teboursouk",
+          "fr": "Téboursouk",
+          "ar": "تبرسق"
+        },
+        {
+          "id": "beja-testour",
+          "fr": "Testour",
+          "ar": "تستور"
+        },
+        {
+          "id": "beja-thibar",
+          "fr": "Thibar",
+          "ar": "تيبار"
+        }
+      ]
+    },
+    {
+      "id": "ben-arous",
+      "fr": "Ben Arous",
+      "ar": "بن عروس",
+      "villes": [
+        {
+          "id": "ben-arous-ben-arous",
+          "fr": "Ben Arous",
+          "ar": "بن عروس المدينة"
+        },
+        {
+          "id": "ben-arous-boumhel",
+          "fr": "Boumhel",
+          "ar": "بومهل البساتين"
+        },
+        {
+          "id": "ben-arous-el-mourouj",
+          "fr": "El Mourouj",
+          "ar": "المروج"
+        },
+        {
+          "id": "ben-arous-ezzahra",
+          "fr": "Ezzahra",
+          "ar": "الزهراء"
+        },
+        {
+          "id": "ben-arous-fouchana",
+          "fr": "Fouchana",
+          "ar": "فوشانة"
+        },
+        {
+          "id": "ben-arous-hammam-chott",
+          "fr": "Hammam Chott",
+          "ar": "حمام الشط"
+        },
+        {
+          "id": "ben-arous-hammam-lif",
+          "fr": "Hammam Lif",
+          "ar": "حمام الأنف"
+        },
+        {
+          "id": "ben-arous-m-hamdia",
+          "fr": "M'hamdia",
+          "ar": "المحمدية"
+        },
+        {
+          "id": "ben-arous-medina-jedida",
+          "fr": "Médina Jedida",
+          "ar": "المدينة الجديدة"
+        },
+        {
+          "id": "ben-arous-megrine",
+          "fr": "Mégrine",
+          "ar": "مقرين"
+        },
+        {
+          "id": "ben-arous-mornag",
+          "fr": "Mornag",
+          "ar": "مرناق"
+        },
+        {
+          "id": "ben-arous-rades",
+          "fr": "Radès",
+          "ar": "رادس"
+        }
+      ]
+    },
+    {
+      "id": "bizerte",
+      "fr": "Bizerte",
+      "ar": "بنزرت",
+      "villes": [
+        {
+          "id": "bizerte-bizerte-nord",
+          "fr": "Bizerte Nord",
+          "ar": "بنزرت الشمالية"
+        },
+        {
+          "id": "bizerte-bizerte-sud",
+          "fr": "Bizerte Sud",
+          "ar": "بنزرت الجنوبية"
+        },
+        {
+          "id": "bizerte-djoumine",
+          "fr": "Djoumine",
+          "ar": "جومين"
+        },
+        {
+          "id": "bizerte-el-alia",
+          "fr": "El Alia",
+          "ar": "العالية"
+        },
+        {
+          "id": "bizerte-ghar-el-melh",
+          "fr": "Ghar El Melh",
+          "ar": "غار الملح"
+        },
+        {
+          "id": "bizerte-ghezala",
+          "fr": "Ghezala",
+          "ar": "غزالة"
+        },
+        {
+          "id": "bizerte-mateur",
+          "fr": "Mateur",
+          "ar": "ماطر"
+        },
+        {
+          "id": "bizerte-menzel-bourguiba",
+          "fr": "Menzel Bourguiba",
+          "ar": "منزل بورقيبة"
+        },
+        {
+          "id": "bizerte-menzel-jemil",
+          "fr": "Menzel Jemil",
+          "ar": "منزل جميل"
+        },
+        {
+          "id": "bizerte-ras-jebel",
+          "fr": "Ras Jebel",
+          "ar": "رأس الجبل"
+        },
+        {
+          "id": "bizerte-sejnane",
+          "fr": "Sejnane",
+          "ar": "سجنان"
+        },
+        {
+          "id": "bizerte-tinja",
+          "fr": "Tinja",
+          "ar": "تينجة"
+        },
+        {
+          "id": "bizerte-utique",
+          "fr": "Utique",
+          "ar": "أوتيك"
+        },
+        {
+          "id": "bizerte-zarzouna",
+          "fr": "Zarzouna",
+          "ar": "جرزونة"
+        }
+      ]
+    },
+    {
+      "id": "gabes",
+      "fr": "Gabès",
+      "ar": "قابس",
+      "villes": [
+        {
+          "id": "gabes-el-hamma",
+          "fr": "El Hamma",
+          "ar": "الحامة"
+        },
+        {
+          "id": "gabes-gabes-medina",
+          "fr": "Gabès Médina",
+          "ar": "قابس المدينة"
+        },
+        {
+          "id": "gabes-gabes-ouest",
+          "fr": "Gabès Ouest",
+          "ar": "قابس الغربية"
+        },
+        {
+          "id": "gabes-gabes-sud",
+          "fr": "Gabès Sud",
+          "ar": "قابس الجنوبية"
+        },
+        {
+          "id": "gabes-ghannouch",
+          "fr": "Ghannouch",
+          "ar": "غنوش"
+        },
+        {
+          "id": "gabes-mareth",
+          "fr": "Mareth",
+          "ar": "مارث"
+        },
+        {
+          "id": "gabes-matmata",
+          "fr": "Matmata",
+          "ar": "مطماطة"
+        },
+        {
+          "id": "gabes-menzel-el-habib",
+          "fr": "Menzel El Habib",
+          "ar": "منزل الحبيب"
+        },
+        {
+          "id": "gabes-metouia",
+          "fr": "Métouia",
+          "ar": "المطوية"
+        },
+        {
+          "id": "gabes-nouvelle-matmata",
+          "fr": "Nouvelle Matmata",
+          "ar": "مطماطة الجديدة"
+        }
+      ]
+    },
+    {
+      "id": "gafsa",
+      "fr": "Gafsa",
+      "ar": "قفصة",
+      "villes": [
+        {
+          "id": "gafsa-belkhir",
+          "fr": "Belkhir",
+          "ar": "بلخير"
+        },
+        {
+          "id": "gafsa-el-guettar",
+          "fr": "El Guettar",
+          "ar": "القطار"
+        },
+        {
+          "id": "gafsa-el-ksar",
+          "fr": "El Ksar",
+          "ar": "القصر"
+        },
+        {
+          "id": "gafsa-el-mdhilla",
+          "fr": "El Mdhilla",
+          "ar": "المظيلة"
+        },
+        {
+          "id": "gafsa-gafsa-nord",
+          "fr": "Gafsa Nord",
+          "ar": "قفصة الشمالية"
+        },
+        {
+          "id": "gafsa-gafsa-sud",
+          "fr": "Gafsa Sud",
+          "ar": "قفصة الجنوبية"
+        },
+        {
+          "id": "gafsa-metlaoui",
+          "fr": "Métlaoui",
+          "ar": "المتلوي"
+        },
+        {
+          "id": "gafsa-oum-el-araies",
+          "fr": "Oum El Araies",
+          "ar": "أم العرائس"
+        },
+        {
+          "id": "gafsa-redeyef",
+          "fr": "Redeyef",
+          "ar": "الرديف"
+        },
+        {
+          "id": "gafsa-sened",
+          "fr": "Sened",
+          "ar": "السند"
+        },
+        {
+          "id": "gafsa-sidi-aich",
+          "fr": "Sidi Aïch",
+          "ar": "سيدي عيش"
+        }
+      ]
+    },
+    {
+      "id": "jendouba",
+      "fr": "Jendouba",
+      "ar": "جندوبة",
+      "villes": [
+        {
+          "id": "jendouba-ain-draham",
+          "fr": "Aïn Draham",
+          "ar": "عين دراهم"
+        },
+        {
+          "id": "jendouba-balta-bou-aouane",
+          "fr": "Balta-Bou Aouane",
+          "ar": "بلطة بوعوان"
+        },
+        {
+          "id": "jendouba-bou-salem",
+          "fr": "Bou Salem",
+          "ar": "بوسالم"
+        },
+        {
+          "id": "jendouba-fernana",
+          "fr": "Fernana",
+          "ar": "فرنانة"
+        },
+        {
+          "id": "jendouba-ghardimaou",
+          "fr": "Ghardimaou",
+          "ar": "غار الدماء"
+        },
+        {
+          "id": "jendouba-jendouba",
+          "fr": "Jendouba",
+          "ar": "جندوبة المدينة"
+        },
+        {
+          "id": "jendouba-jendouba-nord",
+          "fr": "Jendouba Nord",
+          "ar": "جندوبة الشمالية"
+        },
+        {
+          "id": "jendouba-oued-meliz",
+          "fr": "Oued Meliz",
+          "ar": "وادي مليز"
+        },
+        {
+          "id": "jendouba-tabarka",
+          "fr": "Tabarka",
+          "ar": "طبرقة"
+        }
+      ]
+    },
+    {
+      "id": "kairouan",
+      "fr": "Kairouan",
+      "ar": "القيروان",
+      "villes": [
+        {
+          "id": "kairouan-alaa",
+          "fr": "Alaâ",
+          "ar": "العلا"
+        },
+        {
+          "id": "kairouan-bou-hajla",
+          "fr": "Bou Hajla",
+          "ar": "بوحجلة"
+        },
+        {
+          "id": "kairouan-chebika",
+          "fr": "Chebika",
+          "ar": "الشبيكة"
+        },
+        {
+          "id": "kairouan-chrarda",
+          "fr": "Chrarda",
+          "ar": "الشراردة"
+        },
+        {
+          "id": "kairouan-haffouz",
+          "fr": "Haffouz",
+          "ar": "حفوز"
+        },
+        {
+          "id": "kairouan-hajeb-el-ayoun",
+          "fr": "Hajeb El Ayoun",
+          "ar": "حاجب العيون"
+        },
+        {
+          "id": "kairouan-kairouan-nord",
+          "fr": "Kairouan Nord",
+          "ar": "القيروان الشمالية"
+        },
+        {
+          "id": "kairouan-kairouan-sud",
+          "fr": "Kairouan Sud",
+          "ar": "القيروان الجنوبية"
+        },
+        {
+          "id": "kairouan-nasrallah",
+          "fr": "Nasrallah",
+          "ar": "نصر الله"
+        },
+        {
+          "id": "kairouan-oueslatia",
+          "fr": "Oueslatia",
+          "ar": "الوسلاتية"
+        },
+        {
+          "id": "kairouan-sbikha",
+          "fr": "Sbikha",
+          "ar": "السبيخة"
+        }
+      ]
+    },
+    {
+      "id": "kasserine",
+      "fr": "Kasserine",
+      "ar": "القصرين",
+      "villes": [
+        {
+          "id": "kasserine-ayoun",
+          "fr": "Ayoun",
+          "ar": "العيون"
+        },
+        {
+          "id": "kasserine-ezzouhour",
+          "fr": "Ezzouhour",
+          "ar": "الزهور"
+        },
+        {
+          "id": "kasserine-feriana",
+          "fr": "Feriana",
+          "ar": "فريانة"
+        },
+        {
+          "id": "kasserine-foussana",
+          "fr": "Foussana",
+          "ar": "فوسانة"
+        },
+        {
+          "id": "kasserine-haidra",
+          "fr": "Haïdra",
+          "ar": "حيدرة"
+        },
+        {
+          "id": "kasserine-hassi-el-ferid",
+          "fr": "Hassi El Ferid",
+          "ar": "حاسي الفريد"
+        },
+        {
+          "id": "kasserine-jedelienne",
+          "fr": "Jedelienne",
+          "ar": "جدليان"
+        },
+        {
+          "id": "kasserine-kasserine-nord",
+          "fr": "Kasserine Nord",
+          "ar": "القصرين الشمالية"
+        },
+        {
+          "id": "kasserine-kasserine-sud",
+          "fr": "Kasserine Sud",
+          "ar": "القصرين الجنوبية"
+        },
+        {
+          "id": "kasserine-majel-bel-abbes",
+          "fr": "Majel Bel Abbès",
+          "ar": "ماجل بلعباس"
+        },
+        {
+          "id": "kasserine-sbeitla",
+          "fr": "Sbeitla",
+          "ar": "سبيطلة"
+        },
+        {
+          "id": "kasserine-sbiba",
+          "fr": "Sbiba",
+          "ar": "سبيبة"
+        },
+        {
+          "id": "kasserine-thala",
+          "fr": "Thala",
+          "ar": "تالة"
+        }
+      ]
+    },
+    {
+      "id": "kebili",
+      "fr": "Kébili",
+      "ar": "قبلي",
+      "villes": [
+        {
+          "id": "kebili-douz-nord",
+          "fr": "Douz Nord",
+          "ar": "دوز الشمالية"
+        },
+        {
+          "id": "kebili-douz-sud",
+          "fr": "Douz Sud",
+          "ar": "دوز الجنوبية"
+        },
+        {
+          "id": "kebili-el-faouar",
+          "fr": "El Faouar",
+          "ar": "الفوار"
+        },
+        {
+          "id": "kebili-kebili-nord",
+          "fr": "Kébili Nord",
+          "ar": "قبلي الشمالية"
+        },
+        {
+          "id": "kebili-kebili-sud",
+          "fr": "Kébili Sud",
+          "ar": "قبلي الجنوبية"
+        },
+        {
+          "id": "kebili-souk-lahad",
+          "fr": "Souk Lahad",
+          "ar": "سوق الأحد"
+        }
+      ]
+    },
+    {
+      "id": "la-manouba",
+      "fr": "La Manouba",
+      "ar": "منوبة",
+      "villes": [
+        {
+          "id": "la-manouba-borj-el-amri",
+          "fr": "Borj El Amri",
+          "ar": "برج العامري"
+        },
+        {
+          "id": "la-manouba-douar-hicher",
+          "fr": "Douar Hicher",
+          "ar": "دوار هيشر"
+        },
+        {
+          "id": "la-manouba-el-battan",
+          "fr": "El Battan",
+          "ar": "البطان"
+        },
+        {
+          "id": "la-manouba-jedaida",
+          "fr": "Jedaida",
+          "ar": "الجديدة"
+        },
+        {
+          "id": "la-manouba-manouba",
+          "fr": "Manouba",
+          "ar": "منوبة المدينة"
+        },
+        {
+          "id": "la-manouba-mornaguia",
+          "fr": "Mornaguia",
+          "ar": "المرناقية"
+        },
+        {
+          "id": "la-manouba-oued-ellil",
+          "fr": "Oued Ellil",
+          "ar": "وادي الليل"
+        },
+        {
+          "id": "la-manouba-tebourba",
+          "fr": "Tébourba",
+          "ar": "طبربة"
+        }
+      ]
+    },
+    {
+      "id": "le-kef",
+      "fr": "Le Kef",
+      "ar": "الكاف",
+      "villes": [
+        {
+          "id": "le-kef-dahmani",
+          "fr": "Dahmani",
+          "ar": "الدهماني"
+        },
+        {
+          "id": "le-kef-es-sers",
+          "fr": "Es Sers",
+          "ar": "السرس"
+        },
+        {
+          "id": "le-kef-jerissa",
+          "fr": "Jérissa",
+          "ar": "الجريصة"
+        },
+        {
+          "id": "le-kef-kalaat-khasba",
+          "fr": "Kalaat Khasba",
+          "ar": "القلعة الخصبة"
+        },
+        {
+          "id": "le-kef-kalaat-senan",
+          "fr": "Kalâat Senan",
+          "ar": "قلعة سنان"
+        },
+        {
+          "id": "le-kef-kef-est",
+          "fr": "Kef Est",
+          "ar": "الكاف الشرقية"
+        },
+        {
+          "id": "le-kef-kef-ouest",
+          "fr": "Kef Ouest",
+          "ar": "الكاف الغربية"
+        },
+        {
+          "id": "le-kef-ksour",
+          "fr": "Ksour",
+          "ar": "القصور"
+        },
+        {
+          "id": "le-kef-nebeur",
+          "fr": "Nebeur",
+          "ar": "نبر"
+        },
+        {
+          "id": "le-kef-sakiet-sidi-youssef",
+          "fr": "Sakiet Sidi Youssef",
+          "ar": "ساقية سيدي يوسف"
+        },
+        {
+          "id": "le-kef-tajerouine",
+          "fr": "Tajerouine",
+          "ar": "تاجروين"
+        }
+      ]
+    },
+    {
+      "id": "mahdia",
+      "fr": "Mahdia",
+      "ar": "المهدية",
+      "villes": [
+        {
+          "id": "mahdia-bou-merdes",
+          "fr": "Bou Merdes",
+          "ar": "بومرداس"
+        },
+        {
+          "id": "mahdia-chebba",
+          "fr": "Chebba",
+          "ar": "الشابة"
+        },
+        {
+          "id": "mahdia-chorbane",
+          "fr": "Chorbane",
+          "ar": "شربان"
+        },
+        {
+          "id": "mahdia-el-jem",
+          "fr": "El Jem",
+          "ar": "الجم"
+        },
+        {
+          "id": "mahdia-hbira",
+          "fr": "Hbira",
+          "ar": "هبيرة"
+        },
+        {
+          "id": "mahdia-ksour-essef",
+          "fr": "Ksour Essef",
+          "ar": "قصور الساف"
+        },
+        {
+          "id": "mahdia-mahdia",
+          "fr": "Mahdia",
+          "ar": "المهدية المدينة"
+        },
+        {
+          "id": "mahdia-mellouleche",
+          "fr": "Melloulèche",
+          "ar": "ملولش"
+        },
+        {
+          "id": "mahdia-ouled-chamekh",
+          "fr": "Ouled Chamekh",
+          "ar": "أولاد الشامخ"
+        },
+        {
+          "id": "mahdia-sidi-alouane",
+          "fr": "Sidi Alouane",
+          "ar": "سيدي علوان"
+        },
+        {
+          "id": "mahdia-souassi",
+          "fr": "Souassi",
+          "ar": "السواسي"
+        }
+      ]
+    },
+    {
+      "id": "medenine",
+      "fr": "Médenine",
+      "ar": "مدنين",
+      "villes": [
+        {
+          "id": "medenine-ben-gardane",
+          "fr": "Ben Gardane",
+          "ar": "بنقردان"
+        },
+        {
+          "id": "medenine-beni-khedache",
+          "fr": "Béni Khedache",
+          "ar": "بني خداش"
+        },
+        {
+          "id": "medenine-djerba-ajim",
+          "fr": "Djerba Ajim",
+          "ar": "جربة عجيم"
+        },
+        {
+          "id": "medenine-djerba-houmt-souk",
+          "fr": "Djerba Houmt Souk",
+          "ar": "جربة حومة السوق"
+        },
+        {
+          "id": "medenine-djerba-midoun",
+          "fr": "Djerba Midoun",
+          "ar": "جربة ميدون"
+        },
+        {
+          "id": "medenine-medenine-nord",
+          "fr": "Médenine Nord",
+          "ar": "مدنين الشمالية"
+        },
+        {
+          "id": "medenine-medenine-sud",
+          "fr": "Médenine Sud",
+          "ar": "مدنين الجنوبية"
+        },
+        {
+          "id": "medenine-sidi-makhlouf",
+          "fr": "Sidi Makhlouf",
+          "ar": "سيدي مخلوف"
+        },
+        {
+          "id": "medenine-zarzis",
+          "fr": "Zarzis",
+          "ar": "جرجيس"
+        }
+      ]
+    },
+    {
+      "id": "monastir",
+      "fr": "Monastir",
+      "ar": "المنستير",
+      "villes": [
+        {
+          "id": "monastir-bekalta",
+          "fr": "Bekalta",
+          "ar": "البقالطة"
+        },
+        {
+          "id": "monastir-bembla",
+          "fr": "Bembla",
+          "ar": "بنبلة"
+        },
+        {
+          "id": "monastir-beni-hassen",
+          "fr": "Beni Hassen",
+          "ar": "بني حسان"
+        },
+        {
+          "id": "monastir-jammel",
+          "fr": "Jammel",
+          "ar": "جمال"
+        },
+        {
+          "id": "monastir-ksar-hellal",
+          "fr": "Ksar Hellal",
+          "ar": "قصر هلال"
+        },
+        {
+          "id": "monastir-ksibet-el-mediouni",
+          "fr": "Ksibet El Mediouni",
+          "ar": "قصيبة المديوني"
+        },
+        {
+          "id": "monastir-moknine",
+          "fr": "Moknine",
+          "ar": "المكنين"
+        },
+        {
+          "id": "monastir-monastir",
+          "fr": "Monastir",
+          "ar": "المنستير المدينة"
+        },
+        {
+          "id": "monastir-ouerdanine",
+          "fr": "Ouerdanine",
+          "ar": "الوردانين"
+        },
+        {
+          "id": "monastir-sahline",
+          "fr": "Sahline",
+          "ar": "الساحلين"
+        },
+        {
+          "id": "monastir-sayada-lamta-bou-hjar",
+          "fr": "Sayada-Lamta-Bou Hjar",
+          "ar": "صيادة - لمطة - بوحجر"
+        },
+        {
+          "id": "monastir-teboulba",
+          "fr": "Teboulba",
+          "ar": "طبلبة"
+        },
+        {
+          "id": "monastir-zeramdine",
+          "fr": "Zeramdine",
+          "ar": "زرمدين"
+        }
+      ]
+    },
+    {
+      "id": "nabeul",
+      "fr": "Nabeul",
+      "ar": "نابل",
+      "villes": [
+        {
+          "id": "nabeul-beni-khalled",
+          "fr": "Beni Khalled",
+          "ar": "بني خلاد"
+        },
+        {
+          "id": "nabeul-beni-khiar",
+          "fr": "Béni Khiar",
+          "ar": "بني خيار"
+        },
+        {
+          "id": "nabeul-bou-argoub",
+          "fr": "Bou Argoub",
+          "ar": "بوعرقوب"
+        },
+        {
+          "id": "nabeul-dar-chaabane-el-fehri",
+          "fr": "Dar Chaâbane El Fehri",
+          "ar": "دار شعبان الفهري"
+        },
+        {
+          "id": "nabeul-el-haouaria",
+          "fr": "El Haouaria",
+          "ar": "الهوارية"
+        },
+        {
+          "id": "nabeul-el-mida",
+          "fr": "El Mida",
+          "ar": "الميدة"
+        },
+        {
+          "id": "nabeul-grombalia",
+          "fr": "Grombalia",
+          "ar": "قرمبالية"
+        },
+        {
+          "id": "nabeul-hammam-ghezaz",
+          "fr": "Hammam Ghezaz",
+          "ar": "حمام الأغزاز"
+        },
+        {
+          "id": "nabeul-hammamet",
+          "fr": "Hammamet",
+          "ar": "الحمامات"
+        },
+        {
+          "id": "nabeul-kelibia",
+          "fr": "Kélibia",
+          "ar": "قليبية"
+        },
+        {
+          "id": "nabeul-korba",
+          "fr": "Korba",
+          "ar": "قربة"
+        },
+        {
+          "id": "nabeul-menzel-bouzelfa",
+          "fr": "Menzel Bouzelfa",
+          "ar": "منزل بوزلفة"
+        },
+        {
+          "id": "nabeul-menzel-temime",
+          "fr": "Menzel Temime",
+          "ar": "منزل تميم"
+        },
+        {
+          "id": "nabeul-nabeul",
+          "fr": "Nabeul",
+          "ar": "نابل المدينة"
+        },
+        {
+          "id": "nabeul-soliman",
+          "fr": "Soliman",
+          "ar": "سليمان"
+        },
+        {
+          "id": "nabeul-takelsa",
+          "fr": "Takelsa",
+          "ar": "تاكلسة"
+        }
+      ]
+    },
+    {
+      "id": "sfax",
+      "fr": "Sfax",
+      "ar": "صفاقس",
+      "villes": [
+        {
+          "id": "sfax-agareb",
+          "fr": "Agareb",
+          "ar": "عقارب"
+        },
+        {
+          "id": "sfax-bir-ali-ben-khalifa",
+          "fr": "Bir Ali Ben Khalifa",
+          "ar": "بئر علي بن خليفة"
+        },
+        {
+          "id": "sfax-el-amra",
+          "fr": "El Amra",
+          "ar": "العامرة"
+        },
+        {
+          "id": "sfax-el-ghraiba",
+          "fr": "El Ghraïba",
+          "ar": "الغريبة"
+        },
+        {
+          "id": "sfax-el-hencha",
+          "fr": "El Hencha",
+          "ar": "الحنشة"
+        },
+        {
+          "id": "sfax-jebeniana",
+          "fr": "Jebeniana",
+          "ar": "جبنيانة"
+        },
+        {
+          "id": "sfax-kerkennah",
+          "fr": "Kerkennah",
+          "ar": "قرقنة"
+        },
+        {
+          "id": "sfax-mahres",
+          "fr": "Mahrès",
+          "ar": "المحرس"
+        },
+        {
+          "id": "sfax-menzel-chaker",
+          "fr": "Menzel Chaker",
+          "ar": "منزل شاكر"
+        },
+        {
+          "id": "sfax-sakiet-eddaier",
+          "fr": "Sakiet Eddaïer",
+          "ar": "ساقية الدائر"
+        },
+        {
+          "id": "sfax-sakiet-ezzit",
+          "fr": "Sakiet Ezzit",
+          "ar": "ساقية الزيت"
+        },
+        {
+          "id": "sfax-sfax-medina",
+          "fr": "Sfax Médina",
+          "ar": "صفاقس المدينة"
+        },
+        {
+          "id": "sfax-sfax-ouest",
+          "fr": "Sfax Ouest",
+          "ar": "صفاقس الغربية"
+        },
+        {
+          "id": "sfax-sfax-sud",
+          "fr": "Sfax Sud",
+          "ar": "صفاقس الجنوبية"
+        },
+        {
+          "id": "sfax-skhira",
+          "fr": "Skhira",
+          "ar": "الصخيرة"
+        },
+        {
+          "id": "sfax-thyna",
+          "fr": "Thyna",
+          "ar": "طينة"
+        }
+      ]
+    },
+    {
+      "id": "sidi-bouzid",
+      "fr": "Sidi Bouzid",
+      "ar": "سيدي بوزيد",
+      "villes": [
+        {
+          "id": "sidi-bouzid-bir-el-hafey",
+          "fr": "Bir El Hafey",
+          "ar": "بئر الحفي"
+        },
+        {
+          "id": "sidi-bouzid-jilma",
+          "fr": "Jilma",
+          "ar": "جلمة"
+        },
+        {
+          "id": "sidi-bouzid-mazzouna",
+          "fr": "Mazzouna",
+          "ar": "المزونة"
+        },
+        {
+          "id": "sidi-bouzid-meknassy",
+          "fr": "Meknassy",
+          "ar": "المكناسي"
+        },
+        {
+          "id": "sidi-bouzid-menzel-bouzaiane",
+          "fr": "Menzel Bouzaïane",
+          "ar": "منزل بوزيان"
+        },
+        {
+          "id": "sidi-bouzid-ouled-haffouz",
+          "fr": "Ouled Haffouz",
+          "ar": "أولاد حفوز"
+        },
+        {
+          "id": "sidi-bouzid-regueb",
+          "fr": "Regueb",
+          "ar": "الرقاب"
+        },
+        {
+          "id": "sidi-bouzid-sabalat-ouled-asker",
+          "fr": "Sabalat Ouled Asker",
+          "ar": "السبالة"
+        },
+        {
+          "id": "sidi-bouzid-sidi-ali-ben-aoun",
+          "fr": "Sidi Ali Ben Aoun",
+          "ar": "سيدي علي بن عون"
+        },
+        {
+          "id": "sidi-bouzid-sidi-bouzid-est",
+          "fr": "Sidi Bouzid Est",
+          "ar": "سيدي بوزيد الشرقية"
+        },
+        {
+          "id": "sidi-bouzid-sidi-bouzid-ouest",
+          "fr": "Sidi Bouzid Ouest",
+          "ar": "سيدي بوزيد الغربية"
+        },
+        {
+          "id": "sidi-bouzid-souk-jedid",
+          "fr": "Souk Jedid",
+          "ar": "السوق الجديد"
+        }
+      ]
+    },
+    {
+      "id": "siliana",
+      "fr": "Siliana",
+      "ar": "سليانة",
+      "villes": [
+        {
+          "id": "siliana-bargou",
+          "fr": "Bargou",
+          "ar": "برقو"
+        },
+        {
+          "id": "siliana-bou-arada",
+          "fr": "Bou Arada",
+          "ar": "بوعرادة"
+        },
+        {
+          "id": "siliana-el-aroussa",
+          "fr": "El Aroussa",
+          "ar": "العروسة"
+        },
+        {
+          "id": "siliana-el-krib",
+          "fr": "El Krib",
+          "ar": "الكريب"
+        },
+        {
+          "id": "siliana-gaafour",
+          "fr": "Gaâfour",
+          "ar": "قعفور"
+        },
+        {
+          "id": "siliana-kesra",
+          "fr": "Kesra",
+          "ar": "كسرى"
+        },
+        {
+          "id": "siliana-makthar",
+          "fr": "Makthar",
+          "ar": "مكثر"
+        },
+        {
+          "id": "siliana-rouhia",
+          "fr": "Rouhia",
+          "ar": "الروحية"
+        },
+        {
+          "id": "siliana-sidi-bou-rouis",
+          "fr": "Sidi Bou Rouis",
+          "ar": "سيدي بورويس"
+        },
+        {
+          "id": "siliana-siliana-nord",
+          "fr": "Siliana Nord",
+          "ar": "سليانة الشمالية"
+        },
+        {
+          "id": "siliana-siliana-sud",
+          "fr": "Siliana Sud",
+          "ar": "سليانة الجنوبية"
+        }
+      ]
+    },
+    {
+      "id": "sousse",
+      "fr": "Sousse",
+      "ar": "سوسة",
+      "villes": [
+        {
+          "id": "sousse-akouda",
+          "fr": "Akouda",
+          "ar": "أكودة"
+        },
+        {
+          "id": "sousse-bouficha",
+          "fr": "Bouficha",
+          "ar": "بوفيشة"
+        },
+        {
+          "id": "sousse-enfidha",
+          "fr": "Enfidha",
+          "ar": "النفيضة"
+        },
+        {
+          "id": "sousse-hammam-sousse",
+          "fr": "Hammam Sousse",
+          "ar": "حمام سوسة"
+        },
+        {
+          "id": "sousse-hergla",
+          "fr": "Hergla",
+          "ar": "هرقلة"
+        },
+        {
+          "id": "sousse-kalaa-kebira",
+          "fr": "Kalâa Kebira",
+          "ar": "القلعة الكبرى"
+        },
+        {
+          "id": "sousse-kalaa-seghira",
+          "fr": "Kalâa Seghira",
+          "ar": "القلعة الصغرى"
+        },
+        {
+          "id": "sousse-kondar",
+          "fr": "Kondar",
+          "ar": "كندار"
+        },
+        {
+          "id": "sousse-m-saken",
+          "fr": "M'saken",
+          "ar": "مساكن"
+        },
+        {
+          "id": "sousse-sidi-bou-ali",
+          "fr": "Sidi Bou Ali",
+          "ar": "سيدي بوعلي"
+        },
+        {
+          "id": "sousse-sidi-el-heni",
+          "fr": "Sidi El Héni",
+          "ar": "سيدي الهاني"
+        },
+        {
+          "id": "sousse-sousse-jawhara",
+          "fr": "Sousse Jawhara",
+          "ar": "سوسة جوهرة"
+        },
+        {
+          "id": "sousse-sousse-medina",
+          "fr": "Sousse Médina",
+          "ar": "سوسة المدينة"
+        },
+        {
+          "id": "sousse-sousse-riadh",
+          "fr": "Sousse Riadh",
+          "ar": "سوسة الرياض"
+        },
+        {
+          "id": "sousse-sousse-sidi-abdelhamid",
+          "fr": "Sousse Sidi Abdelhamid",
+          "ar": "سوسة سيدي عبد الحميد"
+        },
+        {
+          "id": "sousse-zaouiet-sousse-ksibet-thrayet",
+          "fr": "Zaouiet Sousse - Ksibet Thrayet",
+          "ar": "الزاوية قصيبة الثريات"
+        }
+      ]
+    },
+    {
+      "id": "tataouine",
+      "fr": "Tataouine",
+      "ar": "تطاوين",
+      "villes": [
+        {
+          "id": "tataouine-bir-lahmar",
+          "fr": "Bir Lahmar",
+          "ar": "بئر الأحمر"
+        },
+        {
+          "id": "tataouine-dehiba",
+          "fr": "Dehiba",
+          "ar": "الذهيبة"
+        },
+        {
+          "id": "tataouine-ghomrassen",
+          "fr": "Ghomrassen",
+          "ar": "غمراسن"
+        },
+        {
+          "id": "tataouine-remada",
+          "fr": "Remada",
+          "ar": "رمادة"
+        },
+        {
+          "id": "tataouine-smar",
+          "fr": "Smâr",
+          "ar": "الصمار"
+        },
+        {
+          "id": "tataouine-tataouine-nord",
+          "fr": "Tataouine Nord",
+          "ar": "تطاوين الشمالية"
+        },
+        {
+          "id": "tataouine-tataouine-sud",
+          "fr": "Tataouine Sud",
+          "ar": "تطاوين الجنوبية"
+        }
+      ]
+    },
+    {
+      "id": "tozeur",
+      "fr": "Tozeur",
+      "ar": "توزر",
+      "villes": [
+        {
+          "id": "tozeur-degache",
+          "fr": "Degache",
+          "ar": "دقاش"
+        },
+        {
+          "id": "tozeur-hazoua",
+          "fr": "Hazoua",
+          "ar": "حزوة"
+        },
+        {
+          "id": "tozeur-nefta",
+          "fr": "Nefta",
+          "ar": "نفطة"
+        },
+        {
+          "id": "tozeur-tamaghza",
+          "fr": "Tamaghza",
+          "ar": "تمغزة"
+        },
+        {
+          "id": "tozeur-tozeur",
+          "fr": "Tozeur",
+          "ar": "توزر المدينة"
+        }
+      ]
+    },
+    {
+      "id": "tunis",
+      "fr": "Tunis",
+      "ar": "تونس",
+      "villes": [
+        {
+          "id": "tunis-bab-bhar",
+          "fr": "Bab Bhar",
+          "ar": "باب البحر"
+        },
+        {
+          "id": "tunis-bab-souika",
+          "fr": "Bab Souika",
+          "ar": "باب السويقة"
+        },
+        {
+          "id": "tunis-bouhaira",
+          "fr": "Bouhaira",
+          "ar": "ضفاف البحيرة"
+        },
+        {
+          "id": "tunis-carthage",
+          "fr": "Carthage",
+          "ar": "قرطاج"
+        },
+        {
+          "id": "tunis-el-khadra",
+          "fr": "El Khadra",
+          "ar": "حي الخضراء"
+        },
+        {
+          "id": "tunis-el-menzah",
+          "fr": "El Menzah",
+          "ar": "المنزه"
+        },
+        {
+          "id": "tunis-el-ouardia",
+          "fr": "El Ouardia",
+          "ar": "الوردية"
+        },
+        {
+          "id": "tunis-ettahrir",
+          "fr": "Ettahrir",
+          "ar": "حي التحرير"
+        },
+        {
+          "id": "tunis-ezzouhour",
+          "fr": "Ezzouhour",
+          "ar": "الزهور"
+        },
+        {
+          "id": "tunis-hrairia",
+          "fr": "Hraïria",
+          "ar": "الحرايرية"
+        },
+        {
+          "id": "tunis-jebel-jelloud",
+          "fr": "Jebel Jelloud",
+          "ar": "جبل الجلود"
+        },
+        {
+          "id": "tunis-kabaria",
+          "fr": "Kabaria",
+          "ar": "الكبارية"
+        },
+        {
+          "id": "tunis-la-goulette",
+          "fr": "La Goulette",
+          "ar": "حلق الوادي"
+        },
+        {
+          "id": "tunis-la-marsa",
+          "fr": "La Marsa",
+          "ar": "المرسى"
+        },
+        {
+          "id": "tunis-le-bardo",
+          "fr": "Le Bardo",
+          "ar": "باردو"
+        },
+        {
+          "id": "tunis-le-kram",
+          "fr": "Le Kram",
+          "ar": "الكرم"
+        },
+        {
+          "id": "tunis-medina",
+          "fr": "Médina",
+          "ar": "تونس المدينة"
+        },
+        {
+          "id": "tunis-omrane",
+          "fr": "Omrane",
+          "ar": "العمران"
+        },
+        {
+          "id": "tunis-omrane-superieur",
+          "fr": "Omrane Supérieur",
+          "ar": "العمران الأعلى"
+        },
+        {
+          "id": "tunis-sidi-el-bechir",
+          "fr": "Sidi El Béchir",
+          "ar": "سيدي البشير"
+        },
+        {
+          "id": "tunis-sidi-hassine",
+          "fr": "Sidi Hassine",
+          "ar": "سيدي حسين"
+        },
+        {
+          "id": "tunis-sijoumi",
+          "fr": "Sijoumi",
+          "ar": "السيجومي"
+        }
+      ]
+    },
+    {
+      "id": "zaghouan",
+      "fr": "Zaghouan",
+      "ar": "زغوان",
+      "villes": [
+        {
+          "id": "zaghouan-bir-mcherga",
+          "fr": "Bir Mcherga",
+          "ar": "بئر مشارقة"
+        },
+        {
+          "id": "zaghouan-fahs",
+          "fr": "Fahs",
+          "ar": "الفحص"
+        },
+        {
+          "id": "zaghouan-nadhour",
+          "fr": "Nadhour",
+          "ar": "الناظور"
+        },
+        {
+          "id": "zaghouan-saouaf",
+          "fr": "Saouaf",
+          "ar": "صواف"
+        },
+        {
+          "id": "zaghouan-zaghouan",
+          "fr": "Zaghouan",
+          "ar": "زغوان المدينة"
+        },
+        {
+          "id": "zaghouan-zriba",
+          "fr": "Zriba",
+          "ar": "الزريبة"
+        }
+      ]
+    }
+  ]
+}
