@@ -72,5 +72,7 @@
   "etatUsage": "مستعمل",
   "erreurNonAutorise": "انتهت جلستك",
   "erreurIntrouvable": "هذا العنصر لم يعد موجودًا",
-  "erreurServeur": "الخدمة غير متاحة"
+  "erreurServeur": "الخدمة غير متاحة",
+  "photosAjouter": "إضافة صور",
+  "photosRetirer": "إزالة الصورة"
 }

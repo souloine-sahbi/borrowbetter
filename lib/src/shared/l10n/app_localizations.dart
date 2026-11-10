@@ -537,6 +537,18 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Service indisponible'**
   String get erreurServeur;
+
+  /// No description provided for @photosAjouter.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ajouter des photos'**
+  String get photosAjouter;
+
+  /// No description provided for @photosRetirer.
+  ///
+  /// In fr, this message translates to:
+  /// **'Retirer la photo'**
+  String get photosRetirer;
 }
 
 class _AppLocalizationsDelegate

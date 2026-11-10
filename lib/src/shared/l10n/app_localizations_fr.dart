@@ -229,4 +229,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get erreurServeur => 'Service indisponible';
+
+  @override
+  String get photosAjouter => 'Ajouter des photos';
+
+  @override
+  String get photosRetirer => 'Retirer la photo';
 }

@@ -71,5 +71,7 @@
   "etatBonEtat": "Bon état",
   "etatUsage": "Usagé","erreurNonAutorise": "Votre session a expiré",
   "erreurIntrouvable": "Cet objet n'existe plus",
-  "erreurServeur": "Service indisponible"
+  "erreurServeur": "Service indisponible",
+  "photosAjouter": "Ajouter des photos",
+  "photosRetirer": "Retirer la photo"
 }

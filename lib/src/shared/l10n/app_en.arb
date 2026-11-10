@@ -72,5 +72,7 @@
   "etatUsage": "Used",
   "erreurNonAutorise": "Your session has expired",
   "erreurIntrouvable": "This item no longer exists",
-  "erreurServeur": "Service unavailable"
+  "erreurServeur": "Service unavailable",
+  "photosAjouter": "Add photos",
+  "photosRetirer": "Remove photo"
 }
