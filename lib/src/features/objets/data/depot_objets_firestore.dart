@@ -60,7 +60,7 @@ class DepotObjetsFirestore implements DepotObjets {
           'villeId': brouillon.villeId,
           'langueAnnonce': brouillon.langueAnnonce,
           'statut': StatutObjet.disponible.name,
-          'photos': <String>[],
+          'photos': brouillon.photos,
           'creeLe': FieldValue.serverTimestamp(),
         })
         ..set(reference.collection('prive').doc('adresse'), {
