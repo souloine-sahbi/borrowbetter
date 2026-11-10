@@ -519,6 +519,24 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Usagé'**
   String get etatUsage;
+
+  /// No description provided for @erreurNonAutorise.
+  ///
+  /// In fr, this message translates to:
+  /// **'Votre session a expiré'**
+  String get erreurNonAutorise;
+
+  /// No description provided for @erreurIntrouvable.
+  ///
+  /// In fr, this message translates to:
+  /// **'Cet objet n\'existe plus'**
+  String get erreurIntrouvable;
+
+  /// No description provided for @erreurServeur.
+  ///
+  /// In fr, this message translates to:
+  /// **'Service indisponible'**
+  String get erreurServeur;
 }
 
 class _AppLocalizationsDelegate

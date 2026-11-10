@@ -219,4 +219,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get etatUsage => 'مستعمل';
+
+  @override
+  String get erreurNonAutorise => 'انتهت جلستك';
+
+  @override
+  String get erreurIntrouvable => 'هذا العنصر لم يعد موجودًا';
+
+  @override
+  String get erreurServeur => 'الخدمة غير متاحة';
 }
