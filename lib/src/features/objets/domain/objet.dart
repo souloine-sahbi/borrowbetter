@@ -1,3 +1,6 @@
+// freezed écrit le nom de la classe dans ses constructeurs factory.
+// ignore_for_file: unnecessary_type_name_in_constructor
+
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'objet.freezed.dart';
@@ -19,7 +22,7 @@ enum StatutObjet { disponible, indisponible, enAttenteModeration, masque }
 
 @freezed
 abstract class Objet with _$Objet {
-  const factory({
+  const factory Objet({
     required String id,
     required String proprietaireId,
     required String proprietaireNom,
@@ -37,9 +40,11 @@ abstract class Objet with _$Objet {
 }
 
 /// Données saisies dans le formulaire, avant l'enregistrement.
+///
+/// [photos] contient les adresses déjà envoyées à l'hébergeur d'images.
 @freezed
 abstract class BrouillonObjet with _$BrouillonObjet {
-  const factory({
+  const factory BrouillonObjet({
     required String titre,
     required String description,
     required CategorieObjet categorie,
@@ -48,6 +53,7 @@ abstract class BrouillonObjet with _$BrouillonObjet {
     required String villeId,
     required String langueAnnonce,
     required String cite,
+    @Default(<String>[]) List<String> photos,
     String? rue,
   }) = _BrouillonObjet;
 }

@@ -5,10 +5,12 @@ import 'package:borrowbetter/src/features/lieux/presentation/selecteur_localisat
 import 'package:borrowbetter/src/features/objets/domain/objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/libelles_objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/objets_providers.dart';
+import 'package:borrowbetter/src/features/objets/presentation/selecteur_photos.dart';
+import 'package:borrowbetter/src/shared/domain/failure.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
+import 'package:borrowbetter/src/shared/presentation/message_pour.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
 import 'package:borrowbetter/src/shared/widgets/bouton_principal.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -30,6 +32,7 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
   EtatObjet? _etat;
   String? _gouvernorat;
   String? _ville;
+  var _photos = <String>[];
   var _enChargement = false;
   String? _erreur;
 
@@ -58,6 +61,8 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
       _erreur = null;
     });
     try {
+      // Les photos d'abord : on n'enregistre l'objet qu'avec leurs adresses.
+      final adresses = await ref.read(depotPhotosProvider).envoyer(_photos);
       await ref
           .read(depotObjetsProvider)
           .publier(
@@ -71,15 +76,16 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
               langueAnnonce: langue,
               cite: _cite.text.trim(),
               rue: rue.isEmpty ? null : rue,
+              photos: adresses,
             ),
             proprietaireId: utilisateur.uid,
             proprietaireNom: utilisateur.displayName ?? '',
           );
       messager.showSnackBar(SnackBar(content: Text(textes.objetPublie)));
       routeur.pop();
-    } on FirebaseException {
+    } on Failure catch (echec) {
       if (!mounted) return;
-      setState(() => _erreur = textes.erreurInconnue);
+      setState(() => _erreur = messagePour(textes, echec));
     } finally {
       if (mounted) setState(() => _enChargement = false);
     }
@@ -155,6 +161,11 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
                       icone: Icons.notes,
                     ),
                     validator: (valeur) => validerObligatoire(textes, valeur),
+                  ),
+                  const SizedBox(height: Espacements.m),
+                  SelecteurPhotos(
+                    chemins: _photos,
+                    onChanged: (chemins) => setState(() => _photos = chemins),
                   ),
                   const SizedBox(height: Espacements.m),
                   SelecteurLocalisation(

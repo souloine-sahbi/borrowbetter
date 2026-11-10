@@ -228,4 +228,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get erreurServeur => 'الخدمة غير متاحة';
+
+  @override
+  String get photosAjouter => 'إضافة صور';
+
+  @override
+  String get photosRetirer => 'إزالة الصورة';
 }
