@@ -69,5 +69,8 @@
   "etatNeuf": "جديد",
   "etatCommeNeuf": "كالجديد",
   "etatBonEtat": "جيد",
-  "etatUsage": "مستعمل"
+  "etatUsage": "مستعمل",
+  "erreurNonAutorise": "انتهت جلستك",
+  "erreurIntrouvable": "هذا العنصر لم يعد موجودًا",
+  "erreurServeur": "الخدمة غير متاحة"
 }

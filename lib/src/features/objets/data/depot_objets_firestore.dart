@@ -1,5 +1,6 @@
 import 'package:borrowbetter/src/features/objets/domain/depot_objets.dart';
 import 'package:borrowbetter/src/features/objets/domain/objet.dart';
+import 'package:borrowbetter/src/shared/data/traduire_firebase.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DepotObjetsFirestore implements DepotObjets {
@@ -16,18 +17,27 @@ class DepotObjetsFirestore implements DepotObjets {
         .where('statut', isEqualTo: StatutObjet.disponible.name)
         .snapshots()
         .map((instantane) {
-          final objets = [
+          return [
             for (final doc in instantane.docs) _versObjet(doc.id, doc.data()),
           ]..sort((a, b) => b.creeLe.compareTo(a.creeLe));
-          return objets;
+        })
+        .handleError((Object erreur, StackTrace trace) {
+          if (erreur is FirebaseException) {
+            Error.throwWithStackTrace(traduireFirebase(erreur), trace);
+          }
+          Error.throwWithStackTrace(erreur, trace);
         });
   }
 
   @override
   Future<Objet?> parId(String id) async {
-    final doc = await _objets.doc(id).get();
-    final donnees = doc.data();
-    return donnees == null ? null : _versObjet(doc.id, donnees);
+    try {
+      final doc = await _objets.doc(id).get();
+      final donnees = doc.data();
+      return donnees == null ? null : _versObjet(doc.id, donnees);
+    } on FirebaseException catch (e, trace) {
+      Error.throwWithStackTrace(traduireFirebase(e), trace);
+    }
   }
 
   @override
@@ -36,36 +46,44 @@ class DepotObjetsFirestore implements DepotObjets {
     required String proprietaireId,
     required String proprietaireNom,
   }) async {
-    final reference = _objets.doc();
-    final lot = _firestore.batch()
-      ..set(reference, {
-        'proprietaireId': proprietaireId,
-        'proprietaireNom': proprietaireNom,
-        'titre': brouillon.titre,
-        'description': brouillon.description,
-        'categorie': brouillon.categorie.name,
-        'etat': brouillon.etat.name,
-        'gouvernoratId': brouillon.gouvernoratId,
-        'villeId': brouillon.villeId,
-        'langueAnnonce': brouillon.langueAnnonce,
-        'statut': StatutObjet.disponible.name,
-        'photos': <String>[],
-        'creeLe': FieldValue.serverTimestamp(),
-      })
-      ..set(reference.collection('prive').doc('adresse'), {
-        'cite': brouillon.cite,
-        'rue': brouillon.rue,
-      });
-    await lot.commit();
-    return reference.id;
+    try {
+      final reference = _objets.doc();
+      final lot = _firestore.batch()
+        ..set(reference, {
+          'proprietaireId': proprietaireId,
+          'proprietaireNom': proprietaireNom,
+          'titre': brouillon.titre,
+          'description': brouillon.description,
+          'categorie': brouillon.categorie.name,
+          'etat': brouillon.etat.name,
+          'gouvernoratId': brouillon.gouvernoratId,
+          'villeId': brouillon.villeId,
+          'langueAnnonce': brouillon.langueAnnonce,
+          'statut': StatutObjet.disponible.name,
+          'photos': <String>[],
+          'creeLe': FieldValue.serverTimestamp(),
+        })
+        ..set(reference.collection('prive').doc('adresse'), {
+          'cite': brouillon.cite,
+          'rue': brouillon.rue,
+        });
+
+      await lot.commit();
+      return reference.id;
+    } on FirebaseException catch (e, trace) {
+      Error.throwWithStackTrace(traduireFirebase(e), trace);
+    }
   }
 }
 
 T _enumDepuis<T extends Enum>(List<T> valeurs, Object? nom, T parDefaut) =>
     valeurs.asNameMap()[nom] ?? parDefaut;
 
+/// Conversion document Firestore vers modèle de domaine : tout est lu comme
+/// nullable, les valeurs par défaut se décident ici et nulle part ailleurs.
 Objet _versObjet(String id, Map<String, dynamic> donnees) {
   final photos = donnees['photos'] as List<dynamic>? ?? const [];
+
   return Objet(
     id: id,
     proprietaireId: donnees['proprietaireId'] as String? ?? '',

@@ -69,5 +69,8 @@
   "etatNeuf": "New",
   "etatCommeNeuf": "Like new",
   "etatBonEtat": "Good",
-  "etatUsage": "Used"
+  "etatUsage": "Used",
+  "erreurNonAutorise": "Your session has expired",
+  "erreurIntrouvable": "This item no longer exists",
+  "erreurServeur": "Service unavailable"
 }

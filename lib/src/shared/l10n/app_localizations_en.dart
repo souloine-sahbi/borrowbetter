@@ -220,4 +220,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get etatUsage => 'Used';
+
+  @override
+  String get erreurNonAutorise => 'Your session has expired';
+
+  @override
+  String get erreurIntrouvable => 'This item no longer exists';
+
+  @override
+  String get erreurServeur => 'Service unavailable';
 }
