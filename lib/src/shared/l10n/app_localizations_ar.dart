@@ -234,4 +234,21 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get photosRetirer => 'إزالة الصورة';
+
+  @override
+  String get objetDetailTitre => 'Item details';
+
+  @override
+  String objetProposePar(String nom) {
+    return 'Offered by $nom';
+  }
+
+  @override
+  String get objetDemander => 'طلب استعارة';
+
+  @override
+  String get objetDemanderBientot => 'طلبات الاستعارة قريبًا.';
+
+  @override
+  String get objetProprietaire => 'المالك';
 }

@@ -549,6 +549,36 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Retirer la photo'**
   String get photosRetirer;
+
+  /// No description provided for @objetDetailTitre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Détails de l\'objet'**
+  String get objetDetailTitre;
+
+  /// No description provided for @objetProposePar.
+  ///
+  /// In fr, this message translates to:
+  /// **'Proposé par {nom}'**
+  String objetProposePar(String nom);
+
+  /// No description provided for @objetDemander.
+  ///
+  /// In fr, this message translates to:
+  /// **'Demander à emprunter'**
+  String get objetDemander;
+
+  /// No description provided for @objetDemanderBientot.
+  ///
+  /// In fr, this message translates to:
+  /// **'La demande d\'emprunt arrive bientôt.'**
+  String get objetDemanderBientot;
+
+  /// No description provided for @objetProprietaire.
+  ///
+  /// In fr, this message translates to:
+  /// **'Propriétaire'**
+  String get objetProprietaire;
 }
 
 class _AppLocalizationsDelegate

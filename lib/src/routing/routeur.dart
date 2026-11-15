@@ -2,6 +2,8 @@ import 'package:borrowbetter/src/features/accueil/presentation/ecran_accueil.dar
 import 'package:borrowbetter/src/features/auth/data/depot_auth.dart';
 import 'package:borrowbetter/src/features/auth/presentation/ecran_connexion.dart';
 import 'package:borrowbetter/src/features/auth/presentation/ecran_inscription.dart';
+import 'package:borrowbetter/src/features/objets/domain/objet.dart';
+import 'package:borrowbetter/src/features/objets/presentation/ecran_detail_objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/ecran_nouvel_objet.dart';
 import 'package:borrowbetter/src/features/parametres/presentation/ecran_parametres.dart';
 import 'package:borrowbetter/src/features/recherche/presentation/ecran_recherche.dart';
@@ -48,6 +50,18 @@ final routeurProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: Chemins.nouvelObjet,
         builder: (context, state) => const EcranNouvelObjet(),
+      ),
+      GoRoute(
+        path: Chemins.objet,
+        builder: (context, state) {
+          // `extra` n'est qu'une optimisation : perdu sur un lien profond,
+          // l'écran recharge alors l'objet à partir de l'identifiant.
+          final extra = state.extra;
+          return EcranDetailObjet(
+            id: state.pathParameters['id']!,
+            objetInitial: extra is Objet ? extra : null,
+          );
+        },
       ),
       StatefulShellRoute.indexedStack(
         builder: (context, state, coquille) =>

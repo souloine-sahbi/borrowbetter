@@ -74,5 +74,17 @@
   "erreurIntrouvable": "هذا العنصر لم يعد موجودًا",
   "erreurServeur": "الخدمة غير متاحة",
   "photosAjouter": "إضافة صور",
-  "photosRetirer": "إزالة الصورة"
+  "photosRetirer": "إزالة الصورة",
+  "objetDetailTitre": "Item details",
+  "objetProposePar": "Offered by {nom}",
+  "@objetProposePar": {
+    "placeholders": {
+      "nom": {
+        "type": "String"
+      }
+    }
+  },
+  "objetDemander": "طلب استعارة",
+  "objetDemanderBientot": "طلبات الاستعارة قريبًا.",
+  "objetProprietaire": "المالك"
 }

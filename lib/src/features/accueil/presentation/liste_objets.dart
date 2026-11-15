@@ -3,11 +3,13 @@ import 'package:borrowbetter/src/features/lieux/domain/lieux.dart';
 import 'package:borrowbetter/src/features/lieux/presentation/lieux_provider.dart';
 import 'package:borrowbetter/src/features/objets/domain/objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/libelles_objet.dart';
+import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
 import 'package:borrowbetter/src/shared/widgets/carte_objet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 /// Liste verticale d'objets, construite à la demande.
 class ListeObjets extends ConsumerWidget {
@@ -46,6 +48,9 @@ class ListeObjets extends ConsumerWidget {
               langue: langue,
             ),
             photoUrl: objet.photos.firstOrNull,
+            heroTag: objet.id,
+            onTap: () =>
+                context.push(Chemins.detailObjet(objet.id), extra: objet),
           ),
         );
       },

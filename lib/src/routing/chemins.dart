@@ -6,4 +6,10 @@ abstract final class Chemins {
   static const inscription = '/inscription';
   static const splash = '/splash';
   static const nouvelObjet = '/objets/nouveau';
+
+  /// Modèle de route : l'identifiant fait partie de l'adresse.
+  static const objet = '/objet/:id';
+
+  /// Adresse concrète du détail d'un objet.
+  static String detailObjet(String id) => '/objet/$id';
 }
