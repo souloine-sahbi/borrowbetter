@@ -252,4 +252,18 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get objetProprietaire => 'Owner';
+
+  @override
+  String get accueilBonjour => 'Hello';
+
+  @override
+  String accueilBonjourNom(String nom) {
+    return 'Hello, $nom';
+  }
+
+  @override
+  String get accueilRechercher => 'Search for items…';
+
+  @override
+  String get accueilRecents => 'Recently added';
 }
