@@ -74,5 +74,17 @@
   "erreurIntrouvable": "This item no longer exists",
   "erreurServeur": "Service unavailable",
   "photosAjouter": "Add photos",
-  "photosRetirer": "Remove photo"
+  "photosRetirer": "Remove photo",
+  "objetDetailTitre": "Item details",
+  "objetProposePar": "Offered by {nom}",
+  "@objetProposePar": {
+    "placeholders": {
+      "nom": {
+        "type": "String"
+      }
+    }
+  },
+  "objetDemander": "Request to borrow",
+  "objetDemanderBientot": "Borrow requests are coming soon.",
+  "objetProprietaire": "Owner"
 }

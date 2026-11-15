@@ -73,5 +73,17 @@
   "erreurIntrouvable": "Cet objet n'existe plus",
   "erreurServeur": "Service indisponible",
   "photosAjouter": "Ajouter des photos",
-  "photosRetirer": "Retirer la photo"
+  "photosRetirer": "Retirer la photo",
+  "objetDetailTitre": "Détails de l'objet",
+  "objetProposePar": "Proposé par {nom}",
+  "@objetProposePar": {
+    "placeholders": {
+      "nom": {
+        "type": "String"
+      }
+    }
+  },
+  "objetDemander": "Demander à emprunter",
+  "objetDemanderBientot": "La demande d'emprunt arrive bientôt.",
+  "objetProprietaire": "Propriétaire"
 }

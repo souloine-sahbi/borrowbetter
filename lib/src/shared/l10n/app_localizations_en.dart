@@ -235,4 +235,21 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get photosRetirer => 'Remove photo';
+
+  @override
+  String get objetDetailTitre => 'Item details';
+
+  @override
+  String objetProposePar(String nom) {
+    return 'Offered by $nom';
+  }
+
+  @override
+  String get objetDemander => 'Request to borrow';
+
+  @override
+  String get objetDemanderBientot => 'Borrow requests are coming soon.';
+
+  @override
+  String get objetProprietaire => 'Owner';
 }
