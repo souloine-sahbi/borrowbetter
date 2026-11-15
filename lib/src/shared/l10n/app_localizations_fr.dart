@@ -252,4 +252,18 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get objetProprietaire => 'Propriétaire';
+
+  @override
+  String get accueilBonjour => 'Bonjour';
+
+  @override
+  String accueilBonjourNom(String nom) {
+    return 'Bonjour, $nom';
+  }
+
+  @override
+  String get accueilRechercher => 'Rechercher un objet…';
+
+  @override
+  String get accueilRecents => 'Récemment ajoutés';
 }

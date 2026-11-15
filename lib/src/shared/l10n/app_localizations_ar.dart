@@ -251,4 +251,18 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get objetProprietaire => 'المالك';
+
+  @override
+  String get accueilBonjour => 'مرحبًا';
+
+  @override
+  String accueilBonjourNom(String nom) {
+    return 'مرحبًا، $nom';
+  }
+
+  @override
+  String get accueilRechercher => 'ابحث عن غرض…';
+
+  @override
+  String get accueilRecents => 'أضيفت مؤخرًا';
 }

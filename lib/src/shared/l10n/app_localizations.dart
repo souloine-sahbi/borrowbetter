@@ -579,6 +579,30 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Propriétaire'**
   String get objetProprietaire;
+
+  /// No description provided for @accueilBonjour.
+  ///
+  /// In fr, this message translates to:
+  /// **'Bonjour'**
+  String get accueilBonjour;
+
+  /// No description provided for @accueilBonjourNom.
+  ///
+  /// In fr, this message translates to:
+  /// **'Bonjour, {nom}'**
+  String accueilBonjourNom(String nom);
+
+  /// No description provided for @accueilRechercher.
+  ///
+  /// In fr, this message translates to:
+  /// **'Rechercher un objet…'**
+  String get accueilRechercher;
+
+  /// No description provided for @accueilRecents.
+  ///
+  /// In fr, this message translates to:
+  /// **'Récemment ajoutés'**
+  String get accueilRecents;
 }
 
 class _AppLocalizationsDelegate

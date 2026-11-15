@@ -86,5 +86,16 @@
   },
   "objetDemander": "طلب استعارة",
   "objetDemanderBientot": "طلبات الاستعارة قريبًا.",
-  "objetProprietaire": "المالك"
+  "objetProprietaire": "المالك",
+    "accueilBonjour": "مرحبًا",
+  "accueilBonjourNom": "مرحبًا، {nom}",
+  "@accueilBonjourNom": {
+    "placeholders": {
+      "nom": {
+        "type": "String"
+      }
+    }
+  },
+  "accueilRechercher": "ابحث عن غرض…",
+  "accueilRecents": "أضيفت مؤخرًا"
 }

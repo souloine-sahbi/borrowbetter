@@ -86,5 +86,16 @@
   },
   "objetDemander": "Request to borrow",
   "objetDemanderBientot": "Borrow requests are coming soon.",
-  "objetProprietaire": "Owner"
+  "objetProprietaire": "Owner",
+    "accueilBonjour": "Hello",
+  "accueilBonjourNom": "Hello, {nom}",
+  "@accueilBonjourNom": {
+    "placeholders": {
+      "nom": {
+        "type": "String"
+      }
+    }
+  },
+  "accueilRechercher": "Search for items…",
+  "accueilRecents": "Recently added"
 }

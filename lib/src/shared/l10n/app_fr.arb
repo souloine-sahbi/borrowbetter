@@ -85,5 +85,16 @@
   },
   "objetDemander": "Demander à emprunter",
   "objetDemanderBientot": "La demande d'emprunt arrive bientôt.",
-  "objetProprietaire": "Propriétaire"
+  "objetProprietaire": "Propriétaire",
+    "accueilBonjour": "Bonjour",
+  "accueilBonjourNom": "Bonjour, {nom}",
+  "@accueilBonjourNom": {
+    "placeholders": {
+      "nom": {
+        "type": "String"
+      }
+    }
+  },
+  "accueilRechercher": "Rechercher un objet…",
+  "accueilRecents": "Récemment ajoutés"
 }
