@@ -96,5 +96,9 @@
     }
   },
   "accueilRechercher": "Rechercher un objet…",
-  "accueilRecents": "Récemment ajoutés"
+  "accueilRecents": "Récemment ajoutés",
+  "rechercheToutes": "Tout",
+  "rechercheFiltres": "Filtres",
+  "rechercheReinitialiser": "Réinitialiser le lieu",
+  "rechercheTerminer": "Terminer"
 }

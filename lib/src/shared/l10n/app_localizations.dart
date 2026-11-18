@@ -603,6 +603,30 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Récemment ajoutés'**
   String get accueilRecents;
+
+  /// No description provided for @rechercheToutes.
+  ///
+  /// In fr, this message translates to:
+  /// **'Tout'**
+  String get rechercheToutes;
+
+  /// No description provided for @rechercheFiltres.
+  ///
+  /// In fr, this message translates to:
+  /// **'Filtres'**
+  String get rechercheFiltres;
+
+  /// No description provided for @rechercheReinitialiser.
+  ///
+  /// In fr, this message translates to:
+  /// **'Réinitialiser le lieu'**
+  String get rechercheReinitialiser;
+
+  /// No description provided for @rechercheTerminer.
+  ///
+  /// In fr, this message translates to:
+  /// **'Terminer'**
+  String get rechercheTerminer;
 }
 
 class _AppLocalizationsDelegate

@@ -97,5 +97,9 @@
     }
   },
   "accueilRechercher": "ابحث عن غرض…",
-  "accueilRecents": "أضيفت مؤخرًا"
+  "accueilRecents": "أضيفت مؤخرًا",
+  "rechercheToutes": "الكل",
+  "rechercheFiltres": "تصفية",
+  "rechercheReinitialiser": "إعادة تعيين الموقع",
+  "rechercheTerminer": "تم"
 }
