@@ -266,4 +266,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get accueilRecents => 'Recently added';
+
+  @override
+  String get rechercheToutes => 'All';
+
+  @override
+  String get rechercheFiltres => 'Filters';
+
+  @override
+  String get rechercheReinitialiser => 'Reset location';
+
+  @override
+  String get rechercheTerminer => 'Done';
 }

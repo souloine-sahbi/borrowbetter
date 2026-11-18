@@ -12,9 +12,25 @@ class DepotObjetsFirestore implements DepotObjets {
       _firestore.collection('items');
 
   @override
-  Stream<List<Objet>> surveillerDisponibles() {
-    return _objets
-        .where('statut', isEqualTo: StatutObjet.disponible.name)
+  Stream<List<Objet>> surveillerDisponibles({
+    CategorieObjet? categorie,
+    String? gouvernoratId,
+    String? villeId,
+  }) {
+    var requete = _objets.where(
+      'statut',
+      isEqualTo: StatutObjet.disponible.name,
+    );
+    if (categorie != null) {
+      requete = requete.where('categorie', isEqualTo: categorie.name);
+    }
+    if (gouvernoratId != null) {
+      requete = requete.where('gouvernoratId', isEqualTo: gouvernoratId);
+    }
+    if (villeId != null) {
+      requete = requete.where('villeId', isEqualTo: villeId);
+    }
+    return requete
         .snapshots()
         .map((instantane) {
           return [

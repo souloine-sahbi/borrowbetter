@@ -97,5 +97,9 @@
     }
   },
   "accueilRechercher": "Search for items…",
-  "accueilRecents": "Recently added"
+  "accueilRecents": "Recently added",
+  "rechercheToutes": "All",
+  "rechercheFiltres": "Filters",
+  "rechercheReinitialiser": "Reset location",
+  "rechercheTerminer": "Done"
 }

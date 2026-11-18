@@ -11,7 +11,11 @@ class _DepotFactice implements DepotObjets {
   final Objet? _objet;
 
   @override
-  Stream<List<Objet>> surveillerDisponibles() => const Stream.empty();
+  Stream<List<Objet>> surveillerDisponibles({
+    CategorieObjet? categorie,
+    String? gouvernoratId,
+    String? villeId,
+  }) => const Stream.empty();
 
   @override
   Future<Objet?> parId(String id) async => _objet;

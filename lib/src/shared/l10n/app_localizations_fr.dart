@@ -266,4 +266,16 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get accueilRecents => 'Récemment ajoutés';
+
+  @override
+  String get rechercheToutes => 'Tout';
+
+  @override
+  String get rechercheFiltres => 'Filtres';
+
+  @override
+  String get rechercheReinitialiser => 'Réinitialiser le lieu';
+
+  @override
+  String get rechercheTerminer => 'Terminer';
 }

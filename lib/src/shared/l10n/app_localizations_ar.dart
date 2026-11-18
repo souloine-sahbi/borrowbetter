@@ -265,4 +265,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get accueilRecents => 'أضيفت مؤخرًا';
+
+  @override
+  String get rechercheToutes => 'الكل';
+
+  @override
+  String get rechercheFiltres => 'تصفية';
+
+  @override
+  String get rechercheReinitialiser => 'إعادة تعيين الموقع';
+
+  @override
+  String get rechercheTerminer => 'تم';
 }
