@@ -74,9 +74,8 @@ class _EtatEcranRecherche extends ConsumerState<EcranRecherche> {
                 child: Row(
                   children: [
                     IconButton(
-                      tooltip: MaterialLocalizations.of(
-                        context,
-                      ).backButtonTooltip,
+                      tooltip: MaterialLocalizations.of(context)
+                          .backButtonTooltip,
                       icon: const Icon(Icons.arrow_back_ios_new),
                       onPressed: () => context.go(Chemins.accueil),
                     ),
@@ -256,10 +255,8 @@ class _Resultats extends ConsumerWidget {
                   ),
                   photoUrl: objet.photos.firstOrNull,
                   variante: VarianteCarte.liste,
-                  onTap: () => context.push(
-                    Chemins.detailObjet(objet.id),
-                    extra: objet,
-                  ),
+                  onTap: () =>
+                      context.push(Chemins.detailObjet(objet.id), extra: objet),
                 ),
               );
             },

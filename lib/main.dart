@@ -1,4 +1,5 @@
 import 'package:borrowbetter/firebase_options.dart';
+import 'package:borrowbetter/src/features/profil/presentation/providers/utilisateur_providers.dart';
 import 'package:borrowbetter/src/routing/routeur.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/l10n/langue_controleur.dart';
@@ -26,6 +27,8 @@ class BorrowBetterApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // Crée le document users/{uid} au besoin et observe le profil connecté.
+    ref.watch(utilisateurCourantProvider);
     return MaterialApp.router(
       onGenerateTitle: (context) => AppLocalizations.of(context).appTitre,
       theme: construireTheme(Brightness.light),

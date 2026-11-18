@@ -1,7 +1,8 @@
-import 'package:borrowbetter/src/features/auth/data/depot_auth.dart';
 import 'package:borrowbetter/src/features/objets/presentation/grille_categories.dart';
 import 'package:borrowbetter/src/features/objets/presentation/rangee_objets.dart';
+import 'package:borrowbetter/src/features/profil/presentation/providers/utilisateur_providers.dart';
 import 'package:borrowbetter/src/features/recherche/presentation/recherche_providers.dart';
+
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
@@ -22,12 +23,8 @@ class EcranAccueil extends ConsumerWidget {
     final textes = AppLocalizations.of(context);
     final theme = Theme.of(context);
     final scheme = theme.colorScheme;
-    final prenom = _majuscule(
-      (ref.read(depotAuthProvider).utilisateur?.displayName ?? '')
-          .trim()
-          .split(' ')
-          .first,
-    );
+    final nomComplet = ref.watch(utilisateurCourantProvider).value?.nom ?? '';
+    final prenom = _majuscule(nomComplet.trim().split(' ').first);
 
     return Scaffold(
       body: SafeArea(
