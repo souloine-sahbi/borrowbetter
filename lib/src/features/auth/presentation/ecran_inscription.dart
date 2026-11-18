@@ -6,6 +6,7 @@ import 'package:borrowbetter/src/features/auth/presentation/decoration_champ.dar
 import 'package:borrowbetter/src/features/auth/presentation/indicateur_force_mot_de_passe.dart';
 import 'package:borrowbetter/src/features/auth/presentation/message_erreur_auth.dart';
 import 'package:borrowbetter/src/features/auth/presentation/validateurs.dart';
+import 'package:borrowbetter/src/features/profil/presentation/providers/utilisateur_providers.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
@@ -41,6 +42,7 @@ class _EtatEcranInscription extends ConsumerState<EcranInscription> {
 
   Future<void> _envoyer() async {
     if (!_formulaire.currentState!.validate()) return;
+    if (_enChargement) return;
     final textes = AppLocalizations.of(context);
     setState(() {
       _enChargement = true;
@@ -54,11 +56,33 @@ class _EtatEcranInscription extends ConsumerState<EcranInscription> {
             email: _email.text.trim(),
             motDePasse: _motDePasse.text,
           );
+      await _enregistrerProfil();
     } on FirebaseAuthException catch (e) {
       if (!mounted) return;
       setState(() => _erreur = messageErreurAuth(textes, e));
     } finally {
       if (mounted) setState(() => _enChargement = false);
+    }
+  }
+
+  /// Le listener de session peut réagir avant la fin de updateDisplayName :
+  /// on crée le document si besoin, puis on fixe le nom saisi.
+  /// Si cette étape échoue, le provider utilisateurCourantProvider recrée
+  /// le document : le compte reste utilisable.
+  Future<void> _enregistrerProfil() async {
+    final uid = ref.read(depotAuthProvider).utilisateur?.uid;
+    if (uid == null) return;
+    final depot = ref.read(depotUtilisateursProvider);
+    final nom = _nom.text.trim();
+    try {
+      await depot.assurerExistence(
+        uid: uid,
+        email: _email.text.trim(),
+        nom: nom,
+      );
+      await depot.definirNom(uid, nom);
+    } on FirebaseException {
+      // Rattrapé par utilisateurCourantProvider (nom = e-mail avant @).
     }
   }
 

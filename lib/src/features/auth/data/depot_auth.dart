@@ -25,6 +25,12 @@ class DepotAuth {
     await identifiants.user?.updateDisplayName(nom);
   }
 
+  /// Flux natif Firebase : pas besoin du paquet google_sign_in.
+  /// Nécessite Google activé dans la console, le SHA-1/SHA-256 et le
+  /// google-services.json à jour.
+  Future<void> connexionGoogle() =>
+      _auth.signInWithProvider(GoogleAuthProvider());
+
   Future<void> deconnexion() => _auth.signOut();
 
   Future<void> reinitialiserMotDePasse(String email) =>
