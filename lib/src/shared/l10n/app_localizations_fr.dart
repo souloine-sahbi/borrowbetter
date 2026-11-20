@@ -299,4 +299,35 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get profilLieuVide => 'Non renseignée';
+
+  @override
+  String get barreAccueil => 'Accueil';
+
+  @override
+  String get barreRecherche => 'Recherche';
+
+  @override
+  String get barreAjouter => 'Ajouter un objet';
+
+  @override
+  String get barreDemandes => 'Demandes';
+
+  @override
+  String get barreProfil => 'Profil';
+
+  @override
+  String get bientotMessage => 'Cette section arrive bientôt.';
+
+  @override
+  String get tiroirMenu => 'Menu';
+
+  @override
+  String get tiroirAide => 'Aide';
+
+  @override
+  String get tiroirAideTexte =>
+      'Pour publier un objet, touchez le bouton + de la barre du bas. Pour emprunter, ouvrez la fiche d\'un objet.';
+
+  @override
+  String get tiroirFermer => 'Fermer';
 }

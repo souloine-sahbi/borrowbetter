@@ -4,6 +4,7 @@ import 'package:borrowbetter/src/features/lieux/presentation/lieux_provider.dart
 import 'package:borrowbetter/src/features/profil/domain/utilisateur.dart';
 import 'package:borrowbetter/src/features/profil/presentation/avatar_utilisateur.dart';
 import 'package:borrowbetter/src/features/profil/presentation/providers/utilisateur_providers.dart';
+import 'package:borrowbetter/src/routing/bouton_menu.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
@@ -19,7 +20,10 @@ class EcranProfil extends ConsumerWidget {
     final textes = AppLocalizations.of(context);
     final profil = ref.watch(utilisateurCourantProvider);
     return Scaffold(
-      appBar: AppBar(title: Text(textes.profilTitre)),
+      appBar: AppBar(
+        leading: const BoutonMenu(),
+        title: Text(textes.profilTitre),
+      ),
       body: profil.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (_, _) => Center(child: Text(textes.profilEchec)),

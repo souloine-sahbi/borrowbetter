@@ -669,6 +669,66 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Non renseignée'**
   String get profilLieuVide;
+
+  /// No description provided for @barreAccueil.
+  ///
+  /// In fr, this message translates to:
+  /// **'Accueil'**
+  String get barreAccueil;
+
+  /// No description provided for @barreRecherche.
+  ///
+  /// In fr, this message translates to:
+  /// **'Recherche'**
+  String get barreRecherche;
+
+  /// No description provided for @barreAjouter.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ajouter un objet'**
+  String get barreAjouter;
+
+  /// No description provided for @barreDemandes.
+  ///
+  /// In fr, this message translates to:
+  /// **'Demandes'**
+  String get barreDemandes;
+
+  /// No description provided for @barreProfil.
+  ///
+  /// In fr, this message translates to:
+  /// **'Profil'**
+  String get barreProfil;
+
+  /// No description provided for @bientotMessage.
+  ///
+  /// In fr, this message translates to:
+  /// **'Cette section arrive bientôt.'**
+  String get bientotMessage;
+
+  /// No description provided for @tiroirMenu.
+  ///
+  /// In fr, this message translates to:
+  /// **'Menu'**
+  String get tiroirMenu;
+
+  /// No description provided for @tiroirAide.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aide'**
+  String get tiroirAide;
+
+  /// No description provided for @tiroirAideTexte.
+  ///
+  /// In fr, this message translates to:
+  /// **'Pour publier un objet, touchez le bouton + de la barre du bas. Pour emprunter, ouvrez la fiche d\'un objet.'**
+  String get tiroirAideTexte;
+
+  /// No description provided for @tiroirFermer.
+  ///
+  /// In fr, this message translates to:
+  /// **'Fermer'**
+  String get tiroirFermer;
 }
 
 class _AppLocalizationsDelegate

@@ -108,5 +108,15 @@
   "profilEnregistrer": "Save",
   "profilEchec": "Could not save. Please try again.",
   "profilLieu": "Area",
-  "profilLieuVide": "Not set"
+  "profilLieuVide": "Not set",
+  "barreAccueil": "Home",
+  "barreRecherche": "Search",
+  "barreAjouter": "Add an item",
+  "barreDemandes": "Requests",
+  "barreProfil": "Profile",
+  "bientotMessage": "This section is coming soon.",
+  "tiroirMenu": "Menu",
+  "tiroirAide": "Help",
+  "tiroirAideTexte": "To publish an item, tap the + button in the bottom bar. To borrow, open an item's page.",
+  "tiroirFermer": "Close"
 }

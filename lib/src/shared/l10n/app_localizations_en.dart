@@ -299,4 +299,35 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profilLieuVide => 'Not set';
+
+  @override
+  String get barreAccueil => 'Home';
+
+  @override
+  String get barreRecherche => 'Search';
+
+  @override
+  String get barreAjouter => 'Add an item';
+
+  @override
+  String get barreDemandes => 'Requests';
+
+  @override
+  String get barreProfil => 'Profile';
+
+  @override
+  String get bientotMessage => 'This section is coming soon.';
+
+  @override
+  String get tiroirMenu => 'Menu';
+
+  @override
+  String get tiroirAide => 'Help';
+
+  @override
+  String get tiroirAideTexte =>
+      'To publish an item, tap the + button in the bottom bar. To borrow, open an item\'s page.';
+
+  @override
+  String get tiroirFermer => 'Close';
 }

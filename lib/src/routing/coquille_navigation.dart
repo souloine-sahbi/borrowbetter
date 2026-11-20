@@ -1,6 +1,12 @@
-import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
+import 'package:borrowbetter/src/routing/barre_navigation_maquette.dart';
+import 'package:borrowbetter/src/routing/chemins.dart';
+import 'package:borrowbetter/src/routing/tiroir_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
+/// Clé du Scaffold de la coquille : permet à un écran d'ouvrir le Drawer
+/// même s'il possède son propre Scaffold.
+final cleCoquille = GlobalKey<ScaffoldState>();
 
 class CoquilleNavigation extends StatelessWidget {
   const new({required this.coquille, super.key});
@@ -9,31 +15,17 @@ class CoquilleNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textes = AppLocalizations.of(context);
     return Scaffold(
+      key: cleCoquille,
+      drawer: const TiroirNavigation(),
       body: coquille,
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: coquille.currentIndex,
-        onDestinationSelected: (index) => coquille.goBranch(
+      bottomNavigationBar: BarreNavigationMaquette(
+        indexCourant: coquille.currentIndex,
+        onSelection: (index) => coquille.goBranch(
           index,
           initialLocation: index == coquille.currentIndex,
         ),
-        destinations: [
-          NavigationDestination(
-            icon: const Icon(Icons.home_outlined),
-            selectedIcon: const Icon(Icons.home),
-            label: textes.navAccueil,
-          ),
-          NavigationDestination(
-            icon: const Icon(Icons.search),
-            label: textes.navRecherche,
-          ),
-          NavigationDestination(
-            icon: const Icon(Icons.settings_outlined),
-            selectedIcon: const Icon(Icons.settings),
-            label: textes.navParametres,
-          ),
-        ],
+        onAjouter: () => context.push(Chemins.nouvelObjet),
       ),
     );
   }

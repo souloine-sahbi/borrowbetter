@@ -298,4 +298,35 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get profilLieuVide => 'غير محددة';
+
+  @override
+  String get barreAccueil => 'الرئيسية';
+
+  @override
+  String get barreRecherche => 'بحث';
+
+  @override
+  String get barreAjouter => 'إضافة غرض';
+
+  @override
+  String get barreDemandes => 'الطلبات';
+
+  @override
+  String get barreProfil => 'الملف الشخصي';
+
+  @override
+  String get bientotMessage => 'هذا القسم قادم قريبًا.';
+
+  @override
+  String get tiroirMenu => 'القائمة';
+
+  @override
+  String get tiroirAide => 'المساعدة';
+
+  @override
+  String get tiroirAideTexte =>
+      'لنشر غرض، اضغط على زر + في الشريط السفلي. للاستعارة، افتح صفحة الغرض.';
+
+  @override
+  String get tiroirFermer => 'إغلاق';
 }

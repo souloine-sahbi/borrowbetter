@@ -108,5 +108,15 @@
   "profilEnregistrer": "حفظ",
   "profilEchec": "تعذر الحفظ. حاول مرة أخرى.",
   "profilLieu": "المنطقة",
-  "profilLieuVide": "غير محددة"
+  "profilLieuVide": "غير محددة",
+  "barreAccueil": "الرئيسية",
+  "barreRecherche": "بحث",
+  "barreAjouter": "إضافة غرض",
+  "barreDemandes": "الطلبات",
+  "barreProfil": "الملف الشخصي",
+  "bientotMessage": "هذا القسم قادم قريبًا.",
+  "tiroirMenu": "القائمة",
+  "tiroirAide": "المساعدة",
+  "tiroirAideTexte": "لنشر غرض، اضغط على زر + في الشريط السفلي. للاستعارة، افتح صفحة الغرض.",
+  "tiroirFermer": "إغلاق"
 }

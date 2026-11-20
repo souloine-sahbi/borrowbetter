@@ -3,6 +3,7 @@ import 'package:borrowbetter/src/features/objets/presentation/rangee_objets.dart
 import 'package:borrowbetter/src/features/profil/presentation/providers/utilisateur_providers.dart';
 import 'package:borrowbetter/src/features/recherche/presentation/recherche_providers.dart';
 
+import 'package:borrowbetter/src/routing/bouton_menu.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
@@ -36,14 +37,21 @@ class EcranAccueil extends ConsumerWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      prenom.isEmpty
-                          ? textes.accueilBonjour
-                          : textes.accueilBonjourNom(prenom),
-                      style: theme.textTheme.headlineSmall?.copyWith(
-                        color: scheme.primary,
-                        fontWeight: FontWeight.w700,
-                      ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            prenom.isEmpty
+                                ? textes.accueilBonjour
+                                : textes.accueilBonjourNom(prenom),
+                            style: theme.textTheme.headlineSmall?.copyWith(
+                              color: scheme.primary,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                        const BoutonMenu(),
+                      ],
                     ),
                     const SizedBox(height: Espacements.m),
                     // Un champ de lecture seule : toucher ouvre la recherche.
@@ -77,15 +85,8 @@ class EcranAccueil extends ConsumerWidget {
             ),
             SliverToBoxAdapter(child: TitreSection(textes.accueilRecents)),
             const SliverToBoxAdapter(child: RangeeObjetsRecents()),
-            // Marge basse : le bouton flottant ne masque pas le contenu.
-            const SliverToBoxAdapter(child: SizedBox(height: 96)),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => context.push(Chemins.nouvelObjet),
-        icon: const Icon(Icons.add),
-        label: Text(textes.objetNouveau),
       ),
     );
   }
