@@ -330,4 +330,39 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get tiroirFermer => 'Fermer';
+
+  @override
+  String get tarifGratuit => 'Gratuit';
+
+  @override
+  String get tarifPrix => 'Prix (DT)';
+
+  @override
+  String get tarifUnite => 'Par';
+
+  @override
+  String get tarifPrixInvalide => 'Saisissez un prix supérieur à 0';
+
+  @override
+  String get tarifPrixTropEleve => 'Prix trop élevé';
+
+  @override
+  String get tarifUniteManquante => 'Choisissez une unité';
+
+  @override
+  String get uniteHeure => 'heure';
+
+  @override
+  String get uniteJour => 'jour';
+
+  @override
+  String get uniteSemaine => 'semaine';
+
+  @override
+  String get uniteMois => 'mois';
+
+  @override
+  String tarifPrixUnite(String prix, String unite) {
+    return '$prix DT / $unite';
+  }
 }

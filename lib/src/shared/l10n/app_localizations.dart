@@ -729,6 +729,72 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Fermer'**
   String get tiroirFermer;
+
+  /// No description provided for @tarifGratuit.
+  ///
+  /// In fr, this message translates to:
+  /// **'Gratuit'**
+  String get tarifGratuit;
+
+  /// No description provided for @tarifPrix.
+  ///
+  /// In fr, this message translates to:
+  /// **'Prix (DT)'**
+  String get tarifPrix;
+
+  /// No description provided for @tarifUnite.
+  ///
+  /// In fr, this message translates to:
+  /// **'Par'**
+  String get tarifUnite;
+
+  /// No description provided for @tarifPrixInvalide.
+  ///
+  /// In fr, this message translates to:
+  /// **'Saisissez un prix supérieur à 0'**
+  String get tarifPrixInvalide;
+
+  /// No description provided for @tarifPrixTropEleve.
+  ///
+  /// In fr, this message translates to:
+  /// **'Prix trop élevé'**
+  String get tarifPrixTropEleve;
+
+  /// No description provided for @tarifUniteManquante.
+  ///
+  /// In fr, this message translates to:
+  /// **'Choisissez une unité'**
+  String get tarifUniteManquante;
+
+  /// No description provided for @uniteHeure.
+  ///
+  /// In fr, this message translates to:
+  /// **'heure'**
+  String get uniteHeure;
+
+  /// No description provided for @uniteJour.
+  ///
+  /// In fr, this message translates to:
+  /// **'jour'**
+  String get uniteJour;
+
+  /// No description provided for @uniteSemaine.
+  ///
+  /// In fr, this message translates to:
+  /// **'semaine'**
+  String get uniteSemaine;
+
+  /// No description provided for @uniteMois.
+  ///
+  /// In fr, this message translates to:
+  /// **'mois'**
+  String get uniteMois;
+
+  /// No description provided for @tarifPrixUnite.
+  ///
+  /// In fr, this message translates to:
+  /// **'{prix} DT / {unite}'**
+  String tarifPrixUnite(String prix, String unite);
 }
 
 class _AppLocalizationsDelegate

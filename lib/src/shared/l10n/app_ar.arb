@@ -118,5 +118,16 @@
   "tiroirMenu": "القائمة",
   "tiroirAide": "المساعدة",
   "tiroirAideTexte": "لنشر غرض، اضغط على زر + في الشريط السفلي. للاستعارة، افتح صفحة الغرض.",
-  "tiroirFermer": "إغلاق"
+  "tiroirFermer": "إغلاق",
+  "tarifGratuit": "مجاني",
+  "tarifPrix": "السعر (د.ت)",
+  "tarifUnite": "لكل",
+  "tarifPrixInvalide": "أدخل سعرًا أكبر من 0",
+  "tarifPrixTropEleve": "السعر مرتفع جدًا",
+  "tarifUniteManquante": "اختر وحدة",
+  "uniteHeure": "ساعة",
+  "uniteJour": "يوم",
+  "uniteSemaine": "أسبوع",
+  "uniteMois": "شهر",
+  "tarifPrixUnite": "{prix} د.ت / {unite}"
 }

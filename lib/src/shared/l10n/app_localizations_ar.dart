@@ -329,4 +329,39 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tiroirFermer => 'إغلاق';
+
+  @override
+  String get tarifGratuit => 'مجاني';
+
+  @override
+  String get tarifPrix => 'السعر (د.ت)';
+
+  @override
+  String get tarifUnite => 'لكل';
+
+  @override
+  String get tarifPrixInvalide => 'أدخل سعرًا أكبر من 0';
+
+  @override
+  String get tarifPrixTropEleve => 'السعر مرتفع جدًا';
+
+  @override
+  String get tarifUniteManquante => 'اختر وحدة';
+
+  @override
+  String get uniteHeure => 'ساعة';
+
+  @override
+  String get uniteJour => 'يوم';
+
+  @override
+  String get uniteSemaine => 'أسبوع';
+
+  @override
+  String get uniteMois => 'شهر';
+
+  @override
+  String tarifPrixUnite(String prix, String unite) {
+    return '$prix د.ت / $unite';
+  }
 }
