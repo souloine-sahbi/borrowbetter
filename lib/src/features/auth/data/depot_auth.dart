@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 class DepotAuth {
   new(this._auth);
@@ -31,7 +32,12 @@ class DepotAuth {
   Future<void> connexionGoogle() =>
       _auth.signInWithProvider(GoogleAuthProvider());
 
-  Future<void> deconnexion() => _auth.signOut();
+  Future<void> deconnexion() async {
+    // Aucun jeton n'est stocké pour l'instant ; on vide le coffre par
+    // précaution pour que rien ne survive à la déconnexion.
+    await const FlutterSecureStorage().deleteAll();
+    await _auth.signOut();
+  }
 
   Future<void> reinitialiserMotDePasse(String email) =>
       _auth.sendPasswordResetEmail(email: email);
