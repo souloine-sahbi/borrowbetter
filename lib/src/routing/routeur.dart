@@ -12,6 +12,8 @@ import 'package:borrowbetter/src/features/recherche/presentation/ecran_recherche
 import 'package:borrowbetter/src/features/splash/presentation/ecran_splash.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/routing/coquille_navigation.dart';
+import 'package:borrowbetter/src/routing/ecran_bientot.dart';
+import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -50,16 +52,16 @@ final routeurProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const EcranInscription(),
       ),
       GoRoute(
-        path: Chemins.profil,
-        builder: (context, state) => const EcranProfil(),
+        path: Chemins.nouvelObjet,
+        builder: (context, state) => const EcranNouvelObjet(),
+      ),
+      GoRoute(
+        path: Chemins.parametres,
+        builder: (context, state) => const EcranParametres(),
       ),
       GoRoute(
         path: Chemins.modifierProfil,
         builder: (context, state) => const EcranModifierProfil(),
-      ),
-      GoRoute(
-        path: Chemins.nouvelObjet,
-        builder: (context, state) => const EcranNouvelObjet(),
       ),
       GoRoute(
         path: Chemins.objet,
@@ -96,8 +98,18 @@ final routeurProvider = Provider<GoRouter>((ref) {
           StatefulShellBranch(
             routes: [
               GoRoute(
-                path: Chemins.parametres,
-                builder: (context, state) => const EcranParametres(),
+                path: Chemins.demandes,
+                builder: (context, state) => EcranBientot(
+                  titre: AppLocalizations.of(context).barreDemandes,
+                ),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: Chemins.profil,
+                builder: (context, state) => const EcranProfil(),
               ),
             ],
           ),

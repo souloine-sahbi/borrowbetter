@@ -107,5 +107,15 @@
   "profilEnregistrer": "Enregistrer",
   "profilEchec": "Enregistrement impossible. Réessayez.",
   "profilLieu": "Zone",
-  "profilLieuVide": "Non renseignée"
+  "profilLieuVide": "Non renseignée",
+  "barreAccueil": "Accueil",
+  "barreRecherche": "Recherche",
+  "barreAjouter": "Ajouter un objet",
+  "barreDemandes": "Demandes",
+  "barreProfil": "Profil",
+  "bientotMessage": "Cette section arrive bientôt.",
+  "tiroirMenu": "Menu",
+  "tiroirAide": "Aide",
+  "tiroirAideTexte": "Pour publier un objet, touchez le bouton + de la barre du bas. Pour emprunter, ouvrez la fiche d'un objet.",
+  "tiroirFermer": "Fermer"
 }
