@@ -277,4 +277,25 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get rechercheTerminer => 'تم';
+
+  @override
+  String get profilTitre => 'الملف الشخصي';
+
+  @override
+  String get profilModifier => 'تعديل الملف الشخصي';
+
+  @override
+  String get profilChangerPhoto => 'تغيير الصورة';
+
+  @override
+  String get profilEnregistrer => 'حفظ';
+
+  @override
+  String get profilEchec => 'تعذر الحفظ. حاول مرة أخرى.';
+
+  @override
+  String get profilLieu => 'المنطقة';
+
+  @override
+  String get profilLieuVide => 'غير محددة';
 }

@@ -101,5 +101,12 @@
   "rechercheToutes": "All",
   "rechercheFiltres": "Filters",
   "rechercheReinitialiser": "Reset location",
-  "rechercheTerminer": "Done"
+  "rechercheTerminer": "Done",
+  "profilTitre": "Profile",
+  "profilModifier": "Edit profile",
+  "profilChangerPhoto": "Change photo",
+  "profilEnregistrer": "Save",
+  "profilEchec": "Could not save. Please try again.",
+  "profilLieu": "Area",
+  "profilLieuVide": "Not set"
 }

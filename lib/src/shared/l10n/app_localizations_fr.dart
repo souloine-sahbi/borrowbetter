@@ -278,4 +278,25 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get rechercheTerminer => 'Terminer';
+
+  @override
+  String get profilTitre => 'Profil';
+
+  @override
+  String get profilModifier => 'Modifier le profil';
+
+  @override
+  String get profilChangerPhoto => 'Changer la photo';
+
+  @override
+  String get profilEnregistrer => 'Enregistrer';
+
+  @override
+  String get profilEchec => 'Enregistrement impossible. Réessayez.';
+
+  @override
+  String get profilLieu => 'Zone';
+
+  @override
+  String get profilLieuVide => 'Non renseignée';
 }

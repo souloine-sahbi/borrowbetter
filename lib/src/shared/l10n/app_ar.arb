@@ -101,5 +101,12 @@
   "rechercheToutes": "الكل",
   "rechercheFiltres": "تصفية",
   "rechercheReinitialiser": "إعادة تعيين الموقع",
-  "rechercheTerminer": "تم"
+  "rechercheTerminer": "تم",
+  "profilTitre": "الملف الشخصي",
+  "profilModifier": "تعديل الملف الشخصي",
+  "profilChangerPhoto": "تغيير الصورة",
+  "profilEnregistrer": "حفظ",
+  "profilEchec": "تعذر الحفظ. حاول مرة أخرى.",
+  "profilLieu": "المنطقة",
+  "profilLieuVide": "غير محددة"
 }
