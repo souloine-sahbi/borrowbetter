@@ -3,6 +3,9 @@ import 'package:borrowbetter/src/features/auth/presentation/decoration_champ.dar
 import 'package:borrowbetter/src/features/auth/presentation/validateurs.dart';
 import 'package:borrowbetter/src/features/lieux/presentation/selecteur_localisation.dart';
 import 'package:borrowbetter/src/features/objets/domain/objet.dart';
+import 'package:borrowbetter/src/features/objets/domain/tarif.dart';
+import 'package:borrowbetter/src/features/objets/domain/unite_tarif.dart';
+import 'package:borrowbetter/src/features/objets/presentation/champ_tarif.dart';
 import 'package:borrowbetter/src/features/objets/presentation/libelles_objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/objets_providers.dart';
 import 'package:borrowbetter/src/features/objets/presentation/selecteur_photos.dart';
@@ -28,6 +31,9 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
   final _description = TextEditingController();
   final _cite = TextEditingController();
   final _rue = TextEditingController();
+  var _gratuit = true;
+  final _prix = TextEditingController();
+  UniteTarif? _unite;
   CategorieObjet? _categorie;
   EtatObjet? _etat;
   String? _gouvernorat;
@@ -42,6 +48,7 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
     _description.dispose();
     _cite.dispose();
     _rue.dispose();
+    _prix.dispose();
     super.dispose();
   }
 
@@ -77,6 +84,8 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
               cite: _cite.text.trim(),
               rue: rue.isEmpty ? null : rue,
               photos: adresses,
+              prix: _gratuit ? null : analyserPrix(_prix.text),
+              unite: _gratuit ? null : _unite,
             ),
             proprietaireId: utilisateur.uid,
             proprietaireNom: utilisateur.displayName ?? '',
@@ -150,6 +159,15 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
                     validator: (valeur) =>
                         valeur == null ? textes.validationObligatoire : null,
                     onChanged: (valeur) => setState(() => _etat = valeur),
+                  ),
+                  const SizedBox(height: Espacements.m),
+                  ChampTarif(
+                    gratuit: _gratuit,
+                    onGratuitChange: (valeur) =>
+                        setState(() => _gratuit = valeur),
+                    prix: _prix,
+                    unite: _unite,
+                    onUniteChange: (valeur) => setState(() => _unite = valeur),
                   ),
                   const SizedBox(height: Espacements.m),
                   TextFormField(

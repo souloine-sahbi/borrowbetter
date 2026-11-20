@@ -4,6 +4,7 @@ import 'package:borrowbetter/src/features/lieux/domain/lieux.dart';
 import 'package:borrowbetter/src/features/lieux/presentation/lieux_provider.dart';
 import 'package:borrowbetter/src/features/objets/domain/objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/galerie_photos.dart';
+import 'package:borrowbetter/src/features/objets/presentation/libelle_tarif.dart';
 import 'package:borrowbetter/src/features/objets/presentation/libelles_objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/objets_providers.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
@@ -169,6 +170,14 @@ class _PageObjet extends ConsumerWidget {
                       style: theme.textTheme.titleLarge?.copyWith(
                         color: scheme.primary,
                         fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const SizedBox(height: Espacements.s),
+                    Text(
+                      libelleTarif(
+                        context,
+                        prix: objet.prix,
+                        unite: objet.unite,
                       ),
                     ),
                     const SizedBox(height: Espacements.s),

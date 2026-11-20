@@ -117,5 +117,22 @@
   "tiroirMenu": "Menu",
   "tiroirAide": "Aide",
   "tiroirAideTexte": "Pour publier un objet, touchez le bouton + de la barre du bas. Pour emprunter, ouvrez la fiche d'un objet.",
-  "tiroirFermer": "Fermer"
+  "tiroirFermer": "Fermer",
+  "tarifGratuit": "Gratuit",
+  "tarifPrix": "Prix (DT)",
+  "tarifUnite": "Par",
+  "tarifPrixInvalide": "Saisissez un prix supérieur à 0",
+  "tarifPrixTropEleve": "Prix trop élevé",
+  "tarifUniteManquante": "Choisissez une unité",
+  "uniteHeure": "heure",
+  "uniteJour": "jour",
+  "uniteSemaine": "semaine",
+  "uniteMois": "mois",
+  "tarifPrixUnite": "{prix} DT / {unite}",
+  "@tarifPrixUnite": {
+    "placeholders": {
+      "prix": { "type": "String" },
+      "unite": { "type": "String" }
+    }
+  }
 }

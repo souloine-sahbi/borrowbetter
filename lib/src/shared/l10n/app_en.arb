@@ -118,5 +118,16 @@
   "tiroirMenu": "Menu",
   "tiroirAide": "Help",
   "tiroirAideTexte": "To publish an item, tap the + button in the bottom bar. To borrow, open an item's page.",
-  "tiroirFermer": "Close"
+  "tiroirFermer": "Close",
+  "tarifGratuit": "Free",
+  "tarifPrix": "Price (DT)",
+  "tarifUnite": "Per",
+  "tarifPrixInvalide": "Enter a price greater than 0",
+  "tarifPrixTropEleve": "Price too high",
+  "tarifUniteManquante": "Choose a unit",
+  "uniteHeure": "hour",
+  "uniteJour": "day",
+  "uniteSemaine": "week",
+  "uniteMois": "month",
+  "tarifPrixUnite": "{prix} DT / {unite}"
 }

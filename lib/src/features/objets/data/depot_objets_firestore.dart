@@ -1,5 +1,6 @@
 import 'package:borrowbetter/src/features/objets/domain/depot_objets.dart';
 import 'package:borrowbetter/src/features/objets/domain/objet.dart';
+import 'package:borrowbetter/src/features/objets/domain/unite_tarif.dart';
 import 'package:borrowbetter/src/shared/data/traduire_firebase.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -77,6 +78,8 @@ class DepotObjetsFirestore implements DepotObjets {
           'langueAnnonce': brouillon.langueAnnonce,
           'statut': StatutObjet.disponible.name,
           'photos': brouillon.photos,
+          'prix': brouillon.prix,
+          'unite': brouillon.unite?.name,
           'creeLe': FieldValue.serverTimestamp(),
         })
         ..set(reference.collection('prive').doc('adresse'), {
@@ -122,5 +125,7 @@ Objet _versObjet(String id, Map<String, dynamic> donnees) {
     ),
     creeLe: (donnees['creeLe'] as Timestamp?)?.toDate() ?? DateTime.now(),
     photos: [for (final photo in photos) photo as String],
+    prix: (donnees['prix'] as num?)?.toDouble(),
+    unite: UniteTarif.values.asNameMap()[donnees['unite']],
   );
 }
