@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$Objet {
 
- String get id; String get proprietaireId; String get proprietaireNom; String get titre; String get description; CategorieObjet get categorie; EtatObjet get etat; String get gouvernoratId; String get villeId; String get langueAnnonce; StatutObjet get statut; DateTime get creeLe; List<String> get photos;
+ String get id; String get proprietaireId; String get proprietaireNom; String get titre; String get description; CategorieObjet get categorie; EtatObjet get etat; String get gouvernoratId; String get villeId; String get langueAnnonce; StatutObjet get statut; DateTime get creeLe; List<String> get photos; double? get prix; UniteTarif? get unite;
 /// Create a copy of Objet
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -27,20 +27,20 @@ $ObjetCopyWith<Objet> get copyWith => _$ObjetCopyWithImpl<Objet>(this as Objet, 
 @override
 bool operator ==(Object other) {
   final _this = this as Objet;
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is Objet&&(identical(other.id, _this.id) || other.id == _this.id)&&(identical(other.proprietaireId, _this.proprietaireId) || other.proprietaireId == _this.proprietaireId)&&(identical(other.proprietaireNom, _this.proprietaireNom) || other.proprietaireNom == _this.proprietaireNom)&&(identical(other.titre, _this.titre) || other.titre == _this.titre)&&(identical(other.description, _this.description) || other.description == _this.description)&&(identical(other.categorie, _this.categorie) || other.categorie == _this.categorie)&&(identical(other.etat, _this.etat) || other.etat == _this.etat)&&(identical(other.gouvernoratId, _this.gouvernoratId) || other.gouvernoratId == _this.gouvernoratId)&&(identical(other.villeId, _this.villeId) || other.villeId == _this.villeId)&&(identical(other.langueAnnonce, _this.langueAnnonce) || other.langueAnnonce == _this.langueAnnonce)&&(identical(other.statut, _this.statut) || other.statut == _this.statut)&&(identical(other.creeLe, _this.creeLe) || other.creeLe == _this.creeLe)&&const DeepCollectionEquality().equals(other.photos, _this.photos));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Objet&&(identical(other.id, _this.id) || other.id == _this.id)&&(identical(other.proprietaireId, _this.proprietaireId) || other.proprietaireId == _this.proprietaireId)&&(identical(other.proprietaireNom, _this.proprietaireNom) || other.proprietaireNom == _this.proprietaireNom)&&(identical(other.titre, _this.titre) || other.titre == _this.titre)&&(identical(other.description, _this.description) || other.description == _this.description)&&(identical(other.categorie, _this.categorie) || other.categorie == _this.categorie)&&(identical(other.etat, _this.etat) || other.etat == _this.etat)&&(identical(other.gouvernoratId, _this.gouvernoratId) || other.gouvernoratId == _this.gouvernoratId)&&(identical(other.villeId, _this.villeId) || other.villeId == _this.villeId)&&(identical(other.langueAnnonce, _this.langueAnnonce) || other.langueAnnonce == _this.langueAnnonce)&&(identical(other.statut, _this.statut) || other.statut == _this.statut)&&(identical(other.creeLe, _this.creeLe) || other.creeLe == _this.creeLe)&&const DeepCollectionEquality().equals(other.photos, _this.photos)&&(identical(other.prix, _this.prix) || other.prix == _this.prix)&&(identical(other.unite, _this.unite) || other.unite == _this.unite));
 }
 
 
 @override
 int get hashCode {
   final _this = this as Objet;
-  return Object.hash(runtimeType,_this.id,_this.proprietaireId,_this.proprietaireNom,_this.titre,_this.description,_this.categorie,_this.etat,_this.gouvernoratId,_this.villeId,_this.langueAnnonce,_this.statut,_this.creeLe,const DeepCollectionEquality().hash(_this.photos));
+  return Object.hash(runtimeType,_this.id,_this.proprietaireId,_this.proprietaireNom,_this.titre,_this.description,_this.categorie,_this.etat,_this.gouvernoratId,_this.villeId,_this.langueAnnonce,_this.statut,_this.creeLe,const DeepCollectionEquality().hash(_this.photos),_this.prix,_this.unite);
 }
 
 @override
 String toString() {
   final _this = this as Objet;
-  return 'Objet(id: ${_this.id}, proprietaireId: ${_this.proprietaireId}, proprietaireNom: ${_this.proprietaireNom}, titre: ${_this.titre}, description: ${_this.description}, categorie: ${_this.categorie}, etat: ${_this.etat}, gouvernoratId: ${_this.gouvernoratId}, villeId: ${_this.villeId}, langueAnnonce: ${_this.langueAnnonce}, statut: ${_this.statut}, creeLe: ${_this.creeLe}, photos: ${_this.photos})';
+  return 'Objet(id: ${_this.id}, proprietaireId: ${_this.proprietaireId}, proprietaireNom: ${_this.proprietaireNom}, titre: ${_this.titre}, description: ${_this.description}, categorie: ${_this.categorie}, etat: ${_this.etat}, gouvernoratId: ${_this.gouvernoratId}, villeId: ${_this.villeId}, langueAnnonce: ${_this.langueAnnonce}, statut: ${_this.statut}, creeLe: ${_this.creeLe}, photos: ${_this.photos}, prix: ${_this.prix}, unite: ${_this.unite})';
 }
 
 
@@ -51,7 +51,7 @@ abstract mixin class $ObjetCopyWith<$Res>  {
   factory $ObjetCopyWith(Objet value, $Res Function(Objet) _then) = _$ObjetCopyWithImpl;
 @useResult
 $Res call({
- String id, String proprietaireId, String proprietaireNom, String titre, String description, CategorieObjet categorie, EtatObjet etat, String gouvernoratId, String villeId, String langueAnnonce, StatutObjet statut, DateTime creeLe, List<String> photos
+ String id, String proprietaireId, String proprietaireNom, String titre, String description, CategorieObjet categorie, EtatObjet etat, String gouvernoratId, String villeId, String langueAnnonce, StatutObjet statut, DateTime creeLe, List<String> photos, double? prix, UniteTarif? unite
 });
 
 
@@ -68,7 +68,7 @@ class _$ObjetCopyWithImpl<$Res>
 
 /// Create a copy of Objet
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? proprietaireId = null,Object? proprietaireNom = null,Object? titre = null,Object? description = null,Object? categorie = null,Object? etat = null,Object? gouvernoratId = null,Object? villeId = null,Object? langueAnnonce = null,Object? statut = null,Object? creeLe = null,Object? photos = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? proprietaireId = null,Object? proprietaireNom = null,Object? titre = null,Object? description = null,Object? categorie = null,Object? etat = null,Object? gouvernoratId = null,Object? villeId = null,Object? langueAnnonce = null,Object? statut = null,Object? creeLe = null,Object? photos = null,Object? prix = freezed,Object? unite = freezed,}) {
   return _then(Objet(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,proprietaireId: null == proprietaireId ? _self.proprietaireId : proprietaireId // ignore: cast_nullable_to_non_nullable
@@ -83,7 +83,9 @@ as String,langueAnnonce: null == langueAnnonce ? _self.langueAnnonce : langueAnn
 as String,statut: null == statut ? _self.statut : statut // ignore: cast_nullable_to_non_nullable
 as StatutObjet,creeLe: null == creeLe ? _self.creeLe : creeLe // ignore: cast_nullable_to_non_nullable
 as DateTime,photos: null == photos ? _self.photos : photos // ignore: cast_nullable_to_non_nullable
-as List<String>,
+as List<String>,prix: freezed == prix ? _self.prix : prix // ignore: cast_nullable_to_non_nullable
+as double?,unite: freezed == unite ? _self.unite : unite // ignore: cast_nullable_to_non_nullable
+as UniteTarif?,
   ));
 }
 
@@ -168,10 +170,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String proprietaireId,  String proprietaireNom,  String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  StatutObjet statut,  DateTime creeLe,  List<String> photos)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String proprietaireId,  String proprietaireNom,  String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  StatutObjet statut,  DateTime creeLe,  List<String> photos,  double? prix,  UniteTarif? unite)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _Objet() when $default != null:
-return $default(_that.id,_that.proprietaireId,_that.proprietaireNom,_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.statut,_that.creeLe,_that.photos);case _:
+return $default(_that.id,_that.proprietaireId,_that.proprietaireNom,_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.statut,_that.creeLe,_that.photos,_that.prix,_that.unite);case _:
   return orElse();
 
 }
@@ -189,10 +191,10 @@ return $default(_that.id,_that.proprietaireId,_that.proprietaireNom,_that.titre,
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String proprietaireId,  String proprietaireNom,  String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  StatutObjet statut,  DateTime creeLe,  List<String> photos)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String proprietaireId,  String proprietaireNom,  String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  StatutObjet statut,  DateTime creeLe,  List<String> photos,  double? prix,  UniteTarif? unite)  $default,) {final _that = this;
 switch (_that) {
 case _Objet():
-return $default(_that.id,_that.proprietaireId,_that.proprietaireNom,_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.statut,_that.creeLe,_that.photos);case _:
+return $default(_that.id,_that.proprietaireId,_that.proprietaireNom,_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.statut,_that.creeLe,_that.photos,_that.prix,_that.unite);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -209,10 +211,10 @@ return $default(_that.id,_that.proprietaireId,_that.proprietaireNom,_that.titre,
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String proprietaireId,  String proprietaireNom,  String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  StatutObjet statut,  DateTime creeLe,  List<String> photos)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String proprietaireId,  String proprietaireNom,  String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  StatutObjet statut,  DateTime creeLe,  List<String> photos,  double? prix,  UniteTarif? unite)?  $default,) {final _that = this;
 switch (_that) {
 case _Objet() when $default != null:
-return $default(_that.id,_that.proprietaireId,_that.proprietaireNom,_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.statut,_that.creeLe,_that.photos);case _:
+return $default(_that.id,_that.proprietaireId,_that.proprietaireNom,_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.statut,_that.creeLe,_that.photos,_that.prix,_that.unite);case _:
   return null;
 
 }
@@ -224,7 +226,7 @@ return $default(_that.id,_that.proprietaireId,_that.proprietaireNom,_that.titre,
 
 
 class _Objet implements Objet {
-  const _Objet({required this.id, required this.proprietaireId, required this.proprietaireNom, required this.titre, required this.description, required this.categorie, required this.etat, required this.gouvernoratId, required this.villeId, required this.langueAnnonce, required this.statut, required this.creeLe,  List<String> photos = const <String>[]}): _photos = photos;
+  const _Objet({required this.id, required this.proprietaireId, required this.proprietaireNom, required this.titre, required this.description, required this.categorie, required this.etat, required this.gouvernoratId, required this.villeId, required this.langueAnnonce, required this.statut, required this.creeLe,  List<String> photos = const <String>[], this.prix, this.unite}): _photos = photos;
   
 
 @override final  String id;
@@ -246,6 +248,8 @@ class _Objet implements Objet {
   return EqualUnmodifiableListView(_photos);
 }
 
+@override final  double? prix;
+@override final  UniteTarif? unite;
 
 /// Create a copy of Objet
 /// with the given fields replaced by the non-null parameter values.
@@ -257,18 +261,18 @@ _$ObjetCopyWith<_Objet> get copyWith => __$ObjetCopyWithImpl<_Objet>(this, _$ide
 
 @override
 bool operator ==(Object other) {
-    return identical(this, other) || (other.runtimeType == runtimeType&&other is _Objet&&(identical(other.id, id) || other.id == id)&&(identical(other.proprietaireId, proprietaireId) || other.proprietaireId == proprietaireId)&&(identical(other.proprietaireNom, proprietaireNom) || other.proprietaireNom == proprietaireNom)&&(identical(other.titre, titre) || other.titre == titre)&&(identical(other.description, description) || other.description == description)&&(identical(other.categorie, categorie) || other.categorie == categorie)&&(identical(other.etat, etat) || other.etat == etat)&&(identical(other.gouvernoratId, gouvernoratId) || other.gouvernoratId == gouvernoratId)&&(identical(other.villeId, villeId) || other.villeId == villeId)&&(identical(other.langueAnnonce, langueAnnonce) || other.langueAnnonce == langueAnnonce)&&(identical(other.statut, statut) || other.statut == statut)&&(identical(other.creeLe, creeLe) || other.creeLe == creeLe)&&const DeepCollectionEquality().equals(other.photos, _photos));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is _Objet&&(identical(other.id, id) || other.id == id)&&(identical(other.proprietaireId, proprietaireId) || other.proprietaireId == proprietaireId)&&(identical(other.proprietaireNom, proprietaireNom) || other.proprietaireNom == proprietaireNom)&&(identical(other.titre, titre) || other.titre == titre)&&(identical(other.description, description) || other.description == description)&&(identical(other.categorie, categorie) || other.categorie == categorie)&&(identical(other.etat, etat) || other.etat == etat)&&(identical(other.gouvernoratId, gouvernoratId) || other.gouvernoratId == gouvernoratId)&&(identical(other.villeId, villeId) || other.villeId == villeId)&&(identical(other.langueAnnonce, langueAnnonce) || other.langueAnnonce == langueAnnonce)&&(identical(other.statut, statut) || other.statut == statut)&&(identical(other.creeLe, creeLe) || other.creeLe == creeLe)&&const DeepCollectionEquality().equals(other.photos, _photos)&&(identical(other.prix, prix) || other.prix == prix)&&(identical(other.unite, unite) || other.unite == unite));
 }
 
 
 @override
 int get hashCode {
-    return Object.hash(runtimeType,id,proprietaireId,proprietaireNom,titre,description,categorie,etat,gouvernoratId,villeId,langueAnnonce,statut,creeLe,const DeepCollectionEquality().hash(_photos));
+    return Object.hash(runtimeType,id,proprietaireId,proprietaireNom,titre,description,categorie,etat,gouvernoratId,villeId,langueAnnonce,statut,creeLe,const DeepCollectionEquality().hash(_photos),prix,unite);
 }
 
 @override
 String toString() {
-    return 'Objet(id: $id, proprietaireId: $proprietaireId, proprietaireNom: $proprietaireNom, titre: $titre, description: $description, categorie: $categorie, etat: $etat, gouvernoratId: $gouvernoratId, villeId: $villeId, langueAnnonce: $langueAnnonce, statut: $statut, creeLe: $creeLe, photos: $photos)';
+    return 'Objet(id: $id, proprietaireId: $proprietaireId, proprietaireNom: $proprietaireNom, titre: $titre, description: $description, categorie: $categorie, etat: $etat, gouvernoratId: $gouvernoratId, villeId: $villeId, langueAnnonce: $langueAnnonce, statut: $statut, creeLe: $creeLe, photos: $photos, prix: $prix, unite: $unite)';
 }
 
 
@@ -279,7 +283,7 @@ abstract mixin class _$ObjetCopyWith<$Res> implements $ObjetCopyWith<$Res> {
   factory _$ObjetCopyWith(_Objet value, $Res Function(_Objet) _then) = __$ObjetCopyWithImpl;
 @override @useResult
 $Res call({
- String id, String proprietaireId, String proprietaireNom, String titre, String description, CategorieObjet categorie, EtatObjet etat, String gouvernoratId, String villeId, String langueAnnonce, StatutObjet statut, DateTime creeLe, List<String> photos
+ String id, String proprietaireId, String proprietaireNom, String titre, String description, CategorieObjet categorie, EtatObjet etat, String gouvernoratId, String villeId, String langueAnnonce, StatutObjet statut, DateTime creeLe, List<String> photos, double? prix, UniteTarif? unite
 });
 
 
@@ -296,7 +300,7 @@ class __$ObjetCopyWithImpl<$Res>
 
 /// Create a copy of Objet
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? proprietaireId = null,Object? proprietaireNom = null,Object? titre = null,Object? description = null,Object? categorie = null,Object? etat = null,Object? gouvernoratId = null,Object? villeId = null,Object? langueAnnonce = null,Object? statut = null,Object? creeLe = null,Object? photos = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? proprietaireId = null,Object? proprietaireNom = null,Object? titre = null,Object? description = null,Object? categorie = null,Object? etat = null,Object? gouvernoratId = null,Object? villeId = null,Object? langueAnnonce = null,Object? statut = null,Object? creeLe = null,Object? photos = null,Object? prix = freezed,Object? unite = freezed,}) {
   return _then(_Objet(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,proprietaireId: null == proprietaireId ? _self.proprietaireId : proprietaireId // ignore: cast_nullable_to_non_nullable
@@ -311,7 +315,9 @@ as String,langueAnnonce: null == langueAnnonce ? _self.langueAnnonce : langueAnn
 as String,statut: null == statut ? _self.statut : statut // ignore: cast_nullable_to_non_nullable
 as StatutObjet,creeLe: null == creeLe ? _self.creeLe : creeLe // ignore: cast_nullable_to_non_nullable
 as DateTime,photos: null == photos ? _self._photos : photos // ignore: cast_nullable_to_non_nullable
-as List<String>,
+as List<String>,prix: freezed == prix ? _self.prix : prix // ignore: cast_nullable_to_non_nullable
+as double?,unite: freezed == unite ? _self.unite : unite // ignore: cast_nullable_to_non_nullable
+as UniteTarif?,
   ));
 }
 
@@ -321,7 +327,7 @@ as List<String>,
 /// @nodoc
 mixin _$BrouillonObjet {
 
- String get titre; String get description; CategorieObjet get categorie; EtatObjet get etat; String get gouvernoratId; String get villeId; String get langueAnnonce; String get cite; List<String> get photos; String? get rue;
+ String get titre; String get description; CategorieObjet get categorie; EtatObjet get etat; String get gouvernoratId; String get villeId; String get langueAnnonce; String get cite; List<String> get photos; String? get rue; double? get prix; UniteTarif? get unite;
 /// Create a copy of BrouillonObjet
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -333,20 +339,20 @@ $BrouillonObjetCopyWith<BrouillonObjet> get copyWith => _$BrouillonObjetCopyWith
 @override
 bool operator ==(Object other) {
   final _this = this as BrouillonObjet;
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is BrouillonObjet&&(identical(other.titre, _this.titre) || other.titre == _this.titre)&&(identical(other.description, _this.description) || other.description == _this.description)&&(identical(other.categorie, _this.categorie) || other.categorie == _this.categorie)&&(identical(other.etat, _this.etat) || other.etat == _this.etat)&&(identical(other.gouvernoratId, _this.gouvernoratId) || other.gouvernoratId == _this.gouvernoratId)&&(identical(other.villeId, _this.villeId) || other.villeId == _this.villeId)&&(identical(other.langueAnnonce, _this.langueAnnonce) || other.langueAnnonce == _this.langueAnnonce)&&(identical(other.cite, _this.cite) || other.cite == _this.cite)&&const DeepCollectionEquality().equals(other.photos, _this.photos)&&(identical(other.rue, _this.rue) || other.rue == _this.rue));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is BrouillonObjet&&(identical(other.titre, _this.titre) || other.titre == _this.titre)&&(identical(other.description, _this.description) || other.description == _this.description)&&(identical(other.categorie, _this.categorie) || other.categorie == _this.categorie)&&(identical(other.etat, _this.etat) || other.etat == _this.etat)&&(identical(other.gouvernoratId, _this.gouvernoratId) || other.gouvernoratId == _this.gouvernoratId)&&(identical(other.villeId, _this.villeId) || other.villeId == _this.villeId)&&(identical(other.langueAnnonce, _this.langueAnnonce) || other.langueAnnonce == _this.langueAnnonce)&&(identical(other.cite, _this.cite) || other.cite == _this.cite)&&const DeepCollectionEquality().equals(other.photos, _this.photos)&&(identical(other.rue, _this.rue) || other.rue == _this.rue)&&(identical(other.prix, _this.prix) || other.prix == _this.prix)&&(identical(other.unite, _this.unite) || other.unite == _this.unite));
 }
 
 
 @override
 int get hashCode {
   final _this = this as BrouillonObjet;
-  return Object.hash(runtimeType,_this.titre,_this.description,_this.categorie,_this.etat,_this.gouvernoratId,_this.villeId,_this.langueAnnonce,_this.cite,const DeepCollectionEquality().hash(_this.photos),_this.rue);
+  return Object.hash(runtimeType,_this.titre,_this.description,_this.categorie,_this.etat,_this.gouvernoratId,_this.villeId,_this.langueAnnonce,_this.cite,const DeepCollectionEquality().hash(_this.photos),_this.rue,_this.prix,_this.unite);
 }
 
 @override
 String toString() {
   final _this = this as BrouillonObjet;
-  return 'BrouillonObjet(titre: ${_this.titre}, description: ${_this.description}, categorie: ${_this.categorie}, etat: ${_this.etat}, gouvernoratId: ${_this.gouvernoratId}, villeId: ${_this.villeId}, langueAnnonce: ${_this.langueAnnonce}, cite: ${_this.cite}, photos: ${_this.photos}, rue: ${_this.rue})';
+  return 'BrouillonObjet(titre: ${_this.titre}, description: ${_this.description}, categorie: ${_this.categorie}, etat: ${_this.etat}, gouvernoratId: ${_this.gouvernoratId}, villeId: ${_this.villeId}, langueAnnonce: ${_this.langueAnnonce}, cite: ${_this.cite}, photos: ${_this.photos}, rue: ${_this.rue}, prix: ${_this.prix}, unite: ${_this.unite})';
 }
 
 
@@ -357,7 +363,7 @@ abstract mixin class $BrouillonObjetCopyWith<$Res>  {
   factory $BrouillonObjetCopyWith(BrouillonObjet value, $Res Function(BrouillonObjet) _then) = _$BrouillonObjetCopyWithImpl;
 @useResult
 $Res call({
- String titre, String description, CategorieObjet categorie, EtatObjet etat, String gouvernoratId, String villeId, String langueAnnonce, String cite, List<String> photos, String? rue
+ String titre, String description, CategorieObjet categorie, EtatObjet etat, String gouvernoratId, String villeId, String langueAnnonce, String cite, List<String> photos, String? rue, double? prix, UniteTarif? unite
 });
 
 
@@ -374,7 +380,7 @@ class _$BrouillonObjetCopyWithImpl<$Res>
 
 /// Create a copy of BrouillonObjet
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? titre = null,Object? description = null,Object? categorie = null,Object? etat = null,Object? gouvernoratId = null,Object? villeId = null,Object? langueAnnonce = null,Object? cite = null,Object? photos = null,Object? rue = freezed,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? titre = null,Object? description = null,Object? categorie = null,Object? etat = null,Object? gouvernoratId = null,Object? villeId = null,Object? langueAnnonce = null,Object? cite = null,Object? photos = null,Object? rue = freezed,Object? prix = freezed,Object? unite = freezed,}) {
   return _then(BrouillonObjet(
 titre: null == titre ? _self.titre : titre // ignore: cast_nullable_to_non_nullable
 as String,description: null == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
@@ -386,7 +392,9 @@ as String,langueAnnonce: null == langueAnnonce ? _self.langueAnnonce : langueAnn
 as String,cite: null == cite ? _self.cite : cite // ignore: cast_nullable_to_non_nullable
 as String,photos: null == photos ? _self.photos : photos // ignore: cast_nullable_to_non_nullable
 as List<String>,rue: freezed == rue ? _self.rue : rue // ignore: cast_nullable_to_non_nullable
-as String?,
+as String?,prix: freezed == prix ? _self.prix : prix // ignore: cast_nullable_to_non_nullable
+as double?,unite: freezed == unite ? _self.unite : unite // ignore: cast_nullable_to_non_nullable
+as UniteTarif?,
   ));
 }
 
@@ -471,10 +479,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  String cite,  List<String> photos,  String? rue)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  String cite,  List<String> photos,  String? rue,  double? prix,  UniteTarif? unite)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _BrouillonObjet() when $default != null:
-return $default(_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.cite,_that.photos,_that.rue);case _:
+return $default(_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.cite,_that.photos,_that.rue,_that.prix,_that.unite);case _:
   return orElse();
 
 }
@@ -492,10 +500,10 @@ return $default(_that.titre,_that.description,_that.categorie,_that.etat,_that.g
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  String cite,  List<String> photos,  String? rue)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  String cite,  List<String> photos,  String? rue,  double? prix,  UniteTarif? unite)  $default,) {final _that = this;
 switch (_that) {
 case _BrouillonObjet():
-return $default(_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.cite,_that.photos,_that.rue);case _:
+return $default(_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.cite,_that.photos,_that.rue,_that.prix,_that.unite);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -512,10 +520,10 @@ return $default(_that.titre,_that.description,_that.categorie,_that.etat,_that.g
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  String cite,  List<String> photos,  String? rue)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String titre,  String description,  CategorieObjet categorie,  EtatObjet etat,  String gouvernoratId,  String villeId,  String langueAnnonce,  String cite,  List<String> photos,  String? rue,  double? prix,  UniteTarif? unite)?  $default,) {final _that = this;
 switch (_that) {
 case _BrouillonObjet() when $default != null:
-return $default(_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.cite,_that.photos,_that.rue);case _:
+return $default(_that.titre,_that.description,_that.categorie,_that.etat,_that.gouvernoratId,_that.villeId,_that.langueAnnonce,_that.cite,_that.photos,_that.rue,_that.prix,_that.unite);case _:
   return null;
 
 }
@@ -527,7 +535,7 @@ return $default(_that.titre,_that.description,_that.categorie,_that.etat,_that.g
 
 
 class _BrouillonObjet implements BrouillonObjet {
-  const _BrouillonObjet({required this.titre, required this.description, required this.categorie, required this.etat, required this.gouvernoratId, required this.villeId, required this.langueAnnonce, required this.cite,  List<String> photos = const <String>[], this.rue}): _photos = photos;
+  const _BrouillonObjet({required this.titre, required this.description, required this.categorie, required this.etat, required this.gouvernoratId, required this.villeId, required this.langueAnnonce, required this.cite,  List<String> photos = const <String>[], this.rue, this.prix, this.unite}): _photos = photos;
   
 
 @override final  String titre;
@@ -546,6 +554,8 @@ class _BrouillonObjet implements BrouillonObjet {
 }
 
 @override final  String? rue;
+@override final  double? prix;
+@override final  UniteTarif? unite;
 
 /// Create a copy of BrouillonObjet
 /// with the given fields replaced by the non-null parameter values.
@@ -557,18 +567,18 @@ _$BrouillonObjetCopyWith<_BrouillonObjet> get copyWith => __$BrouillonObjetCopyW
 
 @override
 bool operator ==(Object other) {
-    return identical(this, other) || (other.runtimeType == runtimeType&&other is _BrouillonObjet&&(identical(other.titre, titre) || other.titre == titre)&&(identical(other.description, description) || other.description == description)&&(identical(other.categorie, categorie) || other.categorie == categorie)&&(identical(other.etat, etat) || other.etat == etat)&&(identical(other.gouvernoratId, gouvernoratId) || other.gouvernoratId == gouvernoratId)&&(identical(other.villeId, villeId) || other.villeId == villeId)&&(identical(other.langueAnnonce, langueAnnonce) || other.langueAnnonce == langueAnnonce)&&(identical(other.cite, cite) || other.cite == cite)&&const DeepCollectionEquality().equals(other.photos, _photos)&&(identical(other.rue, rue) || other.rue == rue));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is _BrouillonObjet&&(identical(other.titre, titre) || other.titre == titre)&&(identical(other.description, description) || other.description == description)&&(identical(other.categorie, categorie) || other.categorie == categorie)&&(identical(other.etat, etat) || other.etat == etat)&&(identical(other.gouvernoratId, gouvernoratId) || other.gouvernoratId == gouvernoratId)&&(identical(other.villeId, villeId) || other.villeId == villeId)&&(identical(other.langueAnnonce, langueAnnonce) || other.langueAnnonce == langueAnnonce)&&(identical(other.cite, cite) || other.cite == cite)&&const DeepCollectionEquality().equals(other.photos, _photos)&&(identical(other.rue, rue) || other.rue == rue)&&(identical(other.prix, prix) || other.prix == prix)&&(identical(other.unite, unite) || other.unite == unite));
 }
 
 
 @override
 int get hashCode {
-    return Object.hash(runtimeType,titre,description,categorie,etat,gouvernoratId,villeId,langueAnnonce,cite,const DeepCollectionEquality().hash(_photos),rue);
+    return Object.hash(runtimeType,titre,description,categorie,etat,gouvernoratId,villeId,langueAnnonce,cite,const DeepCollectionEquality().hash(_photos),rue,prix,unite);
 }
 
 @override
 String toString() {
-    return 'BrouillonObjet(titre: $titre, description: $description, categorie: $categorie, etat: $etat, gouvernoratId: $gouvernoratId, villeId: $villeId, langueAnnonce: $langueAnnonce, cite: $cite, photos: $photos, rue: $rue)';
+    return 'BrouillonObjet(titre: $titre, description: $description, categorie: $categorie, etat: $etat, gouvernoratId: $gouvernoratId, villeId: $villeId, langueAnnonce: $langueAnnonce, cite: $cite, photos: $photos, rue: $rue, prix: $prix, unite: $unite)';
 }
 
 
@@ -579,7 +589,7 @@ abstract mixin class _$BrouillonObjetCopyWith<$Res> implements $BrouillonObjetCo
   factory _$BrouillonObjetCopyWith(_BrouillonObjet value, $Res Function(_BrouillonObjet) _then) = __$BrouillonObjetCopyWithImpl;
 @override @useResult
 $Res call({
- String titre, String description, CategorieObjet categorie, EtatObjet etat, String gouvernoratId, String villeId, String langueAnnonce, String cite, List<String> photos, String? rue
+ String titre, String description, CategorieObjet categorie, EtatObjet etat, String gouvernoratId, String villeId, String langueAnnonce, String cite, List<String> photos, String? rue, double? prix, UniteTarif? unite
 });
 
 
@@ -596,7 +606,7 @@ class __$BrouillonObjetCopyWithImpl<$Res>
 
 /// Create a copy of BrouillonObjet
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? titre = null,Object? description = null,Object? categorie = null,Object? etat = null,Object? gouvernoratId = null,Object? villeId = null,Object? langueAnnonce = null,Object? cite = null,Object? photos = null,Object? rue = freezed,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? titre = null,Object? description = null,Object? categorie = null,Object? etat = null,Object? gouvernoratId = null,Object? villeId = null,Object? langueAnnonce = null,Object? cite = null,Object? photos = null,Object? rue = freezed,Object? prix = freezed,Object? unite = freezed,}) {
   return _then(_BrouillonObjet(
 titre: null == titre ? _self.titre : titre // ignore: cast_nullable_to_non_nullable
 as String,description: null == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
@@ -608,7 +618,9 @@ as String,langueAnnonce: null == langueAnnonce ? _self.langueAnnonce : langueAnn
 as String,cite: null == cite ? _self.cite : cite // ignore: cast_nullable_to_non_nullable
 as String,photos: null == photos ? _self._photos : photos // ignore: cast_nullable_to_non_nullable
 as List<String>,rue: freezed == rue ? _self.rue : rue // ignore: cast_nullable_to_non_nullable
-as String?,
+as String?,prix: freezed == prix ? _self.prix : prix // ignore: cast_nullable_to_non_nullable
+as double?,unite: freezed == unite ? _self.unite : unite // ignore: cast_nullable_to_non_nullable
+as UniteTarif?,
   ));
 }
 

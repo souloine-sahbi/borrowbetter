@@ -1,8 +1,8 @@
 // freezed écrit le nom de la classe dans ses constructeurs factory.
 // ignore_for_file: unnecessary_type_name_in_constructor
 
+import 'package:borrowbetter/src/features/objets/domain/unite_tarif.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-
 part 'objet.freezed.dart';
 
 enum CategorieObjet {
@@ -36,6 +36,8 @@ abstract class Objet with _$Objet {
     required StatutObjet statut,
     required DateTime creeLe,
     @Default(<String>[]) List<String> photos,
+    double? prix,
+    UniteTarif? unite,
   }) = _Objet;
 }
 
@@ -55,5 +57,7 @@ abstract class BrouillonObjet with _$BrouillonObjet {
     required String cite,
     @Default(<String>[]) List<String> photos,
     String? rue,
+    double? prix,
+    UniteTarif? unite,
   }) = _BrouillonObjet;
 }
