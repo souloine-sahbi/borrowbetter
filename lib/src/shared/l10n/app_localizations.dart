@@ -627,6 +627,48 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Terminer'**
   String get rechercheTerminer;
+
+  /// No description provided for @profilTitre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Profil'**
+  String get profilTitre;
+
+  /// No description provided for @profilModifier.
+  ///
+  /// In fr, this message translates to:
+  /// **'Modifier le profil'**
+  String get profilModifier;
+
+  /// No description provided for @profilChangerPhoto.
+  ///
+  /// In fr, this message translates to:
+  /// **'Changer la photo'**
+  String get profilChangerPhoto;
+
+  /// No description provided for @profilEnregistrer.
+  ///
+  /// In fr, this message translates to:
+  /// **'Enregistrer'**
+  String get profilEnregistrer;
+
+  /// No description provided for @profilEchec.
+  ///
+  /// In fr, this message translates to:
+  /// **'Enregistrement impossible. Réessayez.'**
+  String get profilEchec;
+
+  /// No description provided for @profilLieu.
+  ///
+  /// In fr, this message translates to:
+  /// **'Zone'**
+  String get profilLieu;
+
+  /// No description provided for @profilLieuVide.
+  ///
+  /// In fr, this message translates to:
+  /// **'Non renseignée'**
+  String get profilLieuVide;
 }
 
 class _AppLocalizationsDelegate

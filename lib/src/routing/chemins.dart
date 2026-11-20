@@ -6,6 +6,8 @@ abstract final class Chemins {
   static const inscription = '/inscription';
   static const splash = '/splash';
   static const nouvelObjet = '/objets/nouveau';
+  static const profil = '/profil';
+  static const modifierProfil = '/profil/modifier';
 
   /// Modèle de route : l'identifiant fait partie de l'adresse.
   static const objet = '/objet/:id';

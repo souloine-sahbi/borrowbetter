@@ -100,5 +100,12 @@
   "rechercheToutes": "Tout",
   "rechercheFiltres": "Filtres",
   "rechercheReinitialiser": "Réinitialiser le lieu",
-  "rechercheTerminer": "Terminer"
+  "rechercheTerminer": "Terminer",
+  "profilTitre": "Profil",
+  "profilModifier": "Modifier le profil",
+  "profilChangerPhoto": "Changer la photo",
+  "profilEnregistrer": "Enregistrer",
+  "profilEchec": "Enregistrement impossible. Réessayez.",
+  "profilLieu": "Zone",
+  "profilLieuVide": "Non renseignée"
 }

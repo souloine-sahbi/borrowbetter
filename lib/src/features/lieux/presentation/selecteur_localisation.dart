@@ -55,6 +55,7 @@ class SelecteurLocalisation extends ConsumerWidget {
         return Column(
           children: [
             DropdownButtonFormField<String>(
+              key: ValueKey(gouvernoratId),
               initialValue: gouvernoratId,
               isExpanded: true,
               decoration: _decoration(
@@ -73,7 +74,7 @@ class SelecteurLocalisation extends ConsumerWidget {
             ),
             const SizedBox(height: Espacements.m),
             DropdownButtonFormField<String>(
-              key: ValueKey(gouvernoratId),
+              key: ValueKey('$gouvernoratId-$villeId'),
               initialValue: villeId,
               isExpanded: true,
               decoration: _decoration(

@@ -6,6 +6,8 @@ import 'package:borrowbetter/src/features/objets/domain/objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/ecran_detail_objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/ecran_nouvel_objet.dart';
 import 'package:borrowbetter/src/features/parametres/presentation/ecran_parametres.dart';
+import 'package:borrowbetter/src/features/profil/presentation/ecran_modifier_profil.dart';
+import 'package:borrowbetter/src/features/profil/presentation/ecran_profil.dart';
 import 'package:borrowbetter/src/features/recherche/presentation/ecran_recherche.dart';
 import 'package:borrowbetter/src/features/splash/presentation/ecran_splash.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
@@ -46,6 +48,14 @@ final routeurProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: Chemins.inscription,
         builder: (context, state) => const EcranInscription(),
+      ),
+      GoRoute(
+        path: Chemins.profil,
+        builder: (context, state) => const EcranProfil(),
+      ),
+      GoRoute(
+        path: Chemins.modifierProfil,
+        builder: (context, state) => const EcranModifierProfil(),
       ),
       GoRoute(
         path: Chemins.nouvelObjet,
