@@ -129,5 +129,8 @@
   "uniteJour": "day",
   "uniteSemaine": "week",
   "uniteMois": "month",
-  "tarifPrixUnite": "{prix} DT / {unite}"
+  "tarifPrixUnite": "{prix} DT / {unite}",
+  "objetModifierTitre": "Edit item",
+  "objetModifier": "Edit",
+  "objetEchecModification": "Could not save changes. Please try again."
 }

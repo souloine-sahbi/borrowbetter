@@ -365,4 +365,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String tarifPrixUnite(String prix, String unite) {
     return '$prix DT / $unite';
   }
+
+  @override
+  String get objetModifierTitre => 'Edit item';
+
+  @override
+  String get objetModifier => 'Edit';
+
+  @override
+  String get objetEchecModification =>
+      'Could not save changes. Please try again.';
 }

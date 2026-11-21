@@ -795,6 +795,24 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'{prix} DT / {unite}'**
   String tarifPrixUnite(String prix, String unite);
+
+  /// No description provided for @objetModifierTitre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Modifier l\'objet'**
+  String get objetModifierTitre;
+
+  /// No description provided for @objetModifier.
+  ///
+  /// In fr, this message translates to:
+  /// **'Modifier'**
+  String get objetModifier;
+
+  /// No description provided for @objetEchecModification.
+  ///
+  /// In fr, this message translates to:
+  /// **'Modification impossible. Réessayez.'**
+  String get objetEchecModification;
 }
 
 class _AppLocalizationsDelegate

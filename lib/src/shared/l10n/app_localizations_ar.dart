@@ -364,4 +364,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String tarifPrixUnite(String prix, String unite) {
     return '$prix د.ت / $unite';
   }
+
+  @override
+  String get objetModifierTitre => 'تعديل الغرض';
+
+  @override
+  String get objetModifier => 'تعديل';
+
+  @override
+  String get objetEchecModification => 'تعذر حفظ التعديلات. حاول مرة أخرى.';
 }
