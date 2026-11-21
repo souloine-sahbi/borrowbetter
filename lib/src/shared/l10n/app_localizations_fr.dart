@@ -390,4 +390,58 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get traductionReessayer => 'Réessayer';
+
+  @override
+  String get signalementTitre => 'Signaler';
+
+  @override
+  String get signalementSignaler => 'Signaler cet objet';
+
+  @override
+  String get signalementMotif => 'Motif';
+
+  @override
+  String get signalementDescription => 'Description';
+
+  @override
+  String get signalementQuestion => 'Pourquoi signalez-vous cet objet ?';
+
+  @override
+  String get signalementDetails => 'Détails (facultatif)';
+
+  @override
+  String get signalementDetailsAutre => 'Précisez le motif';
+
+  @override
+  String get signalementEnvoyer => 'Envoyer le signalement';
+
+  @override
+  String get signalementMerci => 'Merci, votre signalement a été envoyé.';
+
+  @override
+  String get signalementEchec => 'Envoi impossible. Réessayez.';
+
+  @override
+  String get signalementMotifObligatoire => 'Choisissez un motif';
+
+  @override
+  String get signalementDescriptionCourte => '10 caractères minimum';
+
+  @override
+  String get signalementDescriptionLongue => '500 caractères maximum';
+
+  @override
+  String get motifContenu => 'Contenu inapproprié';
+
+  @override
+  String get motifArnaque => 'Arnaque ou fraude';
+
+  @override
+  String get motifInexistant => 'Objet inexistant ou trompeur';
+
+  @override
+  String get motifComportement => 'Comportement problématique';
+
+  @override
+  String get motifAutre => 'Autre';
 }

@@ -391,4 +391,58 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get traductionReessayer => 'Retry';
+
+  @override
+  String get signalementTitre => 'Report';
+
+  @override
+  String get signalementSignaler => 'Report this item';
+
+  @override
+  String get signalementMotif => 'Reason';
+
+  @override
+  String get signalementDescription => 'Description';
+
+  @override
+  String get signalementQuestion => 'Why are you reporting this item?';
+
+  @override
+  String get signalementDetails => 'Details (optional)';
+
+  @override
+  String get signalementDetailsAutre => 'Please describe the reason';
+
+  @override
+  String get signalementEnvoyer => 'Send report';
+
+  @override
+  String get signalementMerci => 'Thank you, your report has been sent.';
+
+  @override
+  String get signalementEchec => 'Could not send. Please try again.';
+
+  @override
+  String get signalementMotifObligatoire => 'Choose a reason';
+
+  @override
+  String get signalementDescriptionCourte => '10 characters minimum';
+
+  @override
+  String get signalementDescriptionLongue => '500 characters maximum';
+
+  @override
+  String get motifContenu => 'Inappropriate content';
+
+  @override
+  String get motifArnaque => 'Scam or fraud';
+
+  @override
+  String get motifInexistant => 'Item missing or misleading';
+
+  @override
+  String get motifComportement => 'Problematic behavior';
+
+  @override
+  String get motifAutre => 'Other';
 }

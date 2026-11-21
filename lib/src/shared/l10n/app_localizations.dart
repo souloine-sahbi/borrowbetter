@@ -843,6 +843,114 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Réessayer'**
   String get traductionReessayer;
+
+  /// No description provided for @signalementTitre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Signaler'**
+  String get signalementTitre;
+
+  /// No description provided for @signalementSignaler.
+  ///
+  /// In fr, this message translates to:
+  /// **'Signaler cet objet'**
+  String get signalementSignaler;
+
+  /// No description provided for @signalementMotif.
+  ///
+  /// In fr, this message translates to:
+  /// **'Motif'**
+  String get signalementMotif;
+
+  /// No description provided for @signalementDescription.
+  ///
+  /// In fr, this message translates to:
+  /// **'Description'**
+  String get signalementDescription;
+
+  /// No description provided for @signalementQuestion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Pourquoi signalez-vous cet objet ?'**
+  String get signalementQuestion;
+
+  /// No description provided for @signalementDetails.
+  ///
+  /// In fr, this message translates to:
+  /// **'Détails (facultatif)'**
+  String get signalementDetails;
+
+  /// No description provided for @signalementDetailsAutre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Précisez le motif'**
+  String get signalementDetailsAutre;
+
+  /// No description provided for @signalementEnvoyer.
+  ///
+  /// In fr, this message translates to:
+  /// **'Envoyer le signalement'**
+  String get signalementEnvoyer;
+
+  /// No description provided for @signalementMerci.
+  ///
+  /// In fr, this message translates to:
+  /// **'Merci, votre signalement a été envoyé.'**
+  String get signalementMerci;
+
+  /// No description provided for @signalementEchec.
+  ///
+  /// In fr, this message translates to:
+  /// **'Envoi impossible. Réessayez.'**
+  String get signalementEchec;
+
+  /// No description provided for @signalementMotifObligatoire.
+  ///
+  /// In fr, this message translates to:
+  /// **'Choisissez un motif'**
+  String get signalementMotifObligatoire;
+
+  /// No description provided for @signalementDescriptionCourte.
+  ///
+  /// In fr, this message translates to:
+  /// **'10 caractères minimum'**
+  String get signalementDescriptionCourte;
+
+  /// No description provided for @signalementDescriptionLongue.
+  ///
+  /// In fr, this message translates to:
+  /// **'500 caractères maximum'**
+  String get signalementDescriptionLongue;
+
+  /// No description provided for @motifContenu.
+  ///
+  /// In fr, this message translates to:
+  /// **'Contenu inapproprié'**
+  String get motifContenu;
+
+  /// No description provided for @motifArnaque.
+  ///
+  /// In fr, this message translates to:
+  /// **'Arnaque ou fraude'**
+  String get motifArnaque;
+
+  /// No description provided for @motifInexistant.
+  ///
+  /// In fr, this message translates to:
+  /// **'Objet inexistant ou trompeur'**
+  String get motifInexistant;
+
+  /// No description provided for @motifComportement.
+  ///
+  /// In fr, this message translates to:
+  /// **'Comportement problématique'**
+  String get motifComportement;
+
+  /// No description provided for @motifAutre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Autre'**
+  String get motifAutre;
 }
 
 class _AppLocalizationsDelegate

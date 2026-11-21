@@ -7,6 +7,8 @@ import 'package:borrowbetter/src/features/objets/presentation/galerie_photos.dar
 import 'package:borrowbetter/src/features/objets/presentation/libelle_tarif.dart';
 import 'package:borrowbetter/src/features/objets/presentation/libelles_objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/objets_providers.dart';
+import 'package:borrowbetter/src/features/signalement/domain/signalement.dart';
+import 'package:borrowbetter/src/features/signalement/presentation/feuille_signalement.dart';
 import 'package:borrowbetter/src/features/traduction/presentation/bloc_traduction.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
@@ -231,6 +233,17 @@ class _PageObjet extends ConsumerWidget {
                                 content: Text(textes.objetDemanderBientot),
                               ),
                             ),
+                      ),
+                      TextButton.icon(
+                        onPressed: () async {
+                          await afficherSignalement(
+                            context,
+                            cible: CibleSignalement.objet,
+                            cibleId: objet.id,
+                          );
+                        },
+                        icon: const Icon(Icons.flag_outlined),
+                        label: Text(textes.signalementSignaler),
                       ),
                     ],
                   ],

@@ -4,11 +4,14 @@ import 'package:borrowbetter/src/features/auth/presentation/ecran_connexion.dart
 import 'package:borrowbetter/src/features/auth/presentation/ecran_inscription.dart';
 import 'package:borrowbetter/src/features/objets/domain/objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/ecran_detail_objet.dart';
+import 'package:borrowbetter/src/features/objets/presentation/ecran_modifier_objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/ecran_nouvel_objet.dart';
 import 'package:borrowbetter/src/features/parametres/presentation/ecran_parametres.dart';
 import 'package:borrowbetter/src/features/profil/presentation/ecran_modifier_profil.dart';
 import 'package:borrowbetter/src/features/profil/presentation/ecran_profil.dart';
 import 'package:borrowbetter/src/features/recherche/presentation/ecran_recherche.dart';
+import 'package:borrowbetter/src/features/signalement/domain/signalement.dart';
+import 'package:borrowbetter/src/features/signalement/presentation/ecran_signalement.dart';
 import 'package:borrowbetter/src/features/splash/presentation/ecran_splash.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/routing/coquille_navigation.dart';
@@ -64,6 +67,11 @@ final routeurProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const EcranModifierProfil(),
       ),
       GoRoute(
+        path: Chemins.modifierObjet,
+        builder: (context, state) =>
+            EcranModifierObjet(id: state.pathParameters['id']!),
+      ),
+      GoRoute(
         path: Chemins.objet,
         builder: (context, state) {
           // `extra` n'est qu'une optimisation : perdu sur un lien profond,
@@ -74,6 +82,20 @@ final routeurProvider = Provider<GoRouter>((ref) {
             objetInitial: extra is Objet ? extra : null,
           );
         },
+      ),
+      GoRoute(
+        path: Chemins.signalement,
+        redirect: (context, state) =>
+            (state.uri.queryParameters['id'] ?? '').isEmpty
+            ? Chemins.accueil
+            : null,
+        builder: (context, state) => EcranSignalement(
+          cible:
+              CibleSignalement.values
+                  .asNameMap()[state.uri.queryParameters['type']] ??
+              CibleSignalement.objet,
+          cibleId: state.uri.queryParameters['id']!,
+        ),
       ),
       StatefulShellRoute.indexedStack(
         builder: (context, state, coquille) =>
