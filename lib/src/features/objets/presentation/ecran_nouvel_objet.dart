@@ -1,3 +1,6 @@
+﻿import 'package:borrowbetter/src/features/ai/domain/suggestion_annonce.dart';
+import 'package:borrowbetter/src/features/ai/presentation/bandeau_suggestion_ia.dart';
+import 'package:borrowbetter/src/features/ai/presentation/bouton_suggestion_ia.dart';
 import 'package:borrowbetter/src/features/auth/data/depot_auth.dart';
 import 'package:borrowbetter/src/features/auth/presentation/decoration_champ.dart';
 import 'package:borrowbetter/src/features/auth/presentation/validateurs.dart';
@@ -32,6 +35,7 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
   final _cite = TextEditingController();
   final _rue = TextEditingController();
   var _gratuit = true;
+  var _suggestionIA = false;
   final _prix = TextEditingController();
   UniteTarif? _unite;
   CategorieObjet? _categorie;
@@ -41,6 +45,18 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
   var _photos = <String>[];
   var _enChargement = false;
   String? _erreur;
+
+  void _appliquerSuggestion(SuggestionAnnonce suggestion) {
+    setState(() {
+      _titre.text = suggestion.titre;
+      _description.text = suggestion.description;
+      if (suggestion.categorie != null) {
+        _categorie = suggestion.categorie;
+      }
+      if (suggestion.etat != null) _etat = suggestion.etat;
+      _suggestionIA = true;
+    });
+  }
 
   @override
   void dispose() {
@@ -103,6 +119,7 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
   @override
   Widget build(BuildContext context) {
     final textes = AppLocalizations.of(context);
+    final langueAnnonce = Localizations.localeOf(context).languageCode;
     final erreur = _erreur;
     return Scaffold(
       appBar: AppBar(title: Text(textes.objetNouveau)),
@@ -124,6 +141,7 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
                   ),
                   const SizedBox(height: Espacements.m),
                   DropdownButtonFormField<CategorieObjet>(
+                    key: ValueKey(_categorie),
                     initialValue: _categorie,
                     isExpanded: true,
                     decoration: decorationChamp(
@@ -143,6 +161,7 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
                   ),
                   const SizedBox(height: Espacements.m),
                   DropdownButtonFormField<EtatObjet>(
+                    key: ValueKey(_etat),
                     initialValue: _etat,
                     isExpanded: true,
                     decoration: decorationChamp(
@@ -186,6 +205,21 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
                     onChanged: (chemins) => setState(() => _photos = chemins),
                   ),
                   const SizedBox(height: Espacements.m),
+                  BoutonSuggestionIA(
+                    cheminPhoto: _photos.isEmpty ? null : _photos.first,
+                    langue: langueAnnonce,
+                    onSuggestion: _appliquerSuggestion,
+                  ),
+                  AnimatedOpacity(
+                    opacity: _suggestionIA ? 1 : 0,
+                    duration: const Duration(milliseconds: 250),
+                    child: _suggestionIA
+                        ? const Padding(
+                            padding: EdgeInsets.only(top: Espacements.s),
+                            child: BandeauSuggestionIA(),
+                          )
+                        : const SizedBox.shrink(),
+                  ),
                   SelecteurLocalisation(
                     gouvernoratId: _gouvernorat,
                     villeId: _ville,

@@ -160,5 +160,14 @@
   "motifArnaque": "Arnaque ou fraude",
   "motifInexistant": "Objet inexistant ou trompeur",
   "motifComportement": "Comportement problématique",
-  "motifAutre": "Autre"
+  "motifAutre": "Autre",
+  "iaBouton": "Remplir à partir de la photo",
+  "iaPhotoRequise": "Ajoutez d'abord une photo",
+  "iaIndice": "Quelques mots (facultatif)",
+  "iaBandeau": "Suggestion IA, à vérifier avant de publier",
+  "iaConfidTitre": "Analyse de la photo",
+  "iaConfidTexte": "La photo est envoyée à Google (Gemini) pour proposer une fiche. Vous pouvez tout modifier avant de publier. Ce bouton est facultatif.",
+  "iaAccepter": "Continuer",
+  "iaRefuser": "Annuler",
+  "iaEchec": "Suggestion indisponible. Remplissez la fiche à la main."
 }

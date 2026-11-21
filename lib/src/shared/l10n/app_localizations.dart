@@ -951,6 +951,60 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Autre'**
   String get motifAutre;
+
+  /// No description provided for @iaBouton.
+  ///
+  /// In fr, this message translates to:
+  /// **'Remplir à partir de la photo'**
+  String get iaBouton;
+
+  /// No description provided for @iaPhotoRequise.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ajoutez d\'abord une photo'**
+  String get iaPhotoRequise;
+
+  /// No description provided for @iaIndice.
+  ///
+  /// In fr, this message translates to:
+  /// **'Quelques mots (facultatif)'**
+  String get iaIndice;
+
+  /// No description provided for @iaBandeau.
+  ///
+  /// In fr, this message translates to:
+  /// **'Suggestion IA, à vérifier avant de publier'**
+  String get iaBandeau;
+
+  /// No description provided for @iaConfidTitre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Analyse de la photo'**
+  String get iaConfidTitre;
+
+  /// No description provided for @iaConfidTexte.
+  ///
+  /// In fr, this message translates to:
+  /// **'La photo est envoyée à Google (Gemini) pour proposer une fiche. Vous pouvez tout modifier avant de publier. Ce bouton est facultatif.'**
+  String get iaConfidTexte;
+
+  /// No description provided for @iaAccepter.
+  ///
+  /// In fr, this message translates to:
+  /// **'Continuer'**
+  String get iaAccepter;
+
+  /// No description provided for @iaRefuser.
+  ///
+  /// In fr, this message translates to:
+  /// **'Annuler'**
+  String get iaRefuser;
+
+  /// No description provided for @iaEchec.
+  ///
+  /// In fr, this message translates to:
+  /// **'Suggestion indisponible. Remplissez la fiche à la main.'**
+  String get iaEchec;
 }
 
 class _AppLocalizationsDelegate
