@@ -1,3 +1,4 @@
+import 'package:borrowbetter/src/features/objets/domain/adresse_privee.dart';
 import 'package:borrowbetter/src/features/objets/domain/depot_objets.dart';
 import 'package:borrowbetter/src/features/objets/domain/objet.dart';
 import 'package:borrowbetter/src/features/objets/domain/unite_tarif.dart';
@@ -89,6 +90,53 @@ class DepotObjetsFirestore implements DepotObjets {
 
       await lot.commit();
       return reference.id;
+    } on FirebaseException catch (e, trace) {
+      Error.throwWithStackTrace(traduireFirebase(e), trace);
+    }
+  }
+
+  @override
+  Future<void> modifier(String id, BrouillonObjet brouillon) async {
+    try {
+      final reference = _objets.doc(id);
+      final lot = _firestore.batch()
+        ..update(reference, {
+          'titre': brouillon.titre,
+          'description': brouillon.description,
+          'categorie': brouillon.categorie.name,
+          'etat': brouillon.etat.name,
+          'gouvernoratId': brouillon.gouvernoratId,
+          'villeId': brouillon.villeId,
+          'langueAnnonce': brouillon.langueAnnonce,
+          'photos': brouillon.photos,
+          'prix': brouillon.prix,
+          'unite': brouillon.unite?.name,
+          'modifieLe': FieldValue.serverTimestamp(),
+        })
+        ..set(reference.collection('prive').doc('adresse'), {
+          'cite': brouillon.cite,
+          'rue': brouillon.rue,
+        });
+      await lot.commit();
+    } on FirebaseException catch (e, trace) {
+      Error.throwWithStackTrace(traduireFirebase(e), trace);
+    }
+  }
+
+  @override
+  Future<AdressePrivee?> lireAdresse(String id) async {
+    try {
+      final doc = await _objets
+          .doc(id)
+          .collection('prive')
+          .doc('adresse')
+          .get();
+      final donnees = doc.data();
+      if (donnees == null) return null;
+      return (
+        cite: donnees['cite'] as String? ?? '',
+        rue: donnees['rue'] as String? ?? '',
+      );
     } on FirebaseException catch (e, trace) {
       Error.throwWithStackTrace(traduireFirebase(e), trace);
     }

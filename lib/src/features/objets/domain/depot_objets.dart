@@ -1,3 +1,4 @@
+import 'package:borrowbetter/src/features/objets/domain/adresse_privee.dart';
 import 'package:borrowbetter/src/features/objets/domain/objet.dart';
 
 abstract interface class DepotObjets {
@@ -18,4 +19,11 @@ abstract interface class DepotObjets {
     required String proprietaireId,
     required String proprietaireNom,
   });
+
+  /// Met à jour les champs modifiables. Le propriétaire, la date de création
+  /// et le statut ne changent jamais ici.
+  Future<void> modifier(String id, BrouillonObjet brouillon);
+
+  /// Adresse détaillée (réservée au propriétaire pour l'instant).
+  Future<AdressePrivee?> lireAdresse(String id);
 }
