@@ -134,5 +134,8 @@
       "prix": { "type": "String" },
       "unite": { "type": "String" }
     }
-  }
+  },
+  "objetModifierTitre": "Modifier l'objet",
+  "objetModifier": "Modifier",
+  "objetEchecModification": "Modification impossible. Réessayez."
 }

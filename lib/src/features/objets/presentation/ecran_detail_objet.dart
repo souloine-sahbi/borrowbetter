@@ -7,6 +7,7 @@ import 'package:borrowbetter/src/features/objets/presentation/galerie_photos.dar
 import 'package:borrowbetter/src/features/objets/presentation/libelle_tarif.dart';
 import 'package:borrowbetter/src/features/objets/presentation/libelles_objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/objets_providers.dart';
+import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/presentation/message_pour.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
@@ -91,7 +92,7 @@ class _PageObjet extends ConsumerWidget {
       langue: langue,
     );
     final estProprietaire =
-        ref.read(depotAuthProvider).utilisateur?.uid == objet.proprietaireId;
+        objet.proprietaireId == ref.watch(etatAuthProvider).value?.uid;
 
     return Scaffold(
       body: CustomScrollView(
@@ -165,12 +166,26 @@ class _PageObjet extends ConsumerWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      objet.titre,
-                      style: theme.textTheme.titleLarge?.copyWith(
-                        color: scheme.primary,
-                        fontWeight: FontWeight.w700,
-                      ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            objet.titre,
+                            style: theme.textTheme.titleLarge?.copyWith(
+                              color: scheme.primary,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                        if (estProprietaire)
+                          IconButton(
+                            tooltip: textes.objetModifier,
+                            color: scheme.primary,
+                            icon: const Icon(Icons.edit_outlined),
+                            onPressed: () =>
+                                context.push(Chemins.editerObjet(objet.id)),
+                          ),
+                      ],
                     ),
                     const SizedBox(height: Espacements.s),
                     Text(

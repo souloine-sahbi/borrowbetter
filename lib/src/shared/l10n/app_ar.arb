@@ -129,5 +129,8 @@
   "uniteJour": "يوم",
   "uniteSemaine": "أسبوع",
   "uniteMois": "شهر",
-  "tarifPrixUnite": "{prix} د.ت / {unite}"
+  "tarifPrixUnite": "{prix} د.ت / {unite}",
+  "objetModifierTitre": "تعديل الغرض",
+  "objetModifier": "تعديل",
+  "objetEchecModification": "تعذر حفظ التعديلات. حاول مرة أخرى."
 }
