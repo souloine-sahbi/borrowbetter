@@ -442,4 +442,32 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get motifAutre => 'أخرى';
+
+  @override
+  String get iaBouton => 'املأ من الصورة';
+
+  @override
+  String get iaPhotoRequise => 'أضف صورة أولًا';
+
+  @override
+  String get iaIndice => 'بضع كلمات (اختياري)';
+
+  @override
+  String get iaBandeau => 'اقتراح من الذكاء الاصطناعي، تحقق منه قبل النشر';
+
+  @override
+  String get iaConfidTitre => 'تحليل الصورة';
+
+  @override
+  String get iaConfidTexte =>
+      'تُرسل الصورة إلى Google (Gemini) لاقتراح بطاقة الغرض. يمكنك تعديل كل شيء قبل النشر. هذا الزر اختياري.';
+
+  @override
+  String get iaAccepter => 'متابعة';
+
+  @override
+  String get iaRefuser => 'إلغاء';
+
+  @override
+  String get iaEchec => 'الاقتراح غير متاح. املأ البطاقة يدويًا.';
 }

@@ -155,5 +155,14 @@
   "motifArnaque": "Scam or fraud",
   "motifInexistant": "Item missing or misleading",
   "motifComportement": "Problematic behavior",
-  "motifAutre": "Other"
+  "motifAutre": "Other",
+  "iaBouton": "Fill from the photo",
+  "iaPhotoRequise": "Add a photo first",
+  "iaIndice": "A few words (optional)",
+  "iaBandeau": "AI suggestion, please check before publishing",
+  "iaConfidTitre": "Photo analysis",
+  "iaConfidTexte": "The photo is sent to Google (Gemini) to suggest a listing. You can edit everything before publishing. This button is optional.",
+  "iaAccepter": "Continue",
+  "iaRefuser": "Cancel",
+  "iaEchec": "Suggestion unavailable. Please fill in the listing by hand."
 }

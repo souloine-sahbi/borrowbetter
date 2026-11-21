@@ -155,5 +155,14 @@
   "motifArnaque": "احتيال",
   "motifInexistant": "غرض غير موجود أو مضلل",
   "motifComportement": "سلوك مسيء",
-  "motifAutre": "أخرى"
+  "motifAutre": "أخرى",
+  "iaBouton": "املأ من الصورة",
+  "iaPhotoRequise": "أضف صورة أولًا",
+  "iaIndice": "بضع كلمات (اختياري)",
+  "iaBandeau": "اقتراح من الذكاء الاصطناعي، تحقق منه قبل النشر",
+  "iaConfidTitre": "تحليل الصورة",
+  "iaConfidTexte": "تُرسل الصورة إلى Google (Gemini) لاقتراح بطاقة الغرض. يمكنك تعديل كل شيء قبل النشر. هذا الزر اختياري.",
+  "iaAccepter": "متابعة",
+  "iaRefuser": "إلغاء",
+  "iaEchec": "الاقتراح غير متاح. املأ البطاقة يدويًا."
 }

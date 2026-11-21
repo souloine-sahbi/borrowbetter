@@ -444,4 +444,33 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get motifAutre => 'Autre';
+
+  @override
+  String get iaBouton => 'Remplir à partir de la photo';
+
+  @override
+  String get iaPhotoRequise => 'Ajoutez d\'abord une photo';
+
+  @override
+  String get iaIndice => 'Quelques mots (facultatif)';
+
+  @override
+  String get iaBandeau => 'Suggestion IA, à vérifier avant de publier';
+
+  @override
+  String get iaConfidTitre => 'Analyse de la photo';
+
+  @override
+  String get iaConfidTexte =>
+      'La photo est envoyée à Google (Gemini) pour proposer une fiche. Vous pouvez tout modifier avant de publier. Ce bouton est facultatif.';
+
+  @override
+  String get iaAccepter => 'Continuer';
+
+  @override
+  String get iaRefuser => 'Annuler';
+
+  @override
+  String get iaEchec =>
+      'Suggestion indisponible. Remplissez la fiche à la main.';
 }
