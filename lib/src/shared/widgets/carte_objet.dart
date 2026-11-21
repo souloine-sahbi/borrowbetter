@@ -1,3 +1,5 @@
+import 'package:borrowbetter/src/features/objets/domain/unite_tarif.dart';
+import 'package:borrowbetter/src/features/objets/presentation/libelle_tarif.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +19,8 @@ class CarteObjet extends StatelessWidget {
     required this.categorie,
     required this.etat,
     required this.zone,
+    this.prix,
+    this.unite,
     this.photoUrl,
     this.heroTag,
     this.onTap,
@@ -30,6 +34,8 @@ class CarteObjet extends StatelessWidget {
 
   /// Zone approximative, au format « Ville, Gouvernorat ».
   final String zone;
+  final double? prix;
+  final UniteTarif? unite;
   final String? photoUrl;
 
   /// Étiquette `Hero` (par exemple l'identifiant de l'objet). Sans valeur,
@@ -46,6 +52,8 @@ class CarteObjet extends StatelessWidget {
       categorie: categorie,
       etat: etat,
       zone: zone,
+      prix: prix,
+      unite: unite,
     );
     return Card(
       clipBehavior: Clip.antiAlias,
@@ -120,12 +128,16 @@ class _TexteObjet extends StatelessWidget {
     required this.categorie,
     required this.etat,
     required this.zone,
+    required this.prix,
+    required this.unite,
   });
 
   final String titre;
   final String categorie;
   final String etat;
   final String zone;
+  final double? prix;
+  final UniteTarif? unite;
 
   @override
   Widget build(BuildContext context) {
@@ -154,6 +166,12 @@ class _TexteObjet extends StatelessWidget {
           style: theme.textTheme.bodySmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
+        ),
+        Text(
+          libelleTarif(context, prix: prix, unite: unite),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: theme.textTheme.bodySmall,
         ),
       ],
     );

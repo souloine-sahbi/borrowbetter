@@ -1,3 +1,4 @@
+import 'package:borrowbetter/src/features/objets/domain/adresse_privee.dart';
 import 'package:borrowbetter/src/features/objets/domain/depot_objets.dart';
 import 'package:borrowbetter/src/features/objets/domain/objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/objets_providers.dart';
@@ -26,6 +27,12 @@ class _DepotFactice implements DepotObjets {
     required String proprietaireId,
     required String proprietaireNom,
   }) async => 'id';
+
+  @override
+  Future<void> modifier(String id, BrouillonObjet brouillon) async {}
+
+  @override
+  Future<AdressePrivee?> lireAdresse(String id) async => null;
 }
 
 final _objet = Objet(

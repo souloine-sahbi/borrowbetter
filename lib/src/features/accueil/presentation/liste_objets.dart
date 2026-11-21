@@ -41,6 +41,8 @@ class ListeObjets extends ConsumerWidget {
             titre: objet.titre,
             categorie: libelleCategorie(textes, objet.categorie),
             etat: libelleEtat(textes, objet.etat),
+            prix: objet.prix,
+            unite: objet.unite,
             zone: libelleZone(
               lieux,
               gouvernoratId: objet.gouvernoratId,
