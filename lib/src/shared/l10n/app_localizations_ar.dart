@@ -388,4 +388,58 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get traductionReessayer => 'إعادة المحاولة';
+
+  @override
+  String get signalementTitre => 'إبلاغ';
+
+  @override
+  String get signalementSignaler => 'الإبلاغ عن هذا الغرض';
+
+  @override
+  String get signalementMotif => 'السبب';
+
+  @override
+  String get signalementDescription => 'الوصف';
+
+  @override
+  String get signalementQuestion => 'لماذا تبلّغ عن هذا العنصر؟';
+
+  @override
+  String get signalementDetails => 'تفاصيل (اختياري)';
+
+  @override
+  String get signalementDetailsAutre => 'يرجى توضيح السبب';
+
+  @override
+  String get signalementEnvoyer => 'إرسال البلاغ';
+
+  @override
+  String get signalementMerci => 'شكرًا، تم إرسال بلاغك.';
+
+  @override
+  String get signalementEchec => 'تعذر الإرسال. حاول مرة أخرى.';
+
+  @override
+  String get signalementMotifObligatoire => 'اختر سببًا';
+
+  @override
+  String get signalementDescriptionCourte => '10 أحرف على الأقل';
+
+  @override
+  String get signalementDescriptionLongue => '500 حرف على الأكثر';
+
+  @override
+  String get motifContenu => 'محتوى غير لائق';
+
+  @override
+  String get motifArnaque => 'احتيال';
+
+  @override
+  String get motifInexistant => 'غرض غير موجود أو مضلل';
+
+  @override
+  String get motifComportement => 'سلوك مسيء';
+
+  @override
+  String get motifAutre => 'أخرى';
 }
