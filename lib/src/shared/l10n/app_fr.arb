@@ -137,5 +137,10 @@
   },
   "objetModifierTitre": "Modifier l'objet",
   "objetModifier": "Modifier",
-  "objetEchecModification": "Modification impossible. Réessayez."
+  "objetEchecModification": "Modification impossible. Réessayez.",
+  "traductionTraduire": "Traduire",
+  "traductionTraduitAuto": "Traduit automatiquement",
+  "traductionVoirOriginal": "Voir l'original",
+  "traductionEchec": "Traduction impossible. Le texte original reste affiché.",
+  "traductionReessayer": "Réessayer"
 }

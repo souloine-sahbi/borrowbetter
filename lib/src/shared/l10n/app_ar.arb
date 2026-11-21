@@ -132,5 +132,10 @@
   "tarifPrixUnite": "{prix} د.ت / {unite}",
   "objetModifierTitre": "تعديل الغرض",
   "objetModifier": "تعديل",
-  "objetEchecModification": "تعذر حفظ التعديلات. حاول مرة أخرى."
+  "objetEchecModification": "تعذر حفظ التعديلات. حاول مرة أخرى.",
+  "traductionTraduire": "ترجمة",
+  "traductionTraduitAuto": "تمت الترجمة تلقائيًا",
+  "traductionVoirOriginal": "عرض الأصل",
+  "traductionEchec": "تعذرت الترجمة. يبقى النص الأصلي معروضًا.",
+  "traductionReessayer": "إعادة المحاولة"
 }

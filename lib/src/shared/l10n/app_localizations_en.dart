@@ -375,4 +375,20 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get objetEchecModification =>
       'Could not save changes. Please try again.';
+
+  @override
+  String get traductionTraduire => 'Translate';
+
+  @override
+  String get traductionTraduitAuto => 'Automatically translated';
+
+  @override
+  String get traductionVoirOriginal => 'View original';
+
+  @override
+  String get traductionEchec =>
+      'Translation failed. The original text is still shown.';
+
+  @override
+  String get traductionReessayer => 'Retry';
 }

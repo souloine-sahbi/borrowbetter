@@ -7,6 +7,7 @@ import 'package:borrowbetter/src/features/objets/presentation/galerie_photos.dar
 import 'package:borrowbetter/src/features/objets/presentation/libelle_tarif.dart';
 import 'package:borrowbetter/src/features/objets/presentation/libelles_objet.dart';
 import 'package:borrowbetter/src/features/objets/presentation/objets_providers.dart';
+import 'package:borrowbetter/src/features/traduction/presentation/bloc_traduction.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/presentation/message_pour.dart';
@@ -169,12 +170,10 @@ class _PageObjet extends ConsumerWidget {
                     Row(
                       children: [
                         Expanded(
-                          child: Text(
-                            objet.titre,
-                            style: theme.textTheme.titleLarge?.copyWith(
-                              color: scheme.primary,
-                              fontWeight: FontWeight.w700,
-                            ),
+                          child: BlocTraduction(
+                            titre: objet.titre,
+                            description: objet.description,
+                            langueAnnonce: objet.langueAnnonce,
                           ),
                         ),
                         if (estProprietaire)
@@ -212,13 +211,6 @@ class _PageObjet extends ConsumerWidget {
                       const SizedBox(height: Espacements.m),
                       _Proprietaire(nom: objet.proprietaireNom),
                     ],
-                    const SizedBox(height: Espacements.m),
-                    Text(
-                      objet.description,
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
                     const SizedBox(height: Espacements.m),
                     Wrap(
                       spacing: Espacements.s,
