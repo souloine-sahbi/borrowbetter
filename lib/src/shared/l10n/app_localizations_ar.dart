@@ -373,4 +373,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get objetEchecModification => 'تعذر حفظ التعديلات. حاول مرة أخرى.';
+
+  @override
+  String get traductionTraduire => 'ترجمة';
+
+  @override
+  String get traductionTraduitAuto => 'تمت الترجمة تلقائيًا';
+
+  @override
+  String get traductionVoirOriginal => 'عرض الأصل';
+
+  @override
+  String get traductionEchec => 'تعذرت الترجمة. يبقى النص الأصلي معروضًا.';
+
+  @override
+  String get traductionReessayer => 'إعادة المحاولة';
 }

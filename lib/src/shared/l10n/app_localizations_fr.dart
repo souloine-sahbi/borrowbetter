@@ -374,4 +374,20 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get objetEchecModification => 'Modification impossible. Réessayez.';
+
+  @override
+  String get traductionTraduire => 'Traduire';
+
+  @override
+  String get traductionTraduitAuto => 'Traduit automatiquement';
+
+  @override
+  String get traductionVoirOriginal => 'Voir l\'original';
+
+  @override
+  String get traductionEchec =>
+      'Traduction impossible. Le texte original reste affiché.';
+
+  @override
+  String get traductionReessayer => 'Réessayer';
 }

@@ -132,5 +132,10 @@
   "tarifPrixUnite": "{prix} DT / {unite}",
   "objetModifierTitre": "Edit item",
   "objetModifier": "Edit",
-  "objetEchecModification": "Could not save changes. Please try again."
+  "objetEchecModification": "Could not save changes. Please try again.",
+  "traductionTraduire": "Translate",
+  "traductionTraduitAuto": "Automatically translated",
+  "traductionVoirOriginal": "View original",
+  "traductionEchec": "Translation failed. The original text is still shown.",
+  "traductionReessayer": "Retry"
 }

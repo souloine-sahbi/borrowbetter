@@ -813,6 +813,36 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Modification impossible. Réessayez.'**
   String get objetEchecModification;
+
+  /// No description provided for @traductionTraduire.
+  ///
+  /// In fr, this message translates to:
+  /// **'Traduire'**
+  String get traductionTraduire;
+
+  /// No description provided for @traductionTraduitAuto.
+  ///
+  /// In fr, this message translates to:
+  /// **'Traduit automatiquement'**
+  String get traductionTraduitAuto;
+
+  /// No description provided for @traductionVoirOriginal.
+  ///
+  /// In fr, this message translates to:
+  /// **'Voir l\'original'**
+  String get traductionVoirOriginal;
+
+  /// No description provided for @traductionEchec.
+  ///
+  /// In fr, this message translates to:
+  /// **'Traduction impossible. Le texte original reste affiché.'**
+  String get traductionEchec;
+
+  /// No description provided for @traductionReessayer.
+  ///
+  /// In fr, this message translates to:
+  /// **'Réessayer'**
+  String get traductionReessayer;
 }
 
 class _AppLocalizationsDelegate
