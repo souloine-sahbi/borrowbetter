@@ -3,7 +3,6 @@ import 'package:borrowbetter/src/features/ai/presentation/ia_providers.dart';
 import 'package:borrowbetter/src/features/auth/presentation/decoration_champ.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';

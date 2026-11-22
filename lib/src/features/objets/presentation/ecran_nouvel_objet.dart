@@ -15,6 +15,7 @@ import 'package:borrowbetter/src/features/objets/presentation/selecteur_photos.d
 import 'package:borrowbetter/src/shared/domain/failure.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/presentation/message_pour.dart';
+import 'package:borrowbetter/src/shared/publicite/publicite_test.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
 import 'package:borrowbetter/src/shared/widgets/bouton_principal.dart';
 import 'package:flutter/material.dart';
@@ -108,6 +109,7 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
           );
       messager.showSnackBar(SnackBar(content: Text(textes.objetPublie)));
       routeur.pop();
+      ref.read(serviceInterstitielProvider).afficher();
     } on Failure catch (echec) {
       if (!mounted) return;
       setState(() => _erreur = messagePour(textes, echec));
@@ -118,6 +120,7 @@ class _EtatEcranNouvelObjet extends ConsumerState<EcranNouvelObjet> {
 
   @override
   Widget build(BuildContext context) {
+    ref.watch(serviceInterstitielProvider);
     final textes = AppLocalizations.of(context);
     final langueAnnonce = Localizations.localeOf(context).languageCode;
     final erreur = _erreur;

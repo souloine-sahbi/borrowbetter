@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:borrowbetter/firebase_options.dart';
 import 'package:borrowbetter/src/features/profil/presentation/providers/utilisateur_providers.dart';
 import 'package:borrowbetter/src/routing/routeur.dart';
@@ -9,6 +11,7 @@ import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> main() async {
@@ -18,6 +21,7 @@ Future<void> main() async {
     providerAndroid: const AndroidDebugProvider(),
   );
   final preferences = await SharedPreferences.getInstance();
+  unawaited(MobileAds.instance.initialize());
   runApp(
     ProviderScope(
       overrides: [preferencesProvider.overrideWithValue(preferences)],

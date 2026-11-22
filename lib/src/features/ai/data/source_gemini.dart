@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:borrowbetter/src/shared/domain/failure.dart';
 import 'package:firebase_ai/firebase_ai.dart';
