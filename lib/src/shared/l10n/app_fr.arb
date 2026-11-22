@@ -169,5 +169,18 @@
   "iaConfidTexte": "La photo est envoyée à Google (Gemini) pour proposer une fiche. Vous pouvez tout modifier avant de publier. Ce bouton est facultatif.",
   "iaAccepter": "Continuer",
   "iaRefuser": "Annuler",
-  "iaEchec": "Suggestion indisponible. Remplissez la fiche à la main."
+  "iaEchec": "Suggestion indisponible. Remplissez la fiche à la main.",
+  "parametresAPropos": "À propos de BorrowBetter",
+  "aProposTitre": "BorrowBetter",
+  "aProposSlogan": "Empruntez ce dont vous avez besoin, partagez ce que vous avez.",
+  "aProposTexte": "BorrowBetter met en relation des particuliers pour prêter et emprunter des objets du quotidien : perceuse, tente, livres, matériel de sport... Moins de dépenses, moins de gaspillage, plus d'entraide.",
+  "aProposVersion": "Version {version}",
+  "@aProposVersion": {
+    "placeholders": {
+      "version": { "type": "String" }
+    }
+  },
+  "aProposFermer": "Fermer",
+  "profilMesEmprunts": "Mes emprunts",
+  "profilMesObjets": "Mes objets"
 }

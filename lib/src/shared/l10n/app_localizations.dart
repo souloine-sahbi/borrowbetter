@@ -1005,6 +1005,54 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Suggestion indisponible. Remplissez la fiche à la main.'**
   String get iaEchec;
+
+  /// No description provided for @parametresAPropos.
+  ///
+  /// In fr, this message translates to:
+  /// **'À propos de BorrowBetter'**
+  String get parametresAPropos;
+
+  /// No description provided for @aProposTitre.
+  ///
+  /// In fr, this message translates to:
+  /// **'BorrowBetter'**
+  String get aProposTitre;
+
+  /// No description provided for @aProposSlogan.
+  ///
+  /// In fr, this message translates to:
+  /// **'Empruntez ce dont vous avez besoin, partagez ce que vous avez.'**
+  String get aProposSlogan;
+
+  /// No description provided for @aProposTexte.
+  ///
+  /// In fr, this message translates to:
+  /// **'BorrowBetter met en relation des particuliers pour prêter et emprunter des objets du quotidien : perceuse, tente, livres, matériel de sport... Moins de dépenses, moins de gaspillage, plus d\'entraide.'**
+  String get aProposTexte;
+
+  /// No description provided for @aProposVersion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Version {version}'**
+  String aProposVersion(String version);
+
+  /// No description provided for @aProposFermer.
+  ///
+  /// In fr, this message translates to:
+  /// **'Fermer'**
+  String get aProposFermer;
+
+  /// No description provided for @profilMesEmprunts.
+  ///
+  /// In fr, this message translates to:
+  /// **'Mes emprunts'**
+  String get profilMesEmprunts;
+
+  /// No description provided for @profilMesObjets.
+  ///
+  /// In fr, this message translates to:
+  /// **'Mes objets'**
+  String get profilMesObjets;
 }
 
 class _AppLocalizationsDelegate
