@@ -164,5 +164,13 @@
   "iaConfidTexte": "The photo is sent to Google (Gemini) to suggest a listing. You can edit everything before publishing. This button is optional.",
   "iaAccepter": "Continue",
   "iaRefuser": "Cancel",
-  "iaEchec": "Suggestion unavailable. Please fill in the listing by hand."
+  "iaEchec": "Suggestion unavailable. Please fill in the listing by hand.",
+  "parametresAPropos": "About BorrowBetter",
+  "aProposTitre": "BorrowBetter",
+  "aProposSlogan": "Borrow what you need, share what you have.",
+  "aProposTexte": "BorrowBetter connects people to lend and borrow everyday items: a drill, a tent, books, sports gear... Less spending, less waste, more community.",
+  "aProposVersion": "Version {version}",
+  "aProposFermer": "Close",
+  "profilMesEmprunts": "My borrowings",
+  "profilMesObjets": "My items"
 }

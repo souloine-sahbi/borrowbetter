@@ -164,5 +164,13 @@
   "iaConfidTexte": "تُرسل الصورة إلى Google (Gemini) لاقتراح بطاقة الغرض. يمكنك تعديل كل شيء قبل النشر. هذا الزر اختياري.",
   "iaAccepter": "متابعة",
   "iaRefuser": "إلغاء",
-  "iaEchec": "الاقتراح غير متاح. املأ البطاقة يدويًا."
+  "iaEchec": "الاقتراح غير متاح. املأ البطاقة يدويًا.",
+  "parametresAPropos": "حول BorrowBetter",
+  "aProposTitre": "BorrowBetter",
+  "aProposSlogan": "استعر ما تحتاجه، وشارك ما تملكه.",
+  "aProposTexte": "يربط BorrowBetter بين الأشخاص لإعارة واستعارة أغراض الحياة اليومية: مثقاب، خيمة، كتب، معدات رياضية... إنفاق أقل، هدر أقل، وتعاون أكبر.",
+  "aProposVersion": "الإصدار {version}",
+  "aProposFermer": "إغلاق",
+  "profilMesEmprunts": "استعاراتي",
+  "profilMesObjets": "أغراضي"
 }

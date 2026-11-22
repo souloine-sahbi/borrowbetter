@@ -473,4 +473,32 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get iaEchec =>
       'Suggestion indisponible. Remplissez la fiche à la main.';
+
+  @override
+  String get parametresAPropos => 'À propos de BorrowBetter';
+
+  @override
+  String get aProposTitre => 'BorrowBetter';
+
+  @override
+  String get aProposSlogan =>
+      'Empruntez ce dont vous avez besoin, partagez ce que vous avez.';
+
+  @override
+  String get aProposTexte =>
+      'BorrowBetter met en relation des particuliers pour prêter et emprunter des objets du quotidien : perceuse, tente, livres, matériel de sport... Moins de dépenses, moins de gaspillage, plus d\'entraide.';
+
+  @override
+  String aProposVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get aProposFermer => 'Fermer';
+
+  @override
+  String get profilMesEmprunts => 'Mes emprunts';
+
+  @override
+  String get profilMesObjets => 'Mes objets';
 }

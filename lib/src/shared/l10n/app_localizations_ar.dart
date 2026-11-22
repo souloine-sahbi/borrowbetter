@@ -470,4 +470,31 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get iaEchec => 'الاقتراح غير متاح. املأ البطاقة يدويًا.';
+
+  @override
+  String get parametresAPropos => 'حول BorrowBetter';
+
+  @override
+  String get aProposTitre => 'BorrowBetter';
+
+  @override
+  String get aProposSlogan => 'استعر ما تحتاجه، وشارك ما تملكه.';
+
+  @override
+  String get aProposTexte =>
+      'يربط BorrowBetter بين الأشخاص لإعارة واستعارة أغراض الحياة اليومية: مثقاب، خيمة، كتب، معدات رياضية... إنفاق أقل، هدر أقل، وتعاون أكبر.';
+
+  @override
+  String aProposVersion(String version) {
+    return 'الإصدار $version';
+  }
+
+  @override
+  String get aProposFermer => 'إغلاق';
+
+  @override
+  String get profilMesEmprunts => 'استعاراتي';
+
+  @override
+  String get profilMesObjets => 'أغراضي';
 }
