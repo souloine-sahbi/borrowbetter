@@ -6,6 +6,7 @@ import 'package:borrowbetter/src/features/recherche/presentation/recherche_provi
 import 'package:borrowbetter/src/routing/bouton_menu.dart';
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
+import 'package:borrowbetter/src/shared/publicite/publicite_test.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
 import 'package:borrowbetter/src/shared/widgets/titre_section.dart';
 import 'package:flutter/material.dart';
@@ -85,6 +86,8 @@ class EcranAccueil extends ConsumerWidget {
             ),
             SliverToBoxAdapter(child: TitreSection(textes.accueilRecents)),
             const SliverToBoxAdapter(child: RangeeObjetsRecents()),
+            const SliverToBoxAdapter(child: BanniereTest()),
+            const SliverToBoxAdapter(child: SizedBox(height: Espacements.l)),
           ],
         ),
       ),

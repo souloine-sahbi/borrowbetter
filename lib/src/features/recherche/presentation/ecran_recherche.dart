@@ -10,6 +10,7 @@ import 'package:borrowbetter/src/features/recherche/presentation/recherche_provi
 import 'package:borrowbetter/src/routing/chemins.dart';
 import 'package:borrowbetter/src/shared/l10n/app_localizations.dart';
 import 'package:borrowbetter/src/shared/presentation/message_pour.dart';
+import 'package:borrowbetter/src/shared/publicite/publicite_test.dart';
 import 'package:borrowbetter/src/shared/theme/dimensions.dart';
 import 'package:borrowbetter/src/shared/widgets/carte_objet.dart';
 import 'package:borrowbetter/src/shared/widgets/centre_chargement.dart';
@@ -189,8 +190,9 @@ class _EtatEcranRecherche extends ConsumerState<EcranRecherche> {
               SliverGrilleCategories(onCategorie: notifier.choisirCategorie),
               SliverToBoxAdapter(child: TitreSection(textes.accueilRecents)),
               const _Resultats(texte: ''),
-              const SliverToBoxAdapter(child: SizedBox(height: Espacements.l)),
             ],
+            const SliverToBoxAdapter(child: BanniereTest()),
+            const SliverToBoxAdapter(child: SizedBox(height: Espacements.l)),
           ],
         ),
       ),
