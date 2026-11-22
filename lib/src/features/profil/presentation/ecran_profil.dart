@@ -1,6 +1,4 @@
 import 'package:borrowbetter/src/features/auth/data/depot_auth.dart';
-import 'package:borrowbetter/src/features/lieux/domain/libelle_zone.dart';
-import 'package:borrowbetter/src/features/lieux/presentation/lieux_provider.dart';
 import 'package:borrowbetter/src/features/profil/domain/utilisateur.dart';
 import 'package:borrowbetter/src/features/profil/presentation/avatar_utilisateur.dart';
 import 'package:borrowbetter/src/features/profil/presentation/providers/utilisateur_providers.dart';
@@ -21,8 +19,8 @@ class EcranProfil extends ConsumerWidget {
     final profil = ref.watch(utilisateurCourantProvider);
     return Scaffold(
       appBar: AppBar(
-        leading: const BoutonMenu(),
         title: Text(textes.profilTitre),
+        leading: const BoutonMenu(),
       ),
       body: profil.when(
         loading: () => const Center(child: CircularProgressIndicator()),
@@ -44,17 +42,10 @@ class _ContenuProfil extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final textes = AppLocalizations.of(context);
     final theme = Theme.of(context);
-    final lieux = ref.watch(lieuxProvider).value ?? [];
-    final gouvernorat = utilisateur.gouvernorat;
-    final ville = utilisateur.ville;
-    final lieu = gouvernorat == null
-        ? textes.profilLieuVide
-        : libelleZone(
-            lieux,
-            gouvernoratId: gouvernorat,
-            villeId: ville ?? '',
-            langue: Localizations.localeOf(context).languageCode,
-          );
+    final lieu = [
+      utilisateur.ville,
+      utilisateur.gouvernorat,
+    ].whereType<String>().where((v) => v.isNotEmpty).join(', ');
     return ListView(
       padding: const EdgeInsets.all(Espacements.l),
       children: [
@@ -81,23 +72,45 @@ class _ContenuProfil extends ConsumerWidget {
             color: theme.colorScheme.onSurfaceVariant,
           ),
         ),
-        const SizedBox(height: Espacements.xl),
-        ListTile(
-          leading: const Icon(Icons.place_outlined),
-          title: Text(textes.profilLieu),
-          subtitle: Text(lieu.isEmpty ? textes.profilLieuVide : lieu),
-        ),
         const SizedBox(height: Espacements.l),
         FilledButton.icon(
           onPressed: () => context.push(Chemins.modifierProfil),
           icon: const Icon(Icons.edit_outlined),
           label: Text(textes.profilModifier),
         ),
-        const SizedBox(height: Espacements.m),
-        OutlinedButton.icon(
-          onPressed: () => ref.read(depotAuthProvider).deconnexion(),
-          icon: const Icon(Icons.logout),
-          label: Text(textes.authDeconnexion),
+        const SizedBox(height: Espacements.l),
+        ListTile(
+          leading: const Icon(Icons.place_outlined),
+          title: Text(textes.profilLieu),
+          subtitle: Text(lieu.isEmpty ? textes.profilLieuVide : lieu),
+        ),
+        const Divider(),
+        ListTile(
+          leading: const Icon(Icons.swap_horiz),
+          title: Text(textes.profilMesEmprunts),
+          trailing: const Icon(Icons.chevron_right),
+          onTap: () => context.go(Chemins.demandes),
+        ),
+        ListTile(
+          leading: const Icon(Icons.inventory_2_outlined),
+          title: Text(textes.profilMesObjets),
+          trailing: const Icon(Icons.chevron_right),
+          onTap: () => context.go(Chemins.demandes),
+        ),
+        ListTile(
+          leading: const Icon(Icons.settings_outlined),
+          title: Text(textes.navParametres),
+          trailing: const Icon(Icons.chevron_right),
+          onTap: () => context.push(Chemins.parametres),
+        ),
+        const Divider(),
+        ListTile(
+          leading: Icon(Icons.logout, color: theme.colorScheme.error),
+          title: Text(
+            textes.authDeconnexion,
+            style: TextStyle(color: theme.colorScheme.error),
+          ),
+          onTap: () => ref.read(depotAuthProvider).deconnexion(),
         ),
       ],
     );

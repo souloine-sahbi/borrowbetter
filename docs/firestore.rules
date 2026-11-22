@@ -1,0 +1,131 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function connecte() { return request.auth != null; }
+
+    function estAdmin() {
+      return connecte()
+        && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    function prixValide(d) {
+      return !('prix' in d) || d.prix == null
+        || (d.prix is number && d.prix > 0 && d.prix <= 100000);
+    }
+
+    function champsModifies() {
+      return request.resource.data.diff(resource.data).affectedKeys();
+    }
+
+    function partie(d) {
+      return request.auth.uid == d.emprunteurId
+        || request.auth.uid == d.proprietaireId;
+    }
+
+    match /admins/{uid} {
+      allow read: if connecte() && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    match /adminActions/{id} {
+      allow create, read: if estAdmin();
+    }
+
+    match /users/{userId} {
+      allow read: if connecte();
+      allow create: if connecte()
+        && request.auth.uid == userId
+        && request.resource.data.statut == 'actif';
+      allow update: if connecte() && (
+        (request.auth.uid == userId
+          && request.resource.data.statut == resource.data.statut
+          && request.resource.data.creeLe == resource.data.creeLe
+          && request.resource.data.email == resource.data.email)
+        || (estAdmin() && champsModifies().hasOnly(['statut']))
+      );
+    }
+
+    match /items/{itemId} {
+      allow read: if connecte();
+      allow create: if connecte()
+        && request.resource.data.proprietaireId == request.auth.uid
+        && prixValide(request.resource.data);
+      allow update: if connecte() && (
+        (resource.data.proprietaireId == request.auth.uid
+          && request.resource.data.proprietaireId == resource.data.proprietaireId
+          && prixValide(request.resource.data))
+        || (estAdmin() && champsModifies().hasOnly(['statut']))
+      );
+      allow delete: if connecte()
+        && resource.data.proprietaireId == request.auth.uid;
+
+      // Adresse détaillée : propriétaire seulement. L'emprunteur la reçoit
+      // via le champ adresseRemise de sa demande acceptée.
+      match /prive/{docId} {
+        allow read: if connecte()
+          && get(/databases/$(database)/documents/items/$(itemId))
+               .data.proprietaireId == request.auth.uid;
+        allow write: if connecte()
+          && getAfter(/databases/$(database)/documents/items/$(itemId))
+               .data.proprietaireId == request.auth.uid;
+      }
+    }
+
+    match /borrowRequests/{demandeId} {
+      allow read: if connecte() && (partie(resource.data) || estAdmin());
+      allow create: if connecte()
+        && request.resource.data.emprunteurId == request.auth.uid
+        && request.resource.data.proprietaireId != request.auth.uid
+        && request.resource.data.statut == 'enAttente'
+        && get(/databases/$(database)/documents/items/$(request.resource.data.objetId))
+             .data.proprietaireId == request.resource.data.proprietaireId;
+      allow update: if connecte() && partie(resource.data)
+        && champsModifies().hasOnly(['statut', 'updatedAt', 'adresseRemise'])
+        && (
+          (request.auth.uid == resource.data.emprunteurId
+            && resource.data.statut == 'enAttente'
+            && request.resource.data.statut == 'annulee')
+          || (request.auth.uid == resource.data.proprietaireId && (
+               (resource.data.statut == 'enAttente'
+                 && request.resource.data.statut in ['acceptee', 'refusee'])
+            || (resource.data.statut == 'acceptee'
+                 && request.resource.data.statut == 'enCours')
+            || (resource.data.statut == 'enCours'
+                 && request.resource.data.statut == 'terminee')))
+        );
+    }
+
+    match /notifications/{id} {
+      allow read: if connecte() && resource.data.destinataireId == request.auth.uid;
+      allow create: if connecte()
+        && request.resource.data.auteurId == request.auth.uid
+        && request.resource.data.lu == false;
+      allow update: if connecte()
+        && resource.data.destinataireId == request.auth.uid
+        && champsModifies().hasOnly(['lu']);
+    }
+
+    match /reviews/{avisId} {
+      allow read: if connecte();
+      allow create: if connecte()
+        && request.resource.data.auteurId == request.auth.uid
+        && avisId == request.resource.data.demandeId + '_' + request.auth.uid
+        && request.resource.data.note is int
+        && request.resource.data.note >= 1 && request.resource.data.note <= 5
+        && get(/databases/$(database)/documents/borrowRequests/$(request.resource.data.demandeId))
+             .data.statut == 'terminee'
+        && partie(get(/databases/$(database)/documents/borrowRequests/$(request.resource.data.demandeId)).data);
+    }
+
+    match /reports/{reportId} {
+      allow create: if connecte()
+        && request.resource.data.auteurId == request.auth.uid
+        && request.resource.data.statut == 'ouvert'
+        && request.resource.data.description is string
+        && request.resource.data.description.size() <= 500;
+      allow read: if estAdmin();
+      allow update: if estAdmin() && champsModifies().hasOnly(['statut']);
+    }
+  }
+}
